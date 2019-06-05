@@ -12,7 +12,7 @@ Then, write a function named speaker that takes in a string and a callback funct
 const greeting = (word) => word.toUpperCase();
 
 
-const speaker = (message, greeting) => greeting(message);
+const speaker = (message, callback) => callback(message);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -33,9 +33,9 @@ Return the modified array.
 const addValues = (arr, value) => arr.push(value);
 
 
-const addNumbers = (num, arr, times, addValues) => {
+const addNumbers = (num, arr, times, callback) => {
   for(let i = 1; i <= times; i++){
-    addValues(arr, num);
+    callback(arr, num);
   }
   return arr;
 };
@@ -58,9 +58,9 @@ const removeOne = (num, arr) => {
   }
 };
 
-const removeElements = (arr, removeOne) => {
+const removeElements = (arr, callback) => {
   for(let i = 0; i < arr.length; i++){
-    removeOne(arr[i],arr);
+    callback(arr[i],arr);
   }
   return arr;
 };
@@ -71,12 +71,18 @@ CHALLENGE 4
 Write a function named removeWithForEach that produces the same output as challenge 3, but uses forEach.
 ------------------------------------------------------------------------------------------------ */
 
-const removeWithForEach = (arr, removeOne) => {
+const removeWithForEach = (arr, callback) => {
   arr.forEach(function(value){
-    removeOne(value,arr);
+    callback(value,arr);
   })
   return arr;
 };
+
+// const  removeWithForEach = (arr, callback) => {
+//  ['apples', 'bananas', 'cucumbers']
+// arr.forEach((item) => callback(item, arr))
+// return arr;
+// };
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -88,6 +94,17 @@ This function should use forEach again, but rather than taking in a callback as 
 This anonymous function should accept up to three arguments: the element, the index, and the array.
 ------------------------------------------------------------------------------------------------ */
 
+const removeWithAnon = (outerArray) => {
+  outerArray.forEach((element, index, arr) => {
+    if ((element % 3) === 2){
+      arr.pop();
+    }
+  });
+  return outerArray;
+}
+
+// Notes
+
 // const removeWithAnon = (arr) => {
 // 	const x = function(){
 // 		if (value % 3 === 2){
@@ -98,7 +115,6 @@ This anonymous function should accept up to three arguments: the element, the in
 // 	})
 // };
 
-// Notes
 
 // arr.forEach(x(currentValue [, index [, array]])[, thisArg]);
 
@@ -206,7 +222,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should remove three elements from the array', () => {
     expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])).toStrictEqual([1, 2, 3, 4, 5, 6, 7]);
     expect(removeWithAnon([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]).length).toStrictEqual(7);
