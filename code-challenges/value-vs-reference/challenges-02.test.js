@@ -8,9 +8,7 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 ------------------------------------------------------------------------------------------------ */
 
-const appendTheEnd = (str) => {
-  // Solution code here...
-};
+const appendTheEnd = (str) => str += ' The end.';
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -26,7 +24,8 @@ console.log(a) prints [1, 2, 3, 1]
 ------------------------------------------------------------------------------------------------ */
 
 const appendFirstToLast = (arr) => {
-  // Solution code here...
+  let firstElementInArray = arr[0];
+  arr.push(firstElementInArray);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,7 +44,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 ------------------------------------------------------------------------------------------------ */
 
 const addBirthYearProperty = (obj, year) => {
-  // Solution code here...
+  obj.yearBorn = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,7 +61,9 @@ console.log(people[1].isAuthor) prints true
 ------------------------------------------------------------------------------------------------ */
 
 const setStatusAsAuthor = (people) => {
-  // Solution code here...
+  people.forEach(element => {
+    element.isAuthor = true;
+  });
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -80,10 +81,17 @@ append(a, b);
 console.log(a) prints [1, 2, 3, 4]
 ------------------------------------------------------------------------------------------------ */
 
-const append = (arr1, arr2) => {
-  // Solution code here...
+const append = (arr1, arr2) => arr1.push(... arr2);
 
-};
+// describe('Testing challenge 5', () => {
+//   test('It should append the second array to the first', () => {
+//     const a = [1, 2, 3, 4];
+//     const b = [5, 6, 7, 8];
+//     append(a, b);
+
+//     expect(a).toStrictEqual([1, 2, 3, 4, 5, 6, 7, 8]);
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
