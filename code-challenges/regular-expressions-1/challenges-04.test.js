@@ -13,8 +13,8 @@ For example:
 ------------------------------------------------------------------------------------------------ */
 
 const isNum = (input) => {
-  let validator = /\d/;
-  return validator.test(input)
+  // .test will return a boolean 
+  return /\d/.test(input)
 };
 
 // Also works with:
@@ -31,6 +31,8 @@ Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
 const isCapitalized = (str) => {
+  // .match runs on a string and takes in the regex
+  // returns null if no match is found
   let validator = /\b(\w*[A-Z]\w*)\b/g;
   let matchArray = str.match(validator);
   if (matchArray === null){
@@ -39,6 +41,12 @@ const isCapitalized = (str) => {
     return matchArray;
   }
 };
+
+// Also works:
+
+// const isCapitalized = (str) => {
+// return str.match(/[A-Z][a-zA-Z]*/g) || [];
+// };
 
 
 /* ------------------------------------------------------------------------------------------------
@@ -72,7 +80,8 @@ Do not use the vertical bar (pipe) in your pattern.
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  // Solution code here...
+  // .test will return boolean
+  return /^[Oo]ct(ober)?$/.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -86,7 +95,8 @@ The expected output of "Hello, and have a wonderful day!" is ["and ", "have ", "
 ------------------------------------------------------------------------------------------------ */
 
 const noPunctuation = str => {
-  // Solution code here...
+  // .match will return an array
+  return str.match(/\w+\b\s/g)
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -102,7 +112,8 @@ For example, 'Welcome to Code 301!' will return 'W_lc_m_ t_ C_d_ 301!'.
 ------------------------------------------------------------------------------------------------ */
 
 let hangman = (str) => {
-  // Solution code here...
+  // .replace a matching pattern with another value
+  return str.replace(/(a|e|i|o|u)/gi, '_')
 };
 
 /* ------------------------------------------------------------------------------------------------
