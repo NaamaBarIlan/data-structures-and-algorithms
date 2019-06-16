@@ -25,7 +25,7 @@ For example, filterStringsWithVowels('gregor','hound','xyz') returns ['gregor', 
 
 
 const filterStringsWithVowels = (arr) => {
-  return arr.filter(value => /[a e i o u ]/.test(value));
+  return arr.filter(value => /[aeiou]/.test(value));
 };
 
 describe('Testing challenge 2', () => {
@@ -50,8 +50,8 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 ------------------------------------------------------------------------------------------------ */
 
 const notInFirstArray = (forbiddenValues, arr) => {
-  const checkSecondArray = arr.filter(num => num)
-};
+  return arr.filter(value => !forbiddenValues.includes(value));
+}
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -203,7 +203,7 @@ describe('Testing challenge 2', () => {
 
   test('It should not contain any words that do not contain vowels', () => {
     expect(filterStringsWithVowels(['gregor','hound','xyz'])).not.toContain('xyz');
-  });ß
+  });
 });
 
 describe('Testing challenge 3', () => {
