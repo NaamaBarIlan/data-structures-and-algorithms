@@ -73,18 +73,12 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
-  let charNames = arr.reduce( (accumulator, character) => {
-    return accumulator[character.name];
-  }, {} );
-  return charNames;
+  return arr.reduce( (accumulator, character) => {
+    accumulator.push(character.name);
+    return accumulator;
+  }, [] );
 };
 
-// describe('Testing challenge 2', () => {
-//   test('It should return an array continaing the names of the characters', () => {
-//     expect(returnNames(starWarsData)).toStrictEqual([ 'Luke Skywalker', 'C-3PO', 'R2-D2', 'Darth Vader', 'Leia Organa' ]);
-//     expect(returnNames(starWarsData).length).toStrictEqual(5);
-//   });
-// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -95,8 +89,12 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
-  // Solution code here...
+  let newArr = str.split('');
+  return newArr.reduce((newString, currentLetter) => {
+    return currentLetter + newString;
+  }, '');
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
@@ -169,11 +167,11 @@ const calculateAverage = (arr) => {
   return sum/count;
 };
 
-describe('Testing challenge 5', () => {
-    test('It should return the average of the numbers in the array', () => {
-      expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
-    });
-  });
+// describe('Testing challenge 5', () => {
+//   test('It should return the average of the numbers in the array', () => {
+//     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
@@ -276,7 +274,7 @@ describe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the string with the characters in reverse order', () => {
     expect(reversedString('Code 301')).toStrictEqual('103 edoC');
   });
@@ -288,7 +286,7 @@ xdescribe('Testing challenge 4', () => {
   });
 });
 
-describe('Testing challenge 5', () => {
+xdescribe('Testing challenge 5', () => {
   test('It should return the average of the numbers in the array', () => {
     expect(calculateAverage([18, 290, 37, 4, 55, 16, 7, 85 ])).toStrictEqual(64);
   });
