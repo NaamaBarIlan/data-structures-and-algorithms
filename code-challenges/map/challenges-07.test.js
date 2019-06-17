@@ -11,27 +11,14 @@ For example, twoToThe([1,2,3]) returns [2,4,8] because 2 ^ 1 = 2, 2 ^ 2 = 4, and
 ------------------------------------------------------------------------------------------------ */
 
 const forLoopTwoToThe = (arr) => {
-  let newArr = [];  
+  let newArr = [];
   for (let i = 0; i < arr.length; i++){
-    let powerTwo = Math.pow(number, 2);
-    newArr.push(powerTwo[i]);
+    newArr.push(Math.pow(2, arr[i]));
   }
-  return newArr
+  return newArr;
 };
 
 
-describe('Testing challenge 1', () => {
-  test('It should return two raised to the power of the integer', () => {
-    expect(forLoopTwoToThe([0, 4, 5])).toStrictEqual([1, 16, 32]);
-    expect(forLoopTwoToThe([0, 4, 5]).length).toStrictEqual(3);
-  });
-  
-  test('It should return decimals if the integer is negative', () => {
-    expect(forLoopTwoToThe([-1, -2, -3])).toStrictEqual([0.5, 0.25, 0.125]);
-  });
-});
-
-  
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -39,7 +26,11 @@ Write a function named forEachTwoToThe that produces the same output as your for
 ------------------------------------------------------------------------------------------------ */
 
 const forEachTwoToThe = (arr) => {
-  // Solution code here...
+  let newArray = [];
+  arr.forEach(number => {
+    newArray.push(Math.pow(2, number))
+  })
+  return newArray;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -49,7 +40,7 @@ Write a function named mapTwoToThe that produces the same output as your forLoop
 ------------------------------------------------------------------------------------------------ */
 
 const mapTwoToThe = (arr) => {
-  // Solution code here...
+  return arr.map((number) => Math.pow(2, number))
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +54,7 @@ For example: charCode(['h','i']) returns [104, 105].
 ------------------------------------------------------------------------------------------------ */
 
 const charCode = (arr) => {
-  // Solution code here...
+  return arr.map((letter) => letter.charCodeAt())
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -195,7 +186,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return two raised to the power of the integer', () => {
     expect(forEachTwoToThe([0, 4, 5])).toStrictEqual([1, 16, 32]);
     expect(forEachTwoToThe([0, 4, 5]).length).toStrictEqual(3);
@@ -206,7 +197,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return two raised to the power of the integer', () => {
     expect(mapTwoToThe([0, 4, 5])).toStrictEqual([1, 16, 32]);
     expect(mapTwoToThe([0, 4, 5]).length).toStrictEqual(3);
@@ -217,7 +208,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should return an array containing the character code for each letter', () => {
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1'])).toStrictEqual([ 67, 111, 100, 101, 51, 48, 49 ]);
     expect(charCode(['C', 'o', 'd', 'e', '3', '0', '1']).length).toStrictEqual(7);
