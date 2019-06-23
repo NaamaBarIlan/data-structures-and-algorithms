@@ -1,7 +1,5 @@
 'use strict';
 
-import { stringLiteral } from "@babel/types";
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1
 
@@ -11,12 +9,7 @@ For example, ['apple', 'banana', 'MacGyver'] returns ['Apple', 'Banana', 'MacGyv
 ------------------------------------------------------------------------------------------------ */
 
 const toTitleCase = (arr) => {
- let newArr = [];
-for(let i = 0; i < arr.length; i++){
-    let strUpper = str[0].toUpperCase()
-    newArr.push(strUpper)
- }
-  return newArr;
+  return arr.map(word => word.charAt(0).toUpperCase() + word.slice(1));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -90,9 +83,24 @@ let starWarsData = [{
   gender: 'n/a'
 }];
 
+
 let biggerThanLuke = (arr) => {
-  // Solution code here...
+  const massLuke = 77;
+  let newArr = [];
+
+  arr.forEach(person => {
+    if (parseInt(person.mass) > massLuke){
+      newArr.push(person.name);
+    }
+  }); return newArr.join(' - ');
 };
+
+// describe('Testing challenge 2', () => {
+//   test('It should return only characters that are bigger than Luke', () => {
+//     expect(biggerThanLuke(starWarsData)).toStrictEqual('Darth Vader - Pex Kylar');
+//     expect(biggerThanLuke([])).toStrictEqual('');
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -112,6 +120,36 @@ const sortBy = (property, arr) => {
   // Solution code here...
 };
 
+describe('Testing challenge 3', () => {
+  test('It should sort items by a price', () => {
+
+    expect(sortBy('price', [
+      {name: 'Sweatshirt', price: 45},
+      {name: 'Bookmark', price: 2.50},
+      {name: 'Tote bag', price: 15}
+    ])).toStrictEqual([
+      {name: 'Bookmark', price: 2.50},
+      {name: 'Tote bag', price: 15},
+      {name: 'Sweatshirt', price: 45},
+    ]);
+
+  });
+
+  test('It should sort items by name', () => {
+
+    expect(sortBy('name', [
+      {name: 'Sweatshirt', price: 45},
+      {name: 'Bookmark', price: 2.50},
+      {name: 'Tote bag', price: 15}
+    ])).toStrictEqual([
+      {name: 'Bookmark', price: 2.50},
+      {name: 'Sweatshirt', price: 45},
+      {name: 'Tote bag', price: 15},
+    ]);
+  });
+});
+
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
 
@@ -124,9 +162,19 @@ http://www.insecure.com returns false because the URL is not secure
 https://secure.com returns true because the URL is secure
 https:/missingslash.org returns false because the URL is malformed
 ------------------------------------------------------------------------------------------------ */
+
 const isSecure = (url) => {
-// Solution code here...
+  return /https:\/\//g.test(url)
 };
+
+// describe('Testing challenge 4', () => {
+//   test('It should check if url is https', () => {
+
+//     expect(isSecure('http://www.insecure.com')).toBe(false);
+//     expect(isSecure('https://secure.com')).toBe(true);
+//     expect(isSecure('https:/missingslash.org')).toBe(false);
+//   });
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5 - Stretch Goal
@@ -171,14 +219,14 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return only characters that are bigger than Luke', () => {
     expect(biggerThanLuke(starWarsData)).toStrictEqual('Darth Vader - Pex Kylar');
     expect(biggerThanLuke([])).toStrictEqual('');
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should sort items by a price', () => {
 
     expect(sortBy('price', [
@@ -207,7 +255,7 @@ xdescribe('Testing challenge 3', () => {
   });
 });
 
-xdescribe('Testing challenge 4', () => {
+describe('Testing challenge 4', () => {
   test('It should check if url is https', () => {
 
     expect(isSecure('http://www.insecure.com')).toBe(false);
