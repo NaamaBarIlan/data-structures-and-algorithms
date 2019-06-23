@@ -23,8 +23,15 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
-  // Solution code here...
-
+  let totalCookiesPerHour = [];
+  for (let i = 0; i < hoursOpen.length; i++) {
+    let hourlyTotal = 0;
+    for (let j = 0; j < cookieStores.length; i++){
+      hourlyTotal += stores[j][i];
+    }
+    totalCookiesPerHour.push(hourlyTotal)
+  }
+  return totalCookiesPerHour;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -172,7 +179,7 @@ describe('Testing challenge 1', () => {
   });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should create an object of data for each store', () => {
     expect(salesData(hoursOpen, grandTotal(cookieStores))).toStrictEqual([
       { sales: '88 cookies', time: '9 a.m.' },
@@ -194,7 +201,7 @@ xdescribe('Testing challenge 2', () => {
 });
 
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should return the number 24', () => {
     expect(howManyTreats(errands)).toStrictEqual(24);
   });
