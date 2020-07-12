@@ -32,7 +32,7 @@ namespace LinkedListTests
         /// Finds a specific value in the linked list
         /// O(n) time efficiency
         /// </summary>
-        /// <param name="value">searchable value</param>
+        /// <param name="value">search-able value</param>
         /// <returns>response </returns>
         public bool Includes(int value)
         {
@@ -63,12 +63,12 @@ namespace LinkedListTests
             Current = Head;
 
             //StringBuilder class
-            //Why would you use stringBuilder over concatination??
-            //bc it's more efficient in terms of memory management 
+            //Why would you use stringBuilder over concatenation?
+            //Because it's more efficient in terms of memory management 
 
             StringBuilder sb = new StringBuilder();
 
-            // start constructing sb
+            // start constructing sb:
             while(Current != null)
             {
                 sb.Append($"{Current.Value} -> ");
