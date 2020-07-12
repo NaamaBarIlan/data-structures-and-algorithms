@@ -1,35 +1,49 @@
 ﻿using System;
+
+
 namespace array_shift
 {
-    class Program
+    public class Program
     {
+        /// <summary>
+        /// This method calls the InsertShiftArray method with the input parameters. 
+        /// </summary>
+        /// <param name="args">Default method signature</param>
         static void Main(string[] args)
         {
-            int[] inputArray;
-            int insertValue;
-            insertShiftArray(inputArray, insertValue);
+            int[] inputArray = { 4, 8, 15, 23, 42 };
+            int insertValue = 16;
+
+            int[] outputArray = InsertShiftArray(inputArray, insertValue);
+            Console.WriteLine("[{0}]", string.Join(", ", outputArray));
         }
-        static int insertShiftArray(int[] array, int value)
+
+        /// <summary>
+        /// This method takes in an array and the value to be added and returns an array with the new value added at the middle index.
+        /// </summary>
+        /// <param name="array">An int array</param>
+        /// <param name="value">An int data type</param>
+        /// <returns></returns>
+        public static int[] InsertShiftArray(int[] array, int value)
         {
-            int[] newArray = new int[array.Length + 1];
-            int newValuePlacement = (array.Length + 1) / 2;
-            int indexPlace = 0;
-            for (int i = 0; i < newArray.Length; i++)
+            int[] outputArray = new int[array.Length + 1];
+
+            int arrayMiddle = (array.Length + 1) / 2;
+
+            int arrayIndex = 0;
+
+            for (int i = 0; i < outputArray.Length; i++)
             {
-                if (i == newValuePlacement - 1)
+                if (i == arrayMiddle)
                 {
-                    newArray[i] = value;
-                }
-                else if (i != newValuePlacement - 1)
-                {
-                    newArray[i] = array[indexPlace++];
+                    outputArray[i] = value;
                 }
                 else
                 {
-                    Console.WriteLine("Please try again");
+                    outputArray[i] = array[arrayIndex++];
                 }
             }
-            return newArray;
+            return outputArray;
         }
     }
 }

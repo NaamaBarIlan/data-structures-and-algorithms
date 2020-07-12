@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>array_shift_unit_test</RootNamespace>
+    <RootNamespace>Array_Shift_Unit_Test</RootNamespace>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -12,10 +12,6 @@
     <PackageReference Include="xunit" Version="2.4.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
     <PackageReference Include="coverlet.collector" Version="1.2.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\array-shift\array-shift.csproj" />
   </ItemGroup>
 
 </Project>

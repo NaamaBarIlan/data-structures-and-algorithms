@@ -1,14 +1,24 @@
 using System;
 using Xunit;
+using static array_shift.Program;
 
-namespace Array_Shift_Unit_Test
+namespace array_shift_unit_test
 {
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void CanInsertAndShiftArray()
         {
+            // Arrange
+            int[] testInput = { 2, 4, 6, 8 };
+            int testValue = 5;
+            int[] expectedArray = { 2, 4, 5, 6, 8 };
 
+            // Act
+            int[] testOutputArray = InsertShiftArray(testInput, testValue);
+
+            // Assert
+            Assert.Equal(expectedArray, testOutputArray);
         }
     }
 }
