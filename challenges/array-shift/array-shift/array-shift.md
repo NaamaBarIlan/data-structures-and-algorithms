@@ -40,8 +40,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 ---
 
 ### Change Log
-1.2: *Completed feature task, added passing unit tests* - 12 Jul 2020 
-
+1.2: *Completed feature task, added passing unit tests.* - 12 Jul 2020 
 1.1: *Credit - collaborated with Robert Carter and used [Amanda Iverson's solution](https://github.com/Aiverson1011/Data-Structures-and-Algorithms/blob/master/Challenges/arrayShift/arrayShift/Program.cs) to help us understand the problem.* - 12 Jul 2020 
 
 ---
