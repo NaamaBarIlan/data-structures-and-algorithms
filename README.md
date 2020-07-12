@@ -3,4 +3,4 @@
 ## Table of Contents
 
 1. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/challenges/array-shift/array-shift/array-shift.md)
-2. [Singly Linked Lists]()
+2. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
