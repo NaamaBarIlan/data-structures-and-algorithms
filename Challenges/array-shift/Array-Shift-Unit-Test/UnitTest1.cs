@@ -20,5 +20,21 @@ namespace array_shift_unit_test
             // Assert
             Assert.Equal(expectedArray, testOutputArray);
         }
+
+        [Fact]
+        public void CanInsertValueToEmptyArray()
+        {
+            // Arrange
+            int[] testInput = {};
+            int testValue = 1;
+            int[] expectedArray = { 1 };
+
+            // Act
+            int[] testOutputArray = InsertShiftArray(testInput, testValue);
+
+            // Assert
+            Assert.Equal(expectedArray, testOutputArray);
+        }
+
     }
 }
