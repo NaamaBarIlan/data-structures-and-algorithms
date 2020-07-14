@@ -17,7 +17,7 @@ namespace LinkedListTests
         }
 
         /// <summary>
-        /// Inserts a new node with an O(1) operation to the front of the linked list oper
+        /// Inserts a new node with an O(1) operation to the front of the linked list
         /// </summary>
         public void Insert(int value)
         {
@@ -55,7 +55,8 @@ namespace LinkedListTests
         }
 
         /// <summary>
-        /// Overriding current behavior of ToString method to output all values in the linked list as a string
+        /// Overriding current behavior of ToString method to output all values
+        /// in the linked list as a string
         /// </summary>
         /// <returns>a string containing all the values of the linked list</returns>
         public override string ToString()
@@ -79,5 +80,33 @@ namespace LinkedListTests
 
             return sb.ToString();
         }
+
+        /// <summary>
+        /// This method adds a new node with the given value to the end of the list.
+        /// </summary>
+        /// <param name="value">The int value to be added to the list</param>
+        /// <returns>The list with the appended value</returns>
+        public void AppendNumber(int value)
+        {
+            Node node = new Node(value);
+            Current = Head;
+            
+            if(Head == null)
+            {
+                Head = node;
+            }
+            else
+            {
+                while(Current.Next != null)
+                {
+                    Current = Current.Next;
+                }
+
+                Current.Next = node;
+                Current = Current.Next;
+            }
+
+        }
+
     }
 }
