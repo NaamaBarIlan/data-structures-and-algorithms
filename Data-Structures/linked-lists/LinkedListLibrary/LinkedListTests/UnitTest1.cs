@@ -182,7 +182,7 @@ namespace LinkedListTests
             list.InsertBefore(15, 42);
 
             // Arrange
-            string expected = "4 -> 8 -> 42 -> 15 -> 16 -> 23 -> NULL ";
+            string expected = "4 -> 8 -> 42 -> 15 -> 16 -> 23 -> NULL";
             Assert.Equal(expected, list.ToString());
         }
 
