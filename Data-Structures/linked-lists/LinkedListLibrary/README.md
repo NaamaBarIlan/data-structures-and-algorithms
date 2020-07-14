@@ -3,7 +3,7 @@
 
 ## Linked List - Append
 
-*Author: Na'ama Bar-Ilan & Robert Carter*
+*Authors: Na'ama Bar-Ilan & Robert Carter*
 
 ---
 
@@ -27,7 +27,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Visuals
-[Whiteboard Image](./img/code-challenges06.png)
+[Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/img/code-challenge06.png)
 
 ### Insert Method
 
