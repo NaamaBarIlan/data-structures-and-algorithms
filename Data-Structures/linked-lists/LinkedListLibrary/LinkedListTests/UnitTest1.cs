@@ -122,5 +122,124 @@ namespace LinkedListTests
             // Assert
             Assert.Equal(4, list.Current.Value);
         }
+
+        [Fact]
+        public void CanAddNodeToEndOfLinkedList()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(16);
+
+            // Act
+
+            list.Append(23);
+
+            // Assert
+            string expected = "16 -> 15 -> 8 -> 4 -> 23 -> NULL";
+            string answer = list.ToString();
+            Assert.Equal(expected, answer);
+        }
+
+        [Fact]
+        public void CanAddMultipleNodesToAnEnd()
+        {
+            // Arrange & Act
+            LinkedList list = new LinkedList();
+
+            list.Insert(4);
+            list.Insert(58);
+            list.Append(10);
+            list.Insert(12);
+            list.Insert(254);
+            list.Append(11);
+            list.Append(88);
+
+            string expected = "254 -> 12 -> 58 -> 4 -> 10 -> 11 -> 88 -> NULL";
+
+            // Assert
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+        public void CanInsertNodeBeforeMiddleOfLinkedList()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(23);
+            list.Insert(16);
+            list.Insert(15);
+            list.Insert(8);
+            list.Insert(4);
+
+
+            // Act
+            // Find the middle
+            // insert before the middle
+            list.InsertBefore(15, 42);
+
+            // Arrange
+            string expected = "4 -> 8 -> 42 -> 15 -> 16 -> 23 -> NULL ";
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+        public void CanInsertNodeBeforeFirstNode()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(5);
+            list.Insert(6);
+
+            // Act
+            list.InsertBefore(6, 7);
+            string expected = "7 -> 6 -> 5 -> 4 -> NULL";
+
+            // Assert
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+        public void CanInsertNodeAfterANode()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+
+            // Act
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(16);
+
+            list.InsertAfter(15, 100);
+            string expected = "16 -> 15 -> 100 -> 8 -> 4 -> NULL";
+
+            // Assert
+            Assert.Equal(expected, list.ToString());
+        }
+
+        [Fact]
+        public void CanInsertNodeAfterLast()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+
+            // Act
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+            list.Insert(16);
+
+            list.InsertAfter(4, 100);
+
+            string expected = "16 -> 15 -> 8 -> 4 -> 100 -> NULL";
+
+            // Assert
+            Assert.Equal(expected, list.ToString());
+        }
     }
 }
