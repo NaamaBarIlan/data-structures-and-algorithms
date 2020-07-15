@@ -50,9 +50,9 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Whiteboard Visuals
-![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/Assets/code-challenge07.png)
+![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge07.png)
 
-![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/Assets/code-challenge06.png)
+![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge06.png)
 
 ----
 
