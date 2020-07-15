@@ -34,7 +34,7 @@ Write a function called insertShiftArray which takes in an array and the value t
 
 ### Whiteboard Visual
 
-![Image 1](array-shift.png)
+![Image 1](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/array-shift.png)
 
 
 ---
