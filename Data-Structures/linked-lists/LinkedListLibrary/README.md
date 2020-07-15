@@ -21,7 +21,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 | Insert | Adds a new `Node` to the `Linked List` | O(1) | O(1) | myList.Insert(99) |
 | Includes | Takes in a value and returns a boolean depending on if the value is in the `LinkedList` | O(n) | O(1) | myList.Includes(99) |
 | Append    | Adds a new node with a given value to the end of the `LinkedList` | O(n) | O(n) | myList.Append(99) |
-| FindKthFromEnd | Takes a number, k, as a parameter and returns the node’s value that is k from the end of the `LinkedList` | O(n) | O(1) | myList.FindKthFromEnd(99) |
+| FindKthFromEnd | Takes a number, k, as a parameter and returns the nodeâ€™s value that is k from the end of the `LinkedList` | O(n) | O(1) | myList.FindKthFromEnd(99) |
 
 
 
@@ -50,9 +50,9 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Whiteboard Visuals
-![Whiteboard Image](Assets/codechallenge06-whiteboard.png)
+![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/Assets/code-challenge07.png)
 
-![Whiteboard Image](Assets/codechallenge07-whiteboard.png)
+![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/Assets/code-challenge06.png)
 
 ----
 
@@ -77,6 +77,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ## Change Log
 
 1.2 Added the efficiency and approach sections to this README - 14 Jul 2020.
+
 1.1 Added FindKthFromEnd() method and tests - 14 Jul 2020.
 
 
