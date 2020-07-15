@@ -178,5 +178,36 @@ namespace LinkedListTests
             
         }
 
+        public int FindKthFromEnd(int key)
+        {
+            // create 2 references
+            Node walker = Head;
+            Node runner = Head;
+
+            // runner to iterate k number of position within the linked list
+            int k = key;
+            while (key > 0)
+            {
+                if (runner.Next != null)
+                {
+                    k--;
+                    runner = runner.Next;
+                }
+                else
+                {
+                    throw new Exception("K is invalid");
+                }
+            }
+
+            while (runner.Next != null)
+            {
+                walker = walker.Next;
+                runner = runner.Next;
+            }
+
+            return walker.Value;
+        }
+
+
     }
 }
