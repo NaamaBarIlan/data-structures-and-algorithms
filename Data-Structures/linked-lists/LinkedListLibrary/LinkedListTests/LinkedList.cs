@@ -208,6 +208,5 @@ namespace LinkedListTests
             return walker.Value;
         }
 
-
     }
 }

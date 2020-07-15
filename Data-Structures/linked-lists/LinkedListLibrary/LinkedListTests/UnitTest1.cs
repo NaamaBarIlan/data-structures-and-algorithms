@@ -266,19 +266,17 @@ namespace LinkedListTests
         {
             // Arrange
             LinkedList list = new LinkedList();
-
             list.Insert(10);
             list.Insert(20);
             list.Insert(30);
             list.Insert(40);
             list.Insert(50);
 
-            // Act
-            // capture the exception inside of a delegate, and confirm the message is what was the 
+            // Act 
+            // capture the exception inside of a delegate, and confirm the message is what was thrown. 
             var ex = Assert.Throws<Exception>(() => list.FindKthFromEnd(5));
-
+            
             // Assert
-
             Assert.Equal("K is invalid", ex.Message);
         }
 
