@@ -177,8 +177,6 @@ namespace LinkedListTests
 
 
             // Act
-            // Find the middle
-            // insert before the middle
             list.InsertBefore(15, 42);
 
             // Arrange
