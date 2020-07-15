@@ -108,5 +108,75 @@ namespace LinkedListTests
 
         }
 
+        public void Append(int value)
+        {
+            // Create a node
+
+            Node node = new Node(value);
+            Current = Head;
+            // Add it to the end
+            if (Head == null)
+            {
+                Head = node;
+            }
+            else
+            {
+                while (Current.Next != null)
+                {
+                    Current = Current.Next;
+                }
+
+                Current.Next = node;
+                //Current = Current.Next;
+            }
+
+        }
+
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+
+            if(Current.Value == value)
+            {
+                Insert(newValue);
+                Current = Current.Next;
+            }
+            
+            // while loop
+            while (Current.Next != null)
+            {
+                if(Current.Next.Value == value)
+                {
+                    // create the new value
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    Current = Current.Next;
+
+                }
+
+                Current = Current.Next;
+            }
+
+        }
+
+        public void InsertAfter(int value, int newValue)
+        {
+            while(Current != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+
+                    Current = Current.Next;
+                }
+
+                Current = Current.Next;
+            }
+            
+        }
+
     }
 }
