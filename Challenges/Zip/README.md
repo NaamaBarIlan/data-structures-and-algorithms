@@ -1,7 +1,7 @@
-# Data Structure Implementation: Linked List
+# Data Structure Implementation: Linked List : Zip Lists
 ---
 
-## Linked List
+## Linked List : Zip Lists
 
 *Author: Na'ama Bar-Ilan
 
@@ -19,7 +19,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 | Method | Summary | Big O Time | Big O Space | Example | 
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
 | ZipLists | Takes two linked lists as arguments, zips them together into one, so that the nodes alternate between the two lists, and returns a reference to the head of the zipped list | O(n) | O(n) | myList.ZipLists(99) |
-| 
+
 
 ---
 ### Approach
