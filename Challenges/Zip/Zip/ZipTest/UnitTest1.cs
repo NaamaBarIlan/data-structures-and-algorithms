@@ -1,6 +1,6 @@
 using System;
 using Xunit;
-using Zip;
+using static Zip.Program;
 using LinkedListLibrary;
 
 namespace ZipTest
@@ -24,12 +24,16 @@ namespace ZipTest
             list2.Insert(4);
 
             // Act
-            LinkedList zippedList = ZipLists(list1, list2);
+            Node zippedListHead = ZipLists(list1, list2);
 
-            LinkedList result = "1-> 5-> 3-> 9-> 2-> 4-> NULL";
+            LinkedList result = new LinkedList();
+
+            result.Head = zippedListHead;
+
+            string expected = "2 -> 4 -> 3 -> 9 -> 1 -> 5 -> NULL";
 
             // Assert
-            Assert.Equal(result, zippedList);
+            Assert.Equal(expected, result.ToString());
 
         }
 
