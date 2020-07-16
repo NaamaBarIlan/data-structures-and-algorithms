@@ -25,19 +25,27 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ### Approach
 
 #### ZipLists()
-1. 
+1. Declare a new linked list named zippedList. 
+2. Set Node Current to the zippedList head.
+3. Declare a counter and set it to 0.
+4. Use a while loop to switch between appending from List1 and List, as long as the current node in both lists is not null. 
+5. If the count is an even number, append the current value of List1 to the zippedList, set the List1 Current to the next item on the list, and increment the counter.
+6. If the count is an odd number,  append the current value of List2 to the zippedList, set the List2 Current to the next item on the list, and increment the counter.
+6. Use two more while loops to append any left over nodes from each list, in case one list was longer than the other. 
+8. Set the zippedList Current to Head and return that reference. 
+
 ----
 
 ### Efficiency
-* Time:
+* Time Efficiency is O(n) because we are traversing the whole linked list. 
  
-* Space:
+* Space Efficiency is O(n) because we are instantiating a new linked list object.
 
 
 ---
 
 ## Whiteboard Visuals
-![Whiteboard Image]()
+![Whiteboard Image](../../Assets/CodeChallenge08.png)
 
 ----
 

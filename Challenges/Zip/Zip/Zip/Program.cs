@@ -8,9 +8,8 @@ namespace Zip
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Lists!");
         }
-
 
         /// <summary>
         /// This method takes two linked lists as arguments, zips them together into one, so that the nodes alternate between the two lists
@@ -44,14 +43,12 @@ namespace Zip
             {
                 zippedList.Append(list1.Current.Value);
                 list1.Current = list1.Current.Next;
-                count++;
             }
 
             while (list2.Current != null)
             {
                 zippedList.Append(list2.Current.Value);
                 list2.Current = list2.Current.Next;
-                count++;
             }
 
             zippedList.Current = zippedList.Head;
