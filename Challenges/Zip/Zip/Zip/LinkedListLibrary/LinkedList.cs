@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace LinkedListTests
+namespace LinkedListLibrary
 {
     public class LinkedList
     {
@@ -208,40 +208,5 @@ namespace LinkedListTests
             return walker.Value;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="list1"></param>
-        /// <param name="list2"></param>
-        /// <returns></returns>
-        public Node ZipLists(LinkedList list1, LinkedList list2)
-        {
-            LinkedList zippedList = new LinkedList();
-            Node current = Head;
-
-            int count = 0;
-
-            if (count % 2 == 0)
-            {
-                while (list1.Current != null)
-                {
-                    zippedList.Append(list1.Current.Value);
-                    list1.Current = list1.Current.Next;
-                    count++;
-                }
-            }
-            else
-            {
-                while (list2.Current != null)
-                {
-                    zippedList.Append(list2.Current.Value);
-                    list2.Current = list2.Current.Next;
-                    count++;
-                }
-            }
-
-            zippedList.Current = Head;
-            return Head;
-        }
     }
 }
