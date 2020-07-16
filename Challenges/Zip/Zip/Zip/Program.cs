@@ -16,10 +16,12 @@ namespace Zip
         /// <param name="list1">A first linked list object</param>
         /// <param name="list2">A second linked list object</param>
         /// <returns>A reference to the head of the zipped linked list</returns>
-        public Node ZipLists(LinkedList list1, LinkedList list2)
+        public static Node ZipLists(LinkedList list1, LinkedList list2)
         {
             LinkedList zippedList = new LinkedList();
             Node current = zippedList.Head;
+            list1.Current = list1.Head;
+            list2.Current = list2.Head;
 
             int count = 0;
 
