@@ -1,7 +1,7 @@
 # Data Structure Implementation: Linked List
 ---
 
-## Linked List
+## About Me
 
 *Authors: Na'ama Bar-Ilan & Robert Carter*
 
@@ -9,8 +9,7 @@
 
 ## Description
 
-A C# implementation of a `Singly Linked List`. Singly Linked Lists contain individual nodes that have a reference to the `Next` node in the list as well as a `Value`. The methods of this `Linked List` are `Insert`, `Includes`, `ToString`, `Append`, and `FindKthFromEnd`.
-
+A C# implementation of a `Singly Linked List`. Singly Linked Lists contain individual nodes that have a reference to the `Next` node in the list as well as a `Value`. The methods of this `Linked List` are `Insert`, `Includes`, `ToString`, `Append`, `InsertBefore`, `InsertAfter` and `FindKthFromEnd`.
 
 ---
 
@@ -20,7 +19,9 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 | :----------- | :----------- | :-------------: | :-------------: | :----------- |
 | Insert | Adds a new `Node` to the `Linked List` | O(1) | O(1) | myList.Insert(99) |
 | Includes | Takes in a value and returns a boolean depending on if the value is in the `LinkedList` | O(n) | O(1) | myList.Includes(99) |
-| Append    | Adds a new node with a given value to the end of the `LinkedList` | O(n) | O(n) | myList.Append(99) |
+| Append  | Adds a new node with a given value to the end of the `LinkedList` | O(n) | O(n) | myList.Append(99) |
+| InsertBefore | This method takes two int paramaters and inserts one of them before the other in a `LinkedList` | O(n) | O(n) | myList.InsertBefore (99, 9) |
+| InsertAfter | This method takes two int paramaters and inserts one of them after the other in a `LinkedList` | O(n) | O(n) | myList.InsertAfter (99, 9) |
 | FindKthFromEnd | Takes a number, k, as a parameter and returns the node’s value that is k from the end of the `LinkedList` | O(n) | O(1) | myList.FindKthFromEnd(99) |
 
 
@@ -50,8 +51,11 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ---
 
 ## Whiteboard Visuals
+
+##### FindKthFromEnd
 ![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge07.png)
 
+##### Append
 ![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge06.png)
 
 ----
@@ -71,14 +75,22 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 ### Append Method
 *The Append method creates a new node with a given int value, then iterates through the nodes of the Linked List checking all the values. Once the last node on list is reached the method adds the new node to the end of the linked list.*
 
+### InsertBefore
+* This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value before the value.*
+
+### InsertAfter
+* This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value after the value.*
+
 
 ---
 
 ## Change Log
 
-1.2 Added the efficiency and approach sections to this README - 14 Jul 2020.
+1.3 *Updated InsertBefore and InsertAfter methods, summary notes and README* - 19 Jul 2020
 
-1.1 Added FindKthFromEnd() method and tests - 14 Jul 2020.
+1.2 *Added the efficiency and approach sections to this README* - 14 Jul 2020.
+
+1.1 *Added FindKthFromEnd() method and tests* - 14 Jul 2020.
 
 
 ---
