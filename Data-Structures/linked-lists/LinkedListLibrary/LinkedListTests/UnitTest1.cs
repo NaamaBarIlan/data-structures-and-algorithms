@@ -240,7 +240,6 @@ namespace LinkedListTests
             Assert.Equal(expected, list.ToString());
         }
 
-
         [Fact]
         public void CanReturnKthFromEndHappyPath()
         {
