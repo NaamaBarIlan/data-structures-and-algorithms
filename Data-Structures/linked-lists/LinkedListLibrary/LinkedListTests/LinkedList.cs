@@ -17,11 +17,12 @@ namespace LinkedListTests
         }
 
         /// <summary>
-        /// Inserts a new node with an O(1) operation to the front of the linked list
+        /// This method inserts a new node with an O(1) operation to the front of the linked list.
         /// </summary>
         public void Insert(int value)
         {
             Current = Head;
+
             // create the new node that needs to be added 
             Node node = new Node(value);
             node.Next = Head;
@@ -29,15 +30,15 @@ namespace LinkedListTests
         }
 
         /// <summary>
-        /// Finds a specific value in the linked list
+        /// This method finds a specific value in the linked list
         /// O(n) time efficiency
         /// </summary>
         /// <param name="value">search-able value</param>
-        /// <returns>response </returns>
+        /// <returns>Returns true if value is included in the linked list, else returns false.</returns>
         public bool Includes(int value)
         {
             Current = Head;
-            //While loop 
+             
             //traverse the linked list and do the comparison
             while (Current != null)
             {
@@ -51,14 +52,13 @@ namespace LinkedListTests
             }
 
             return false;
-
         }
 
         /// <summary>
-        /// Overriding current behavior of ToString method to output all values
+        /// This method is overriding the current behavior of ToString method to output all values
         /// in the linked list as a string
         /// </summary>
-        /// <returns>a string containing all the values of the linked list</returns>
+        /// <returns>A string containing all the values of the linked list</returns>
         public override string ToString()
         {
             Current = Head;
@@ -108,6 +108,11 @@ namespace LinkedListTests
 
         }
 
+        /// <summary>
+        /// This method adds a new node with the given value to the end of the list.
+        /// </summary>
+        /// <param name="value">The int value to be added to the list</param>
+        /// <returns>The list with the appended value</returns>
         public void Append(int value)
         {
             // Create a node
@@ -132,6 +137,11 @@ namespace LinkedListTests
 
         }
 
+        /// <summary>
+        /// This method takes two int paramaters and inserts one of them before the other in a linked list. 
+        /// </summary>
+        /// <param name="value">The int newValue will be inserted before this int value in the linked list</param>
+        /// <param name="newValue">The int value to be inserted into the list before value.</param>
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
@@ -160,6 +170,11 @@ namespace LinkedListTests
 
         }
 
+        /// <summary>
+        /// This method takes two int paramaters and inserts one of them after the other in a linked list. 
+        /// </summary>
+        /// <param name="value">The int newValue will be inserted after this int value in the linked list</param>
+        /// <param name="newValue">The int value to be inserted into the list after value.</param>
         public void InsertAfter(int value, int newValue)
         {
             while(Current != null)
@@ -178,6 +193,12 @@ namespace LinkedListTests
             
         }
 
+        /// <summary>
+        /// This method take an int value which is a position from the end of a linked list
+        /// and finds the value of the node in that position.
+        /// </summary>
+        /// <param name="key">An int value that is a position from the end of a linked list</param>
+        /// <returns>The int value of the node at the key position in the linked list</returns>
         public int FindKthFromEnd(int key)
         {
             // create 2 references
@@ -208,40 +229,5 @@ namespace LinkedListTests
             return walker.Value;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="list1"></param>
-        /// <param name="list2"></param>
-        /// <returns></returns>
-        public Node ZipLists(LinkedList list1, LinkedList list2)
-        {
-            LinkedList zippedList = new LinkedList();
-            Node current = Head;
-
-            int count = 0;
-
-            if (count % 2 == 0)
-            {
-                while (list1.Current != null)
-                {
-                    zippedList.Append(list1.Current.Value);
-                    list1.Current = list1.Current.Next;
-                    count++;
-                }
-            }
-            else
-            {
-                while (list2.Current != null)
-                {
-                    zippedList.Append(list2.Current.Value);
-                    list2.Current = list2.Current.Next;
-                    count++;
-                }
-            }
-
-            zippedList.Current = Head;
-            return Head;
-        }
     }
 }
