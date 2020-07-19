@@ -261,6 +261,25 @@ namespace LinkedListTests
         }
 
         [Fact]
+
+        public void ItCanReturnValueFromEndOfHappyPath()
+        {
+            LinkedList list = new LinkedList();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            //Act
+            int value = list.FindKthFromEnd(1);
+
+            //Assert
+            Assert.Equal(20, value);
+        }
+
+        [Fact]
         public void CanReturnExceptionForEqualLength()
         {
             // Arrange

@@ -201,13 +201,13 @@ namespace LinkedListTests
         /// <returns>The int value of the node at the key position in the linked list</returns>
         public int FindKthFromEnd(int key)
         {
-            // create 2 references
+            // create 2 references:
             Node walker = Head;
             Node runner = Head;
 
             // runner to iterate k number of position within the linked list
             int k = key;
-            while (key > 0)
+            while (k > 0)
             {
                 if (runner.Next != null)
                 {
