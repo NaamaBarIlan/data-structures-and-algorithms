@@ -52,10 +52,10 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 
 ## Whiteboard Visuals
 
-##### FindKthFromEnd
+### FindKthFromEnd
 ![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge07.png)
 
-##### Append
+### Append
 ![Whiteboard Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/code-challenge06.png)
 
 ----
