@@ -8,7 +8,7 @@ namespace UnitTest_StacksAndQueues
 {
     public class QueueTests
     {
-
+        [Fact]
         public void CanEnqueueIntoQueue()
         {
             // Arrange

@@ -10,6 +10,7 @@ namespace StacksAndQueues
 
         public void Push(string value)
         {
+            // Create a new node
             Node node = new Node(value);
             node.Next = Top;
             Top = node;
