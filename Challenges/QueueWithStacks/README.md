@@ -44,6 +44,7 @@ The Stack instances have only `push`, `pop`, and `peek` methods.
 - To Dequeue the PseudoQueue, first the internal stack needs to be flipped, then its value will be popped off the stack before finally flipping the stack back to the prior orientation.
 - The flipping process will be done with a while loop that pushes the popped top of one stack to the other
 
+---
 
 ## Efficiency
 
