@@ -20,5 +20,37 @@ namespace UnitTest_StacksAndQueues
             Assert.Equal("Candy cane", stack.Top.Value);
             //Assert.NotNull(stack.Top.Value);
         }
+
+        [Fact]
+        public void CanPushMultipleValuesOnStack()
+        {
+            // Arrange
+            Stack stack = new Stack();
+
+            // Act
+            stack.Push("Candy cane");
+            stack.Push("Banana");
+            stack.Push("Potato");
+
+            // Assert
+            Assert.Equal("Potato", stack.Top.Value);
+        }
+
+        [Fact]
+        public void CanPopOffTheStack()
+        {
+            // Arrange
+            Stack stack = new Stack();
+
+            // Act
+            stack.Push("Candy cane");
+            stack.Push("Banana");
+            stack.Push("Potato");
+
+            stack.Pop("Potato");
+
+            // Assert
+            Assert.Equal("Banana", stack.Top.Value);
+        }
     }
 }
