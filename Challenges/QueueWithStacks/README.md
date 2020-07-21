@@ -68,7 +68,7 @@ The Stack instances have only `push`, `pop`, and `peek` methods.
 
 ### Whiteboard Visual
 
-![Whiteboard](Assets/CodeChallenge11.png)
+![Whiteboard](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CodeChallage11.png)
 
 
 ---
