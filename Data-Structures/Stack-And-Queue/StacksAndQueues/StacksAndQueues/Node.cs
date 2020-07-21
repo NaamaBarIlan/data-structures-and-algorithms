@@ -9,7 +9,7 @@ namespace StacksAndQueues
 
         public Node(string value)
         {
-            Value = Value;
+            Value = value;
         }
     }
 }
