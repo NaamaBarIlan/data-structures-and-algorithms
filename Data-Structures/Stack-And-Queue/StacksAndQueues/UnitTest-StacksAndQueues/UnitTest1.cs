@@ -47,10 +47,44 @@ namespace UnitTest_StacksAndQueues
             stack.Push("Banana");
             stack.Push("Potato");
 
-            stack.Pop("Potato");
+            stack.Pop();
 
             // Assert
             Assert.Equal("Banana", stack.Top.Value);
         }
+
+        [Fact]
+        public void CanThrowAnEmptyException()
+        {
+            // Arrange
+            Stack stack = new Stack();
+
+            // Act - Important! How to test an exception. 
+            Exception emptyException = Assert.Throws<Exception>(() => stack.Pop());
+            string expected = "Stack is empty";
+
+            // Assert
+            Assert.Equal(expected, emptyException.Message);
+        }
+
+        //[Fact]
+        //public void CanEmptyAStackAfterMultiplePops()
+        //{
+        //    // Arrange
+        //    Stack stack = new Stack();
+
+        //    // Act
+        //    stack.Push("Candy cane");
+        //    stack.Push("Banana");
+        //    stack.Push("Potato");
+        //    stack.Pop();
+        //    stack.Pop();
+        //    stack.Pop();
+
+        //    bool expected = stack.isEmpty();
+
+        //    // Assert
+        //    Assert.Equal(expected, stack.Top.Value);
+        //}
     }
 }

@@ -16,21 +16,37 @@ namespace StacksAndQueues
             Top = node;
         }
 
-        public string Pop(string value)
+        public bool isEmpty()
         {
-            // check isEmpty
-            if()
-            {
-                return null;
-            }
-            // create a temp node
-            Node node = new Node(value);
-            Node temp = new Node(value);
-            temp = Top;
-            Top = Top.Next;
-            Top.Next = null;
-            return temp.value;
+            return Top == null;
+        }
 
+        public string Pop()
+        {
+            //check isEmpty
+            if (isEmpty())
+            {
+                throw new Exception("Stack is empty");
+            }
+
+            //create a temp node
+            Node temp = Top;
+
+            Top = Top.Next;
+
+            temp.Next = null;
+            return temp.Value;
+        }
+
+        public string Peek()
+        {
+            //check isEmpty
+            if (isEmpty())
+            {
+                throw new Exception("Stack is empty");
+            }
+
+            return Top.Value;
         }
     }
 }
