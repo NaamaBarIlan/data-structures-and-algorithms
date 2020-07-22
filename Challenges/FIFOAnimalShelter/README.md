@@ -54,7 +54,7 @@ Create a class called AnimalShelter which holds only dogs and cats. The shelter 
 
 ### Whiteboard Visual
 
-![Whiteboard](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CodeChallage12.png)
+![Whiteboard](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CodeChallenge12.png)
 
 
 ---
