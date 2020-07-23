@@ -54,7 +54,7 @@ A function that should take a string as its only argument, and should return a b
 
 ### Whiteboard Visual
 
-![Image 1](Assets/CodeChallenge13)
+![Image 1](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CodeChallenge13.png)
 
 
 ---
