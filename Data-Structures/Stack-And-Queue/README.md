@@ -58,6 +58,7 @@
 
 ### Change Log
 
+1.1 *Added Queue methods and 14 passing unit tests.* - 25 Jul 2020
 
 ---
 
