@@ -13,7 +13,6 @@ namespace Trees
 
         }
 
-
         public Tree(T value)
         {
             Node<T> root = new Node<T>(value);
@@ -45,5 +44,29 @@ namespace Trees
                 PreOrder(traversal, root.RightChild);
             }
         }
+
+        public List<T> InOrder(Node<T> root)
+        {
+            List<T> traversal = new List<T>();
+            InOrder(traversal, root);
+            return traversal;
+        }
+
+        private void InOrder(List<T> traversal, Node<T> root)
+        {
+
+            if (root.LeftChild != null)
+            {
+                InOrder(traversal, root.LeftChild);
+            }
+            
+            traversal.Add(root.Value);
+
+            if (root.RightChild != null)
+            {
+                InOrder(traversal, root.RightChild);
+            }
+        }
+
     }
 }
