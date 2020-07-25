@@ -19,17 +19,26 @@ namespace Trees
             Root = root;
         }
 
+        /// <summary>
+        /// Conducts a preorder traversal or a binary tree,
+        /// through indirect recursion with the overload method.
+        /// </summary>
+        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> PreOrder(Node<T> root)
         {
-            // conduct a preorder traversal
-            // capture each of the values in a List
-            // return that list
-
             List<T> traversal = new List<T>();
             PreOrder(traversal, root);
             return traversal;
         }
 
+        /// <summary>
+        /// This overloaded method is used in the indirect recursion in the PreOrder method.
+        /// It traverses the tree from root to left to right, 
+        /// captures each of the values in a list and returns that list.
+        /// </summary>
+        /// <param name="traversal">The list object that will inserted with values</param>
+        /// <param name="root">A unique root value</param>
         private void PreOrder(List<T> traversal, Node<T> root)
         {
             traversal.Add(root.Value);
@@ -45,6 +54,12 @@ namespace Trees
             }
         }
 
+        /// <summary>
+        /// Conducts a inorder traversal or a binary tree,
+        /// through indirect recursion with the overload method.
+        /// </summary>
+        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> InOrder(Node<T> root)
         {
             List<T> traversal = new List<T>();
@@ -52,6 +67,13 @@ namespace Trees
             return traversal;
         }
 
+        /// <summary>
+        /// This overloaded method is used in the indirect recursion in the InOrder method.
+        /// It traverses the tree from left to root to right, 
+        /// captures each of the values in a list and returns that list.
+        /// </summary>
+        /// <param name="traversal">The list object that will inserted with values</param>
+        /// <param name="root">A unique root value</param>
         private void InOrder(List<T> traversal, Node<T> root)
         {
 
@@ -68,6 +90,12 @@ namespace Trees
             }
         }
 
+        /// <summary>
+        /// Conducts a postorder traversal or a binary tree,
+        /// through indirect recursion with the overload method.
+        /// </summary>
+        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> PostOrder(Node<T> root)
         {
             List<T> traversal = new List<T>();
@@ -75,6 +103,13 @@ namespace Trees
             return traversal;
         }
 
+        /// <summary>
+        /// This overloaded method is used in the indirect recursion in the PostOrder method.
+        /// It traverses the tree from left to right to root, 
+        /// captures each of the values in a list and returns that list.
+        /// </summary>
+        /// <param name="traversal">The list object that will inserted with values</param>
+        /// <param name="root">A unique root value</param>
         private void PostOrder(List<T> traversal, Node<T> root)
         {
 
