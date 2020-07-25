@@ -261,25 +261,6 @@ namespace LinkedListTests
         }
 
         [Fact]
-
-        public void ItCanReturnValueFromEndOfHappyPath()
-        {
-            LinkedList list = new LinkedList();
-
-            list.Insert(10);
-            list.Insert(20);
-            list.Insert(30);
-            list.Insert(40);
-            list.Insert(50);
-
-            //Act
-            int value = list.FindKthFromEnd(1);
-
-            //Assert
-            Assert.Equal(20, value);
-        }
-
-        [Fact]
         public void CanReturnExceptionForEqualLength()
         {
             // Arrange
@@ -298,5 +279,59 @@ namespace LinkedListTests
             Assert.Equal("K is invalid", ex.Message);
         }
 
+        [Fact]
+        public void CanReturnExceptionIfGreaterThanLength()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act 
+            // capture the exception inside of a delegate, and confirm the message is what was thrown. 
+            var ex = Assert.Throws<Exception>(() => list.FindKthFromEnd(6));
+            
+            // Assert
+            Assert.Equal("K is invalid", ex.Message);
+        }
+
+        [Fact]
+        public void CanReturnExceptionIfNotAPositiveInteger()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+            int value = list.FindKthFromEnd(-3);
+
+            // Assert
+            Assert.Equal(10, value);
+        }
+
+        [Fact]
+        public void CanReturnKthFromEndWhenListIsOne()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+
+            list.Insert(10);
+
+            // Act
+            int value = list.FindKthFromEnd(0);
+
+            // Assert
+            Assert.Equal(10, value);
+        }
+
     }
+
 }
