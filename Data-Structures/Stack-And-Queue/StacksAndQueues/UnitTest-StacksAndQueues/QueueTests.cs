@@ -23,6 +23,30 @@ namespace UnitTest_StacksAndQueues
         }
 
         [Fact]
+        public void CanEnqueueMultipleValuesIntoQueue()
+        {
+            // Arrange
+            Queue que = new Queue();
+
+            // Act & Assert
+            que.Enqueue("Potato");
+            que.Enqueue("Banana");
+
+            string firstTop = que.Rear.Value;
+
+            que.Enqueue("Mango");
+
+            string secondTop = que.Rear.Value;
+
+            que.Enqueue("Lemon");
+
+            Assert.Equal("Banana", firstTop);
+            Assert.Equal("Mango", secondTop);
+            Assert.Equal("Lemon", que.Rear.Value);
+
+        }
+
+        [Fact]
         public void CanDequeueExpectedValue()
         {
             // Arrange
@@ -75,6 +99,33 @@ namespace UnitTest_StacksAndQueues
 
             // Assert
             Assert.True(que.IsEmpty());
+        }
+
+        [Fact]
+        public void CanInstantiateAnEmptyQueue()
+        {
+            // Arrange
+            Queue que = new Queue();
+
+            // Act
+            bool expected = que.IsEmpty();
+
+            // Assert
+            Assert.True(expected);
+        }
+
+        [Fact]
+        public void CanThrowAnEmptyException()
+        {
+            // Arrange
+            Queue que = new Queue();
+
+            // Act - Important! How to test an exception. 
+            Exception emptyException = Assert.Throws<Exception>(() => que.Dequeue());
+            string expected = "Queue is empty";
+
+            // Assert
+            Assert.Equal(expected, emptyException.Message);
         }
     }
 }
