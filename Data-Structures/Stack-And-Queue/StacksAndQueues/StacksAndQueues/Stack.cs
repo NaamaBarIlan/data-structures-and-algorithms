@@ -16,7 +16,7 @@ namespace StacksAndQueues
             Top = node;
         }
 
-        public bool isEmpty()
+        public bool IsEmpty()
         {
             return Top == null;
         }
@@ -24,7 +24,7 @@ namespace StacksAndQueues
         public string Pop()
         {
             //check isEmpty
-            if (isEmpty())
+            if (IsEmpty())
             {
                 throw new Exception("Stack is empty");
             }
@@ -35,13 +35,14 @@ namespace StacksAndQueues
             Top = Top.Next;
 
             temp.Next = null;
+
             return temp.Value;
         }
 
         public string Peek()
         {
             //check isEmpty
-            if (isEmpty())
+            if (IsEmpty())
             {
                 throw new Exception("Stack is empty");
             }

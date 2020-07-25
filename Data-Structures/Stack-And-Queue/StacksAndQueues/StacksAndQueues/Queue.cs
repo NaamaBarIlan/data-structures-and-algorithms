@@ -32,5 +32,39 @@ namespace StacksAndQueues
             }
 
         }
+
+        public string Dequeue()
+        {
+            //check isEmpty
+            if(IsEmpty())
+            {
+                throw new Exception("Queue is empty");
+            }
+
+            // create a temp node
+            Node temp = Front;
+
+            Front = Front.Next;
+
+            temp.Next = null;
+
+            return temp.Value;
+
+        }
+
+        public bool IsEmpty()
+        {
+            return Front == null;
+        }
+
+        public string Peek()
+        {
+            if (IsEmpty())
+            {
+                throw new Exception("Queue is empty");
+            }
+
+            return Front.Value;
+        }
     }
 }
