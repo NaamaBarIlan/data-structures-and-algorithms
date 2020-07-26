@@ -61,6 +61,7 @@ A function that should take a string as its only argument, and should return a b
 
 ### Change Log
 
-1.1: *Collaborated with Bryant Davis* - 22 Jul 2020  
+1.2 *Updated MBracketValidation method and added unit test* - 26 Jul 2020
+1.1 *Collaborated with Bryant Davis.* - 22 Jul 2020  
 
 ---
