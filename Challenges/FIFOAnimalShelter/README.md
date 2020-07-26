@@ -1,6 +1,6 @@
 # Daily Code Challenge
 
-## Queue With Stacks
+## FIFO Animal Shelter
 *Author: Na'ama Bar-Ilan*
 
 ---
