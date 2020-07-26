@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections;
 
-
-
-namespace Multi_Bracket_Validation
+namespace Queue_With_Stacks
 {
     class Program
     {

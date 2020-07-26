@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Class1
+namespace Multi_Bracket_Validation
 {
     public class Stack
     {
@@ -10,7 +12,7 @@ public class Class1
         /// Takes any string value as an argument and adds a new node with that value to the Top of the stack.
         /// </summary>
         /// <param name="value">A unique string value that will be set as the new Top node value</param>
-        public void Push(string value)
+        public void Push(char value)
         {
             // Create a new node
             Node node = new Node(value);
@@ -32,7 +34,7 @@ public class Class1
         /// and returns the node's value
         /// </summary>
         /// <returns>The unique value of the node that is being removed</returns>
-        public string Pop()
+        public char Pop()
         {
             //check isEmpty
             if (IsEmpty())
@@ -55,7 +57,7 @@ public class Class1
         /// without removing it from the stack
         /// </summary>
         /// <returns>The unique value of the removed node</returns>
-        public string Peek()
+        public char Peek()
         {
             //check isEmpty
             if (IsEmpty())

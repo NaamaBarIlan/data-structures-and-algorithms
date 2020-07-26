@@ -1,10 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-public class Class1
+namespace Queue_With_Stacks
 {
     public class Stack
     {
         public Node Top { get; set; }
+
+        public void Enqueue(string v)
+        {
+            throw new NotImplementedException();
+        }
 
         /// <summary>
         /// Takes any string value as an argument and adds a new node with that value to the Top of the stack.

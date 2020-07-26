@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-namespace StacksAndQueues
+namespace Queue_With_Stacks
 {
     public class Node
     {
