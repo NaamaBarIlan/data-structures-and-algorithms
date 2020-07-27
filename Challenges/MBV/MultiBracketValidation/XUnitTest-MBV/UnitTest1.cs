@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using System.Collections.Generic;
-using MultiBracketValidation;
+using static MultiBracketValidation.MultiBracketValidation;
 
 
 namespace XUnitTest_MBV
@@ -12,6 +12,19 @@ namespace XUnitTest_MBV
         public void CanValidateMultipleBracketsHappyPath()
         {
             // Arrange
+            string testString = "{}(){}";
+
+            // Act
+            bool isValid = MBracketValidation(testString);
+
+            // Assert
+            Assert.True(isValid);
+        }
+
+        [Fact]
+        public void CanValidateMultipleBracketsAndChars()
+        {
+            // Arrange
             string testString = "()[[Extra Characters]]";
 
             // Act
@@ -19,6 +32,19 @@ namespace XUnitTest_MBV
 
             // Assert
             Assert.True(isValid);
+        }
+
+        [Fact]
+        public void CanReturnFalseForUnbalancedBrackets()
+        {
+            // Arrange
+            string testString = "[({}]";
+
+            // Act
+            bool isValid = MBracketValidation(testString);
+
+            // Assert
+            Assert.False(isValid);
         }
     }
 }

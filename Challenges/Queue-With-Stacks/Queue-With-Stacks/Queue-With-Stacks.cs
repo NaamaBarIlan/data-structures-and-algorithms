@@ -16,9 +16,11 @@ namespace Queue_With_Stacks
         /// which acts as a pseudo queueu
         /// </summary>
         /// <param name="value">A unique string value to insert into the stack</param>
-        public void Enqueue(string value)
+        public Node Enqueue(string value)
         {
             enqueueStack.Push(value);
+
+            return enqueueStack.Top;
         }
 
         /// <summary>

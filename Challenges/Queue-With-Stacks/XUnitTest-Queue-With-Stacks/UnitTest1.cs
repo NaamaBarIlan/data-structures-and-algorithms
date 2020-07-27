@@ -10,15 +10,36 @@ namespace XUnitTest_Queue_With_Stacks
         public void CanEnqueueToPseudoQueue()
         {
             // Arrange - create a stack
-            Stack testStack = new Stack();
+            PseudoQueue testPseudoQueue = new PseudoQueue();
 
             // Act - enqueue
-            testStack.Enqueue("Banana");
+            Node top = testPseudoQueue.Enqueue("Banana");
 
-            string expected = testStack.Peek();
+            //string expected = top.Value;
 
             // Assert
-            Assert.Equal("Banana", expected);
+            Assert.Equal("Banana", top.Value);
+        }
+
+        [Fact]
+        public void CanDequeueFromPseudoQueue()
+        {
+            // Arrange - create a stack
+            PseudoQueue testPseudoQueue = new PseudoQueue();
+
+            testPseudoQueue.Enqueue("Banana");
+            testPseudoQueue.Enqueue("Potato");
+            testPseudoQueue.Enqueue("Mango");
+            testPseudoQueue.Enqueue("Lemon");
+
+            // Act - enqueue
+
+            Node front = testPseudoQueue.Dequeueu();
+
+            //string expected = top.Value;
+
+            // Assert
+            Assert.Equal("Lemon", front.Value);
         }
     }
 }

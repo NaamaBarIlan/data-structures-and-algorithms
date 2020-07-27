@@ -8,18 +8,12 @@ namespace Queue_With_Stacks
     {
         public Node Top { get; set; }
 
-        public void Enqueue(string v)
-        {
-            throw new NotImplementedException();
-        }
-
         /// <summary>
         /// Takes any string value as an argument and adds a new node with that value to the Top of the stack.
         /// </summary>
         /// <param name="value">A unique string value that will be set as the new Top node value</param>
         public void Push(string value)
         {
-            // Create a new node
             Node node = new Node(value);
             node.Next = Top;
             Top = node;
@@ -41,13 +35,12 @@ namespace Queue_With_Stacks
         /// <returns>The unique value of the node that is being removed</returns>
         public string Pop()
         {
-            //check isEmpty
+
             if (IsEmpty())
             {
                 throw new Exception("Stack is empty");
             }
 
-            //create a temp node
             Node temp = Top;
 
             Top = Top.Next;
@@ -64,7 +57,6 @@ namespace Queue_With_Stacks
         /// <returns>The unique value of the removed node</returns>
         public string Peek()
         {
-            //check isEmpty
             if (IsEmpty())
             {
                 throw new Exception("Stack is empty");
