@@ -2,9 +2,9 @@
 
 namespace MultiBracketValidation
 {
-    public class Multi_Bracket_Validation
+    public class MultiBracketValidation
     {
-        public bool MBracketValidation(string str)
+        public static bool MBracketValidation(string str)
         {
             Stack stack = new Stack();
 
@@ -27,10 +27,6 @@ namespace MultiBracketValidation
                     {
                         return false;
                     }
-                }
-                else
-                {
-                    return false;
                 }
 
             }

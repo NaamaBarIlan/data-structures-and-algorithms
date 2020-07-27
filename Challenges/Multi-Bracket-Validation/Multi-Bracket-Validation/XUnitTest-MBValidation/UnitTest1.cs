@@ -11,10 +11,11 @@ namespace XUnitTest_MBValidation
         public void CanValidateMultipleBracketsHappyPath()
         {
             // Arrange
+            MultiBracketValidation Multi_Bracket_Validation = new MultiBracketValidation;
             string testString = "()[[Extra Characters]]";
 
             // Act
-            bool isValid = MultiBracketValidation(testString);
+            bool isValid = MBracketValidation(testString);
 
             testMethod();
 

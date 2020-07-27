@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Multi_Bracket_Validation
 {
-    public class Multi_Bracket_Validation
+    public class MultiBracketValidation
     {
-        public bool MultiBracketValidation(string str)
+        public bool MBracketValidation(string str)
         {
             Stack stack = new Stack();
 
