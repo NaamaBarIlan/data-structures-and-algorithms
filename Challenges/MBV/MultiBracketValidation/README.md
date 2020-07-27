@@ -62,7 +62,9 @@ A function that should take a string as its only argument, and should return a b
 ### Change Log
 
 1.3 *Updated BracketValidation method to ignore characters, and created two additional unit tests* - 27 Jul 2020
+
 1.2 *Updated MBracketValidation method and created a happy path unit test* - 26 Jul 2020
+
 1.1 *Collaborated with Bryant Davis.* - 22 Jul 2020  
 
 ---
