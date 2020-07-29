@@ -126,5 +126,18 @@ namespace Trees
             traversal.Add(root.Value);
         }
 
+        public int FindMaximumValue(Tree<T> tree)
+        {
+            //create a temp value
+            int temp = 0;
+           
+            //traverse the tree
+
+            // compare each value to the temp value
+            // if greater, assign the new value to temp
+
+            return temp;
+        }
+
     }
 }
