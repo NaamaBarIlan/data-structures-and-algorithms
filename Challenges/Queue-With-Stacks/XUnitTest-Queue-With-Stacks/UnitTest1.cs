@@ -34,9 +34,9 @@ namespace XUnitTest_Queue_With_Stacks
 
             // Act - enqueue
 
-            //Node front = testPseudoQueue.Dequeueu();
+            Node front = testPseudoQueue.Dequeueu();
 
-            //string expected = top.Value;
+            string expected = top.Value;
 
             // Assert
             Assert.Equal("Lemon", front.Value);
