@@ -1,0 +1,19 @@
+(window["canvasWebpackJsonp"]=window["canvasWebpackJsonp"]||[]).push([[563],{wNRn:function(n,e,s){"use strict"
+s.r(e)
+var t=s("An8g")
+var a=s("q1tI")
+var o=s.n(a)
+var r=s("i8i4")
+var c=s.n(r)
+var i=s("3lLS")
+var u=s.n(i)
+const d=o.a.lazy(()=>Promise.all([s.e(1),s.e(632)]).then(s.bind(null,"mTPw")))
+u()(()=>{var n,e
+const s=window.ENV.current_user_roles||[]
+const a=window.ENV.current_user_types||[]
+const r=[]
+a.includes("Account Admin")&&r.push("admin");(s.includes("teacher")||(null===(n=window.ENV.COURSE)||void 0===n?void 0:n.is_instructor))&&r.push("teacher");(s.includes("student")||(null===(e=window.ENV.COURSE)||void 0===e?void 0:e.is_student))&&r.push("student")
+const i=document.getElementById("global_nav_tour")
+i&&r.length>0&&c.a.render(Object(t["a"])(o.a.Suspense,{fallback:null},void 0,Object(t["a"])(d,{roles:r})),i)})}}])
+
+//# sourceMappingURL=nav_tourpoints-c-baf3dfb195.js.map
