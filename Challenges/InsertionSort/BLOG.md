@@ -19,7 +19,8 @@ Sample Array: `[8,4,23,42,16,15]`
 #### Pass 1:
 ![Image]()
 
-In the first pass of the insertion sort 
+In the first pass of the insertion sort we set the key element J to index 1, which is 4, and compare it with the previous element in the array, which is 8. 
+Since 8 is greater than 4, we move the element 8 to be in the next position and insert the key 4 into the previous position.
 
 #### Pass 2:
 ![Image]()
@@ -48,7 +49,7 @@ On its final iteration through the array
 
 ## Efficency
   * Time: O()
-    * Explanation
+    * 
 
   * Space: O()
-    * Explanation
+    * 
