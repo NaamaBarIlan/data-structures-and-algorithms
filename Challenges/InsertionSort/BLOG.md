@@ -10,7 +10,7 @@ Insertion sort is a simple sorting algorithm that builds the final sorted array 
 
 ## Pseudocode
 
-![PseudocodeImage](../../CC-26-Pseudo.png)
+![PseudocodeImage](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC-26-Pseudo.png)
 
 ## Trace
 
@@ -47,8 +47,8 @@ The 5th pass through the array
 On its final iteration through the array
 
 ## Efficency
-	* Time: O()
-		* Explanation
+  * Time: O()
+    * Explanation
 
-	* Space: O()
-		* Explanation
+  * Space: O()
+    * Explanation
