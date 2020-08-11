@@ -8,7 +8,7 @@
 3. [Queue With Stacks](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/QueueWithStacks)
 4. [FIFO Animal Shelter](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/FIFOAnimalShelter)
 5. [Multi-bracket Validation](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/MBV/MultiBracketValidation/README.md)
-6. [Insertion Sort]()
+6. [Insertion Sort](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/InsertionSort/BLOG.md)
 
 ### Data Structures:
 1. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
