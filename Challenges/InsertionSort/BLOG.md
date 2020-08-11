@@ -60,8 +60,9 @@ This completes the sorting of all of the items in the sample array.
 
 
 ## Efficency
+  * Space: O(1)
+    * As Insertion Sort is done in-place it only requires O(1) of additional memory space.
+  
   * Time: O()
     * 
 
-  * Space: O(1)
-    * As Insertion Sort is done in-place it only requires O(1) of additional memory space.
