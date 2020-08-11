@@ -24,7 +24,7 @@ In the first pass of the insertion sort we set the key j to index 1, which is 4,
 - Since 8 is greater than 4, we move the element 8 to be in the next position and insert the key 4 into the previous position.
 
 #### Pass 2:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC26-Pass2.png)
 
 The second pass through the array we set the key j to index 2, which is 23, and compare it with the previous element in the array, which is 8. 
 
