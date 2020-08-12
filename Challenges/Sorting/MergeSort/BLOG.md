@@ -50,14 +50,14 @@ ALGORITHM Merge(left, right, arr)
 Sample Array: `[8,4,23,42,16,15]`
 
 #### Step 1:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-1.png)
 
 In the first step of the merge sort we first find the middle of the sample array and split it into 2 sub-arrays: left and right: 
 Left Array[8, 4, 23]
 Right Array[42, 16, 15]
 
 #### Step 2:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-2.png)
 
 Since the merge sort algorithm is using recursion, we will continue to split the two sub-arrays down the middle into a left sub-array and a right sub-array:
 Left Array[8, 4, 23] is split into LA[8] and RA[4, 23].
@@ -65,14 +65,14 @@ Right Array[42, 16, 15] is split into LA[42] and RA[15, 16].
 
 
 #### Step 3:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-3.png)
 
 The third step will split the last two sub-arrays with a length that is greater than 1 into two left and right sub-arrays of length 1. This is the end of the recursive splitting of the arrays:
 RA[4, 23] is split into LA[4] and RA[23].
 RA[15, 16] is split into LA[16] and RA[15].
 
 #### Step 4:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-4.png)
 
 The 4th step sorts the smallest sub-arrays of 1 and merges them back into their parent array:
 LA[4] and RA[23] are sorted back in the same order RA[4, 23].
@@ -80,14 +80,14 @@ LA[16] and RA[15] are sorted back in and switch places in RA[15, 16].
 
 
 #### Step 5:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-5.png)
 
 The 5th step sorts the sorted sub-arrays from step 4 with the sub-arrays of 1 element and merges them back into the their parent array:
 LA[8] and RA[4, 23] are sorted back into Left Array[4, 8, 23].
 LA[42] and RA[15, 16] are sorted back int Right Array[15, 16, 42].
 
 #### Step 6:
-![Image]()
+![Image](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC27-6.png)
 
 On the final step the sorted Left Array [4, 8, 23] and sorted Right Array [15, 16, 42] are sorted and merged back into the original sample array [4, 8, 15, 16, 23, 42].
 
