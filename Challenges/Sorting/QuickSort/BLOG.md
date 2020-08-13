@@ -1,4 +1,4 @@
-# Merge Sort
+# Quick Sort
 
 Quick Sort is an efficient and commonly used sorting algorithm. When implemented well, it can be about two or three times faster than merge sort and heap sort
 
