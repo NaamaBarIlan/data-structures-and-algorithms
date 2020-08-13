@@ -10,7 +10,8 @@ Quick Sort is a comparison sort, meaning that it can sort items of any type for 
 
 ## Pseudocode
 
-```ALGORITHM QuickSort(arr, left, right)
+```
+ALGORITHM QuickSort(arr, left, right)
     if left < right
         // Partition the array by setting the position of the pivot value 
         DEFINE position <-- Partition(arr, left, right)
