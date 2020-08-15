@@ -45,5 +45,6 @@ The space complexity of a hashtable is typically O(n) based on the number of ele
 ### Change Log
 
 1.1: *Added hashtable and unit tests* - 15 Aug 2020
+
 ---
 
