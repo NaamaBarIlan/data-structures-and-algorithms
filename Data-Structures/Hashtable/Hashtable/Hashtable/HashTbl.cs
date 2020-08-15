@@ -36,7 +36,12 @@ namespace Hashtable
 
         }
 
-        //add
+        /// <summary>
+        /// Adds a key/value pair of elements into a node
+        /// in a linked list in one of the Table buckets
+        /// </summary>
+        /// <param name="key">The given key to hash and add to the table</param>
+        /// <param name="value">The unique value to add to the table</param>
         public void Add(string key, T value)
         {
             int index = GetHash(key);
@@ -54,7 +59,11 @@ namespace Hashtable
 
         }
 
-
+        /// <summary>
+        /// Takes in a unique key and returns the value from the hashtable
+        /// </summary>
+        /// <param name="key">The unique key value hashed in the table</param>
+        /// <returns>The matching value to the key from the hashtable+</returns>
         public T Get(string key)
         {
             int index = GetHash(key);
@@ -82,6 +91,12 @@ namespace Hashtable
             return default;
         }
 
+        /// <summary>
+        /// Takes in the key and returns a boolean, indicating if the key 
+        /// exists in the hashtable
+        /// </summary>
+        /// <param name="key">The unique key value hashed in the table</param>
+        /// <returns>True if the key exists in the table, false if it does not</returns>
         public bool Contains(string key)
         {
             int index = GetHash(key);
