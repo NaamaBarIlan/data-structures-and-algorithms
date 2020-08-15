@@ -13,11 +13,10 @@ namespace HashtableTests
 
             table.Add("Josie", 9);
             Assert.NotNull(table);
-
         }
 
         [Fact]
-        public void GetValue()
+        public void CanGetValueFromHashTable()
         {
             // arrange
             HashTbl<int> table = new HashTbl<int>(16);
@@ -43,7 +42,53 @@ namespace HashtableTests
             var contains = table.Contains("Cupcake");
 
             Assert.True(contains);
+        }
 
+        [Fact]
+        public void CanReturnNullIfKeyDoesntExist()
+        {
+            HashTbl<int> table = new HashTbl<int>(16);
+
+            table.Add("Josie", 9);
+            table.Add("Dog", 10);
+            table.Add("Cupcake", 5);
+
+            var contains = table.Contains("Mango");
+
+            Assert.False(contains);
+        }
+
+        [Fact]
+        public void CanHandleACollision()
+        {
+            // Arrange
+            HashTbl<int> table = new HashTbl<int>(16);
+
+            table.Add("Josie", 9);
+            table.Add("Josie", 5);
+
+            //  Act
+            var result = table.Get("Josie");
+
+            // Assert
+            Assert.Equal(9, result);
+        }
+
+        [Fact]
+        public void CanRetrieveFromABucketWithACollision()
+        {
+            // Arrange
+            HashTbl<int> table = new HashTbl<int>(16);
+
+            table.Add("Josie", 9);
+            table.Add("Dog", 10);
+            table.Add("Josie", 5);
+
+            //  Act
+            var result = table.Get("Josie");
+
+            // Assert
+            Assert.Equal(9, result);
         }
     }
 }
