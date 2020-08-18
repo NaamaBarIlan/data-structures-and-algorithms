@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWord", "RepeatedWord\RepeatedWord.csproj", "{13C8DF6D-9900-459E-B06A-2B4B00347ACF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest-RepeatedWord", "UnitTest-RepeatedWord\UnitTest-RepeatedWord.csproj", "{A3AA51D6-0110-495F-82D9-D0C2915AE2BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13C8DF6D-9900-459E-B06A-2B4B00347ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C8DF6D-9900-459E-B06A-2B4B00347ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C8DF6D-9900-459E-B06A-2B4B00347ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C8DF6D-9900-459E-B06A-2B4B00347ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AA51D6-0110-495F-82D9-D0C2915AE2BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AA51D6-0110-495F-82D9-D0C2915AE2BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AA51D6-0110-495F-82D9-D0C2915AE2BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AA51D6-0110-495F-82D9-D0C2915AE2BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2EA052C7-987A-4CC2-9F32-22CC7533CE67}
+	EndGlobalSection
+EndGlobal
