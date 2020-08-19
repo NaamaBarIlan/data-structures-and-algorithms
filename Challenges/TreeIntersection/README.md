@@ -32,7 +32,17 @@
 
 ## Approach
 
-* 
+- The function would take 2 BT as parameters.
+
+- Declare an output array
+
+- Declare a Hashtable
+
+- Traverse BT1 and store each node's value as a key in the Hashtable
+
+- Traverse BT2 and for each node, check if the hashtable contains the key. If it does, add the key to the array. 
+
+- Return the array. 
 
 ## Efficiency
 
