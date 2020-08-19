@@ -12,6 +12,7 @@
 7. [Merge Sort](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/Sorting/MergeSort/BLOG.md)
 8. [Quick Sort](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/Sorting/QuickSort/BLOG.md)
 9. [Repeated Word](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/RepeatedWord)
+10. [Tree Intersection](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TreeIntersection)
 
 
 ### Data Structures:
