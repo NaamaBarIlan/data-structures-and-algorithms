@@ -59,7 +59,7 @@
 
 ### Whiteboard Visual
 
-![Image 1](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC32.png)
+![Image 1](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Assets/CC33.png)
 
 
 ---
