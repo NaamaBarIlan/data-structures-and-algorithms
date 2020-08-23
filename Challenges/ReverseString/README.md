@@ -192,4 +192,4 @@ Code:
 
 }
 
-*[This article](https://www.c-sharpcorner.com/UploadFile/19b1bd/reverse-a-string-in-different-ways-using-C-Sharp/) was used to help me understand the Array reverse method.
+*[This article](https://www.c-sharpcorner.com/UploadFile/19b1bd/reverse-a-string-in-different-ways-using-C-Sharp/) was used to help clarify the Array reverse method.
