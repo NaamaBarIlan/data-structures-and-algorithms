@@ -9,7 +9,8 @@ Input:"This is a string"
 Output:"gnirts a si sihT"
 
 Edge cases:
-- Empty string
+
+Empty string
 
 1. Arrays
 
@@ -191,4 +192,4 @@ Code:
 
 }
 
-* This article was used to help me understand the Array reverse method :https://www.c-sharpcorner.com/UploadFile/19b1bd/reverse-a-string-in-different-ways-using-C-Sharp/
+*[This article](https://www.c-sharpcorner.com/UploadFile/19b1bd/reverse-a-string-in-different-ways-using-C-Sharp/) was used to help me understand the Array reverse method.
