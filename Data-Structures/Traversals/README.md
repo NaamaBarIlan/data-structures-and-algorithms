@@ -95,7 +95,7 @@ RecursiveMethod(node)
 #### LIFO
 * Last In First Out - the last item added to the stack will be the first item popped out of the stack.
 
-* **A stack cannot be traversed in place**
+**Important! A stack cannot be traversed in place**
 
 ### Iterative Traversal:
 
@@ -110,7 +110,7 @@ while(Stack.Peek != null) or (!Stack.IsEmpty)
 {
 	var temp = Stack.Pop() // Pop
 	sum += temp.Value      // Evaluate
-	Stack2.Push(temp)      // Pus/Add
+	Stack2.Push(temp)      // Push/Add
 }
 ```
 
@@ -163,29 +163,85 @@ Process(Stack)
 * **Peek** - When you peek you will view the value of the front Node in the queue. If called when the queue is empty an exception will be raised.
 * **IsEmpty** - returns true when queue is empty otherwise returns false.
 
+#### FIFO
+* First In First Out - This means that the first item in the queue will be the first item out of the queue.
+
+#### LILO
+* Last In Last Out - This means that the last item in the queue will be the last item out of the queue.
+
 ### Iterative Traversal:
 
 #### Code:
+
+```
+// In Place:
+if (queue.Peek != null)
+{
+	var first = Front
+}
+do
+{
+	// Remove node from the front of the queue:
+	var temp = queue.Dequeue();
+
+	// EVAL 
+	temp = ?;
+
+	// Add the node to the back of the queue:
+	queue.Enqueue(temp);
+}
+while(Front != First)
+
+=================================================
+
+// Not In Place
+
+while (queue.Peek)
+{
+	// DQ:
+	value = queue.Dequeue();
+
+	// EVAL
+	value = ?;
+}
+
+```
+
 #### Visual:
+
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O() |  |
-| Space | O() |  |
+| Time | O(n) | This is because, at its worse case, the node we are looking for will be at the very rear of the queue |
+| Space | O(1) | This is because we are traversing the queue in place, so no new space needs to be allocated |
 
 ---
 
 ### Recursive Traversal:
 
 #### Code:
+```
+process (queue)
+{
+	if (queue.Peek != null)
+	{
+		return;
+	}
+
+	value = queue.Dequeue();
+	process(queue)
+}
+
+```
 #### Visual:
+
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O() |  |
-| Space | O() |  |
+| Time | O(n) | This is because, at its worse case, the node we are looking for will be at the very rear of the queue |
+| Space | O(1) | This is because we are traversing the queue in place, so no new space needs to be allocated |
 
 ---
 
