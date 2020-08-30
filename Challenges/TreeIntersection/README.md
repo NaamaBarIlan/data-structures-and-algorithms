@@ -2,7 +2,7 @@
 
 ---
 
-## Tree Intersection
+## Left Join
 *Author: Na'ama Bar-Ilan*
 
 ---
@@ -36,7 +36,7 @@
 
 - The function would take 2 BT as parameters.
 
-- Declare an output array
+- Declare an output List
 
 - Declare a Hashtable
 
@@ -67,7 +67,7 @@
 
 ### Change Log
 
-
+1.1 *Completed Tree Intersection code and 2 passing unit tests* - 29 Aug 2020 
 1.0 *Initial project set up* - 19 Aug 2020  
 
 ---
