@@ -190,6 +190,8 @@ Process(Stack)
 
 ## Binary Tree
 
+### Basic Terms:
+
 * **Root** - The root is the first/top Node in the tree
 * **Left Child** - The node that is positioned to the left of a root or node
 * **Right Child** - The node that is positioned to the right of a root or node
@@ -394,6 +396,7 @@ BinarySearchTreeTraversal(Node root)
 		}
 	}
 }
+```
 
 #### Visual:
 
@@ -484,8 +487,8 @@ foreach(var item in hashset)
 
 // Remove an element:
 hashset.Remove(4);
-
 ```
+
 #### Visual:
 
 #### Big O:
