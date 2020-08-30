@@ -2,17 +2,18 @@
 
 ## Table Of Contents
 
-1. Linked Lists
-2. Stacks
-3. Queues
-4. Binary Tree
-5. Binary Search Tree
-6. Hashtables
+1. [Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#linked-lists)
+2. [Stacks](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#stacks)
+3. [Queues](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#queues)
+4. [Binary Tree](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#binary-tree)
+5. [Binary Search Tree](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#binary-search-tree)
+6. [Hashtables](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashtables)
+7. [Hashsets](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashsets)
 
 ### Excercises
 
-* Add all the values
 * Find a value
+* Add all the values
 * Remove a value
 
 ---
@@ -436,6 +437,27 @@ BinarySearchTreeTraversal(Node root)
 
 #### Code:
 
+```
+//	CREATE a hashtable with 10 buckets: 
+HashTbl<int> table = new HashTbl<int>(10);
+
+// HASH a key:
+int index = GetHash(key);
+
+// ADD elements to a hashtable:
+.Add(string key, T value)
+
+table.Add("Josie", 9);
+table.Add("Dog", 10);
+table.Add("Cupcake", 5);
+
+// FIND an element in a hashtable:
+var result = table.Find("Dog");
+
+// CHECK if a hashtable contains an element:
+bool contains = table.Contains("Cupcake");
+
+```
 
 
 #### Visual:
@@ -463,11 +485,11 @@ BinarySearchTreeTraversal(Node root)
 #### Code:
 
 ```
-// Create a HashSet 
+// CREATE a HashSet 
 
 HashSet<int> hashset = new HashSet<int>(); 
 
-// Add elements to the HashSet:
+// ADD elements to the HashSet:
 
 hashset.Add(4);
 hashset.Add(8);
@@ -476,16 +498,16 @@ hashset.Add(16);
 
 // hashset.Add(4) => returns false;
 
-// Count the number of elements in the Hashset:
+// COUNT the number of elements in the Hashset:
 hashset.Count;
 
-// Display all elements:
+// DISPLAY all elements:
 foreach(var item in hashset)
 {
 	Console.WriteLine(item);
 }
 
-// Remove an element:
+// REMOVE an element:
 hashset.Remove(4);
 ```
 
