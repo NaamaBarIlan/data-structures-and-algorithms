@@ -33,7 +33,9 @@
 ### Iterative Traversal:
 
 #### Code:
+
 ```
+
 while(current != null)
 {
 	result = [evaluation logic]
@@ -41,6 +43,29 @@ while(current != null)
 }
 
 Return result
+
+```
+
+**Find a value**
+
+```
+ public Node FindAValueInLL(LinkedList linkedList, int inputValue)
+ {
+	Node current = linkedList.Head;
+
+    while(current != null)
+    {
+        if (current.Value == inputValue)
+        {
+			return current;
+        }
+
+        current = current.Next;        
+    }
+
+    return null;
+}       
+
 ```
 
 #### Visual:
@@ -57,14 +82,19 @@ Return result
 
 #### Code:
 ```
-RecursiveMethod(node)
+public static void TraverseLL(LinkedList list)
 {
-	if (current.Next != null)
-	{
-		Return;
-	}
-	
-	RecursiveMethod(current.Next);
+    TraverseLL(list.Head);
+}
+
+private static void TraverseLL(Node current)
+{
+    Console.WriteLine(current.Value);
+
+    if (current.Next != null)
+    {
+        TraverseLL(current.Next);
+    }
 }
 	
 ```
