@@ -159,16 +159,22 @@ while(Stack.Peek != null) or (!Stack.IsEmpty)
 #### Code:
 
 ```
-Process(Stack)
+public static Node Process(Stack)
 {
-	if(!Stack.Peek())
+	if(Stack.IsEmpty())
 	{
-		return;
+		return null;
 	}
+
+	// EVAL
+	var removed = Stack.Pop();
+
+	if(Stack.IsEmpty())
 	{
-		var = Stack.Pop)();
-		Process(Stack);
+		return removed;
 	}
+
+	return Process(Stack);
 }
 ```
 
