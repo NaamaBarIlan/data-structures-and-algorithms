@@ -10,6 +10,14 @@
 6. [Hashtables](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashtables)
 7. [Hashsets](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashsets)
 
+
+### Reading
+1. [Linked Lists](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-05/resources/singly_linked_list.html)
+2. [Stacks & Queues](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-10/resources/stacks_and_queues.html)
+3. [Trees](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html)
+4. [Hashtables](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html)
+
+
 ### Excercises
 
 * Find a value
@@ -462,7 +470,7 @@ BinarySearchTreeTraversal(Node root)
 	Node current = root;
 
 	// Check if the root equals to the target value:
-	if (current.value == target)
+	if (current.Value == target)
 	{
 		return true;
 	}
@@ -471,21 +479,21 @@ BinarySearchTreeTraversal(Node root)
 	while (current.LeftChild != null && current.RightChild != null)
 	{
 		// Check if the value equals the target
-		if (current.value == target)
+		if (current.Value == target)
 		{
 			return true;
 		}
 
-		// If the value is greater than the target, set the current to left child
-		if (current.value > target)
+		// If the value is smaller than the target, set the current to left child
+		if (current.Value < target)
 		{
-			current = current.LeftChild
+			current = current.LeftChild;
 		}
 
-		// If the value is smaller than the target, set the current to the right child
-		if (current.value < target )
+		// If the value is greater than the target, set the current to the right child
+		if (current.Value > target )
 		{
-			current = current.RightChild
+			current = current.RightChild;
 		}
 	}
 }
@@ -497,7 +505,7 @@ BinarySearchTreeTraversal(Node root)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(h) | The Big O time complexity of a Binary Search Tree’s insertion and search operations is O(h), or O(height). In the worst case, we will have to search all the way down to a leaf, which will require searching through as many nodes as the tree is tall. |
+| Time | O(h) | The Big O time complexity of a Binary Search Tree's insertion and search operations is O(h), or O(height). In the worst case, we will have to search all the way down to a leaf, which will require searching through as many nodes as the tree is tall. |
 | Space | O(1) | The Big O space complexity of a BST search would be O(1). During a search, we are not allocating any additional space. |
 
 --- 
