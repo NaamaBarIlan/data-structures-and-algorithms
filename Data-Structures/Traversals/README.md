@@ -46,11 +46,11 @@
 
 while(current != null)
 {
-	result = [evaluation logic]
+	result = [evaluation logic];
 	current = current.Next;
 }
 
-Return result
+Return result;
 
 ```
 
@@ -75,6 +75,38 @@ Return result
 }       
 
 ```
+
+**Walker and Runner**
+
+public int FindKthFromEnd(int key)
+{
+    // create 2 references:
+    Node walker = Head;
+    Node runner = Head;
+
+    // runner to iterate k number of position within the linked list
+    int k = key;
+    while (k > 0)
+    {
+        if (runner.Next != null)
+        {
+            k--;
+            runner = runner.Next;
+        }
+        else
+        {
+            throw new Exception("K is invalid");
+        }
+    }
+
+    while (runner.Next != null)
+    {
+        walker = walker.Next;
+        runner = runner.Next;
+    }
+
+    return walker.Value;
+}
 
 #### Visual:
 
@@ -350,27 +382,28 @@ BreadthFirst(Node root)
 #### Code:
 
 ```
-Public TreeTraversal(Tree tree)
+public List<T> PreOrder(Node<T> root)
 {
-	var result = TreeTraversal(tree.Root);
-	return result;
+    List<T> traversal = new List<T>();
+    PreOrder(traversal, root);
+    return traversal;
 }
 
-Private TreeTraversal(Node root)
+private void PreOrder(List<T> traversal, Node<T> root)
 {
-	// ROOT
-    Evaluation(root.Value);
+	// ROOT - EVAL 
+    traversal.Add(root.Value);
 
     // LEFT
     if (root.LeftChild != null)
     {
-		TreeTraversal(root.LeftChild);
-    }        
+        PreOrder(traversal, root.LeftChild);
+    }       
 
-    // RIGHT
+	// RIGHT
     if (root.RightChild != null)
     {
-		TreeTraversal(root.RightChild);
+        PreOrder(traversal, root.RightChild);
     }                      
 }
 ```
@@ -382,28 +415,29 @@ Private TreeTraversal(Node root)
 #### Code:
 
 ```
-Public TreeTraversal(Tree tree)
+public List<T> InOrder(Node<T> root)
 {
-	var result = TreeTraversal(tree.Root);
-	return result;
+    List<T> traversal = new List<T>();
+    InOrder(traversal, root);
+    return traversal;
 }
 
-Private TreeTraversal(Node root)
+private void InOrder(List<T> traversal, Node<T> root)
 {
     // LEFT
     if (root.LeftChild != null)
     {
-		TreeTraversal(root.LeftChild);
+        InOrder(traversal, root.LeftChild);
     }        
 
-	// ROOT
-    Evaluation(root.Value);
+	// ROOT - EVAL
+    traversal.Add(root.Value);
 
     // RIGHT
     if (root.RightChild != null)
     {
-		TreeTraversal(root.RightChild);
-    }                      
+        InOrder(traversal, root.RightChild);
+    }                     
 }
 ```
 
@@ -414,28 +448,29 @@ Private TreeTraversal(Node root)
 #### Code:
 
 ```
-Public TreeTraversal(Tree tree)
+public List<T> PostOrder(Node<T> root)
 {
-	var result = TreeTraversal(tree.Root);
-	return result;
+    List<T> traversal = new List<T>();
+    PostOrder(traversal, root);
+    return traversal;
 }
 
-Private TreeTraversal(Node root)
+private void PostOrder(List<T> traversal, Node<T> root)
 {
-    // LEFT
+	// LEFT
     if (root.LeftChild != null)
     {
-		TreeTraversal(root.LeftChild);
-    }        
+        PostOrder(traversal, root.LeftChild);
+    }
 
-    // RIGHT
+	// RIGHT
     if (root.RightChild != null)
     {
-		TreeTraversal(root.RightChild);
-    }              
-	
-	// ROOT
-    Evaluation(root.Value);
+        PostOrder(traversal, root.RightChild);
+    }
+
+	// ROOT - EVAL
+    traversal.Add(root.Value);
 }
 ```
 #### Visual:

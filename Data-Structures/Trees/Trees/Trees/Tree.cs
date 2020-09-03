@@ -126,17 +126,43 @@ namespace Trees
             traversal.Add(root.Value);
         }
 
-        public int FindMaximumValue(Tree<T> tree)
-        {
-            //create a temp value
-            int temp = 0;
+        //public int FindMaximumValue(Tree<T> tree)
+        //{
+        //    //create a temp value
+        //    int temp = 0;
            
-            //traverse the tree
+        //    //traverse the tree
 
-            // compare each value to the temp value
-            // if greater, assign the new value to temp
 
+        //    // compare each value to the temp value
+        //    // if greater, assign the new value to temp
+
+        //    return temp;
+        //}
+
+        public int FindMaximumValue(Tree<int> tree)
+        {
+            int temp = 0;
+            PreOrderMaxValue(temp, tree.Root);
             return temp;
+        }
+
+        private void PreOrderMaxValue(int temp, Node<int> root)
+        {
+            if (root.Value > temp)
+            {
+                temp = root.Value;
+            }
+
+            if (root.LeftChild != null)
+            {
+                PreOrderMaxValue(temp, root.LeftChild);
+            }
+
+            if (root.RightChild != null)
+            {
+                PreOrderMaxValue(temp, root.RightChild);
+            }
         }
 
     }
