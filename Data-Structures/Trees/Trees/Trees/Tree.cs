@@ -126,28 +126,19 @@ namespace Trees
             traversal.Add(root.Value);
         }
 
-        //public int FindMaximumValue(Tree<T> tree)
-        //{
-        //    //create a temp value
-        //    int temp = 0;
-           
-        //    //traverse the tree
-
-
-        //    // compare each value to the temp value
-        //    // if greater, assign the new value to temp
-
-        //    return temp;
-        //}
-
+        /// <summary>
+        /// Traverse a Binary Tree of data type int to find the maximum value
+        /// </summary>
+        /// <param name="tree">The Binary Tree being traversed</param>
+        /// <returns>The maximum value of all the tree node int values</returns>
         public int FindMaximumValue(Tree<int> tree)
         {
             int temp = 0;
-            PreOrderMaxValue(temp, tree.Root);
-            return temp;
+
+            return PreOrderMaxValue(temp, tree.Root);
         }
 
-        private void PreOrderMaxValue(int temp, Node<int> root)
+        private int PreOrderMaxValue(int temp, Node<int> root)
         {
             if (root.Value > temp)
             {
@@ -156,13 +147,16 @@ namespace Trees
 
             if (root.LeftChild != null)
             {
-                PreOrderMaxValue(temp, root.LeftChild);
+                temp = PreOrderMaxValue(temp, root.LeftChild);
             }
 
             if (root.RightChild != null)
             {
-                PreOrderMaxValue(temp, root.RightChild);
+                temp = PreOrderMaxValue(temp, root.RightChild);
             }
+
+            return temp;
+
         }
 
     }
