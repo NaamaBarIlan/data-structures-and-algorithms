@@ -24,3 +24,4 @@
 4. [Trees](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
 5. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
 6. [Graphs](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Graphs)
+7. [Traversals](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals)
