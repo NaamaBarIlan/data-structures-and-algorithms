@@ -346,20 +346,25 @@ BreadthFirst(Node root)
 	// NQ the root
 	queue.Enqueue(root);
 
-	// As long as the queue isn't empty
+	// As long as the queue isn't empty:
 	while (queue.peek())
 	{
 		// DQ the front node and output 
-		node front = queue.dequeue()
-		output front.value
+		node front = queue.dequeue();
 
-		// NQ Left
-		if (front.left != null)
-		queue.enqueue(front.left)
+		ConsoleWriteLine(front.Value);
 
-		// NQ Right
-		if (front.right != null)
-		queue.enqueue(front.right)
+		// NQ Left Child
+		if (front.LeftChild != null)
+		{
+			queue.enqueue(front.LeftChild);
+		}
+		
+		// NQ Right Child
+		if (front.RightChild != null)
+		{
+			queue.enqueue(front.RightChild);
+		}
 	}
 }
 ```
@@ -389,7 +394,7 @@ public List<T> PreOrder(Node<T> root)
     return traversal;
 }
 
-private void PreOrder(List<T> traversal, Node<T> root)
+private void PreOrder(List<T> traversal, Node<T> root)  
 {
 	// ROOT - EVAL 
     traversal.Add(root.Value);
@@ -531,6 +536,9 @@ BinarySearchTreeTraversal(Node root)
 			current = current.RightChild;
 		}
 	}
+
+	// If the value wasn't found in any of the nodes:
+	return False;
 }
 ```
 
@@ -594,7 +602,6 @@ bool contains = table.Contains("Cupcake");
 
 ```
 
-
 #### Visual:
 #### Big O:
 
@@ -613,7 +620,7 @@ bool contains = table.Contains("Cupcake");
 * The elements must be unique. Duplicate elements are not allowed.
 * You can only store elements of the same type.
 * **.Add** - returns true if the element is added to the HashSet; false if the element is already present.
-* ** .Contains** - returns true if the HashSet contains the specified element; otherwise, false.
+* **.Contains** - returns true if the HashSet contains the specified element; otherwise, false.
 * **.Count** - returns the number of elements in the Hashset;
 * **.Remove** - returns true if the element is successfully found and removed; otherwise, false.
 
