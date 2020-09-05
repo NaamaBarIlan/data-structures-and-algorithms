@@ -32,16 +32,16 @@ namespace UnitTest_StacksAndQueues
             que.Enqueue("Potato");
             que.Enqueue("Banana");
 
-            string firstTop = que.Rear.Value;
+            string Front1 = que.Rear.Value;
 
             que.Enqueue("Mango");
 
-            string secondTop = que.Rear.Value;
+            string Front2 = que.Rear.Value;
 
             que.Enqueue("Lemon");
 
-            Assert.Equal("Banana", firstTop);
-            Assert.Equal("Mango", secondTop);
+            Assert.Equal("Banana", Front1);
+            Assert.Equal("Mango", Front2);
             Assert.Equal("Lemon", que.Rear.Value);
 
         }

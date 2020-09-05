@@ -249,29 +249,39 @@ public static Node Process(Stack)
 
 #### Code:
 
+* **In Place**
+
 ```
-// In Place:
-if (queue.Peek != null)
+public int InPlaceQueTraversal()
 {
-	var first = Front
+	int first = 0;
+
+	if (queue.Peek != null)
+	{
+		first = queue.Front;
+	}
+
+	do
+	{
+		// Remove node from the front of the queue:
+		var temp = queue.Dequeue();
+
+		// EVAL 
+		temp = ?;
+
+		// Add the node to the back of the queue:
+		queue.Enqueue(temp);
+	}
+	while(que.Front != first)
+
+	return first;
 }
-do
-{
-	// Remove node from the front of the queue:
-	var temp = queue.Dequeue();
 
-	// EVAL 
-	temp = ?;
+```
 
-	// Add the node to the back of the queue:
-	queue.Enqueue(temp);
-}
-while(Front != First)
+* **Destructive**
 
-=================================================
-
-// Not In Place
-
+```
 while (queue.Peek)
 {
 	// DQ:
@@ -298,7 +308,7 @@ while (queue.Peek)
 
 #### Code:
 ```
-process (queue)
+RecursiveQueTraversal(queue)
 {
 	if (queue.Peek != null)
 	{
@@ -306,7 +316,7 @@ process (queue)
 	}
 
 	value = queue.Dequeue();
-	process(queue)
+	RecursiveQueTraversal(queue);
 }
 
 ```
@@ -347,23 +357,23 @@ BreadthFirst(Node root)
 	queue.Enqueue(root);
 
 	// As long as the queue isn't empty:
-	while (queue.peek())
+	while (queue.Peek())
 	{
 		// DQ the front node and output 
-		node front = queue.dequeue();
+		node front = queue.Dequeue();
 
 		ConsoleWriteLine(front.Value);
 
 		// NQ Left Child
 		if (front.LeftChild != null)
 		{
-			queue.enqueue(front.LeftChild);
+			queue.Enqueue(front.LeftChild);
 		}
 		
 		// NQ Right Child
 		if (front.RightChild != null)
 		{
-			queue.enqueue(front.RightChild);
+			queue.Enqueue(front.RightChild);
 		}
 	}
 }
