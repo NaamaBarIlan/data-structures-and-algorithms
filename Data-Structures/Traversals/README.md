@@ -172,16 +172,27 @@ private static void TraverseLL(Node current)
 #### Code:
 
 ``` 
-Stack stack2 = new Stack();
-
-int sum = 0;
-
-while(Stack.Peek != null) or (!Stack.IsEmpty)
+public int StackTraversal(Stack stack1)
 {
-	var temp = Stack.Pop() // Pop
-	sum += temp.Value      // Evaluate
-	Stack2.Push(temp)      // Push/Add
+	Stack stack2 = new Stack();
+
+	int sum = 0;
+
+	while(stack1.Peek != null) or (!stack1.IsEmpty)
+	{
+		// POP
+		var temp = stack1.Pop(); 
+
+		// EVAL
+		sum += temp.Value; 
+	
+		// PUSH
+		Stack2.Push(temp);     
+	}
+
+	return sum;
 }
+
 ```
 
 * The Evaluation can be an array, LL, hashtable, etc. 
@@ -199,26 +210,26 @@ while(Stack.Peek != null) or (!Stack.IsEmpty)
 #### Code:
 
 ```
-public static Node Process(Stack)
+public Node StackTraversal(Stack stack)
 {
-	if(Stack.IsEmpty())
+	if(stack.IsEmpty())
 	{
 		return null;
 	}
 
 	// EVAL
-	var removed = Stack.Pop();
+	var removed = stack.Pop();
 
-	if(Stack.IsEmpty())
+	if(stack.IsEmpty())
 	{
 		return removed;
 	}
 
-	return Process(Stack);
+	return StackTraversal(stack);
 }
 ```
 
-#### Visual:
+#### Visual: 
 #### Big O:
 
 | Efficiency  | Big O | Analysis |

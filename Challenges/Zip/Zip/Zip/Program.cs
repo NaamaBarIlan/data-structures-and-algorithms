@@ -19,7 +19,6 @@ namespace Zip
         public static Node ZipLists(LinkedList list1, LinkedList list2)
         {
             LinkedList zippedList = new LinkedList();
-            Node current = zippedList.Head;
             list1.Current = list1.Head;
             list2.Current = list2.Head;
 
@@ -53,8 +52,8 @@ namespace Zip
                 list2.Current = list2.Current.Next;
             }
 
-            zippedList.Current = zippedList.Head;
-            return zippedList.Head;
+            Node current = zippedList.Head;
+            return current;
         }
     }
 }
