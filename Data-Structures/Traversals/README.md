@@ -78,6 +78,7 @@ Return result;
 
 **Walker and Runner**
 
+```
 public int FindKthFromEnd(int key)
 {
     // create 2 references:
@@ -107,6 +108,7 @@ public int FindKthFromEnd(int key)
 
     return walker.Value;
 }
+```
 
 #### Visual:
 
