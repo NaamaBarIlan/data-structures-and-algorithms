@@ -545,14 +545,14 @@ BinarySearchTreeTraversal(Node root)
 			return true;
 		}
 
-		// If the value is smaller than the target, set the current to left child
-		if (current.Value < target)
+		// If the target is smaller than the value of current, set the current to the left child
+		if (target < current.Value)
 		{
 			current = current.LeftChild;
 		}
 
-		// If the value is greater than the target, set the current to the right child
-		if (current.Value > target )
+		// If the target is greater than the value of current, set the current to the right child
+		if (target > current.Value)
 		{
 			current = current.RightChild;
 		}
