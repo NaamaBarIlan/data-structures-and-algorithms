@@ -463,21 +463,21 @@ public List<T> InOrder(Node<T> root)
     return traversal;
 }
 
-private void InOrder(List<T> traversal, Node<T> root)
+private void InOrder(List<T> list, Node<T> root)
 {
     // LEFT
     if (root.LeftChild != null)
     {
-        InOrder(traversal, root.LeftChild);
+        InOrder(list, root.LeftChild);
     }        
 
 	// ROOT - EVAL
-    traversal.Add(root.Value);
+    list.Add(root.Value);
 
     // RIGHT
     if (root.RightChild != null)
     {
-        InOrder(traversal, root.RightChild);
+        InOrder(list, root.RightChild);
     }                     
 }
 ```
@@ -489,27 +489,27 @@ private void InOrder(List<T> traversal, Node<T> root)
 ```
 public List<T> PostOrder(Node<T> root)
 {
-    List<T> traversal = new List<T>();
-    PostOrder(traversal, root);
-    return traversal;
+    List<T> list = new List<T>();
+    PostOrder(list, root);
+    return list;
 }
 
-private void PostOrder(List<T> traversal, Node<T> root)
+private void PostOrder(List<T> list, Node<T> root)
 {
 	// LEFT
     if (root.LeftChild != null)
     {
-        PostOrder(traversal, root.LeftChild);
+        PostOrder(list, root.LeftChild);
     }
 
 	// RIGHT
     if (root.RightChild != null)
     {
-        PostOrder(traversal, root.RightChild);
+        PostOrder(list, root.RightChild);
     }
 
 	// ROOT - EVAL
-    traversal.Add(root.Value);
+    list.Add(root.Value);
 }
 ```
 
