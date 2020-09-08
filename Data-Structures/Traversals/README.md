@@ -175,16 +175,16 @@ public int StackTraversal(Stack stack1)
 
 	int sum = 0;
 
-	while(stack1.Peek != null) or (!stack1.IsEmpty)
+	while (stack1.Peek != null) 
 	{
 		// POP
-		var temp = stack1.Pop(); 
+		Node temp = stack1.Pop(); 
 
 		// EVAL
 		sum += temp.Value; 
 	
 		// PUSH
-		Stack2.Push(temp);     
+		stack2.Push(temp);     
 	}
 
 	return sum;
@@ -208,15 +208,15 @@ public int StackTraversal(Stack stack1)
 ```
 public Node StackTraversal(Stack stack)
 {
-	if(stack.IsEmpty())
+	if (stack.IsEmpty())
 	{
 		return null;
 	}
 
 	// EVAL
-	var removed = stack.Pop();
+	Node removed = stack.Pop();
 
-	if(stack.IsEmpty())
+	if (stack.IsEmpty())
 	{
 		return removed;
 	}
@@ -288,13 +288,26 @@ public int InPlaceQueTraversal()
 * **Destructive**
 
 ```
-while (queue.Peek)
+public static int FindMinInQueue(Queue que)
 {
-	// DQ:
-	value = queue.Dequeue();
-
-	// EVAL
-	value = ?;
+	if (que.Peek == null)
+	{
+		return null;
+	}
+	
+	int temp = que.Dequeue;
+	
+	while (que.Peek != null)
+	{
+		int front = que.Dequeue;
+		
+		if (temp > front)
+		{
+			temp = front;
+		}
+	}
+	
+	return temp;
 }
 
 ```
@@ -312,15 +325,30 @@ while (queue.Peek)
 
 #### Code:
 ```
-RecursiveQueTraversal(queue)
-{
-	if (queue.Peek != null)
-	{
-		return;
-	}
 
-	value = queue.Dequeue();
-	RecursiveQueTraversal(queue);
+Public static int SumQueElements(Queue que)
+{
+	int sum = 0;
+	
+	return SumQueElements(que, sum);
+} 
+
+Private static int SumQueElements(Queue que, Int sum)
+{
+	// Check if the front is null
+	If (que.Front == null)
+	{
+		return sum;
+	}
+	
+	// DQ the front
+	int front = que.Dequeue;
+	
+	// EVAL front
+	sum += front;
+	
+	// RECURSION
+	return SumQueElements(que, sum);
 }
 
 ```
@@ -351,32 +379,32 @@ RecursiveQueTraversal(queue)
 #### Code:
 
 ```
-BreadthFirst(Node root)
+public static void BreadthFirstTraversal(Node root)
 {
-	// Create a new queue
-	Queue queue = new Queue();
+	// Instantiate a new queue
+	Queue que = new Queue();
     
 	// NQ the root
-	queue.Enqueue(root);
+	que.Enqueue(root);
 
 	// As long as the queue isn't empty:
-	while (queue.Peek())
+	while (que.Peek() != null)
 	{
 		// DQ the front node and output 
-		node front = queue.Dequeue();
+		Node front = que.Dequeue();
 
 		ConsoleWriteLine(front.Value);
 
 		// NQ Left Child
 		if (front.LeftChild != null)
 		{
-			queue.Enqueue(front.LeftChild);
+			que.Enqueue(front.LeftChild);
 		}
 		
 		// NQ Right Child
 		if (front.RightChild != null)
 		{
-			queue.Enqueue(front.RightChild);
+			que.Enqueue(front.RightChild);
 		}
 	}
 }
@@ -399,26 +427,26 @@ BreadthFirst(Node root)
 ```
 public List<T> PreOrder(Node<T> root)
 {
-    List<T> traversal = new List<T>();
-    PreOrder(traversal, root);
-    return traversal;
+    List<T> list = new List<T>();
+    PreOrder(list, root);
+    return list;
 }
 
-private void PreOrder(List<T> traversal, Node<T> root)  
+private void PreOrder(List<T> list, Node<T> root)  
 {
 	// ROOT - EVAL 
-    traversal.Add(root.Value);
+    list.Add(root.Value);
 
     // LEFT
     if (root.LeftChild != null)
     {
-        PreOrder(traversal, root.LeftChild);
+        PreOrder(list, root.LeftChild);
     }       
 
 	// RIGHT
     if (root.RightChild != null)
     {
-        PreOrder(traversal, root.RightChild);
+        PreOrder(list, root.RightChild);
     }                      
 }
 ```
