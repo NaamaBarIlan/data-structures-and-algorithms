@@ -110,9 +110,6 @@ public int FindKthFromEnd(int key)
 }
 ```
 
-#### Visual:
-
-
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -140,8 +137,6 @@ private static void TraverseLL(Node current)
 }
 	
 ```
-
-#### Visual:
 
 #### Big O:
 
@@ -199,7 +194,6 @@ public int StackTraversal(Stack stack1)
 
 * The Evaluation can be an array, LL, hashtable, etc. 
 
-#### Visual:
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -231,7 +225,6 @@ public Node StackTraversal(Stack stack)
 }
 ```
 
-#### Visual: 
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -306,8 +299,6 @@ while (queue.Peek)
 
 ```
 
-#### Visual:
-
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -333,7 +324,6 @@ RecursiveQueTraversal(queue)
 }
 
 ```
-#### Visual:
 
 #### Big O:
 
@@ -392,9 +382,6 @@ BreadthFirst(Node root)
 }
 ```
   
-
-#### Visual:
-
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -436,8 +423,6 @@ private void PreOrder(List<T> traversal, Node<T> root)
 }
 ```
 
-#### Visual:
-
 #### In-Order Traversal:
 
 #### Code:
@@ -469,8 +454,6 @@ private void InOrder(List<T> traversal, Node<T> root)
 }
 ```
 
-#### Visual:
-
 #### Post-Order Traversal:
 
 #### Code:
@@ -501,7 +484,6 @@ private void PostOrder(List<T> traversal, Node<T> root)
     traversal.Add(root.Value);
 }
 ```
-#### Visual:
 
 #### Big O:
 
@@ -565,8 +547,6 @@ BinarySearchTreeTraversal(Node root)
 }
 ```
 
-#### Visual:
-
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -579,7 +559,7 @@ BinarySearchTreeTraversal(Node root)
 ### Recursive Traversal
 
 #### Code:
-#### Visual:
+
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -625,7 +605,6 @@ bool contains = table.Contains("Cupcake");
 
 ```
 
-#### Visual:
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
@@ -675,8 +654,6 @@ foreach(var item in hashset)
 // REMOVE an element:
 hashset.Remove(4);
 ```
-
-#### Visual:
 
 #### Big O:
 
