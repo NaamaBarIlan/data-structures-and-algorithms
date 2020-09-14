@@ -17,13 +17,6 @@
 3. [Trees](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-15/resources/Trees.html)
 4. [Hashtables](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-30/resources/Hashtables.html)
 
-
-### Excercises
-
-* Find a value
-* Add all the values
-* Remove a value
-
 ---
 
 ## Linked Lists
