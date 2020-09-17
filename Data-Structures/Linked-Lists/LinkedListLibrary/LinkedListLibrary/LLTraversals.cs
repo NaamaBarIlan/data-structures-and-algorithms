@@ -41,7 +41,7 @@ namespace LinkedListLibrary
         public Node FindAValueInLLRecursive(LinkedList linkedList, int inputValue)
         {
             Node current = linkedList.Head;
-            FindAValue(current, inputValue);
+            return FindAValue(current, inputValue);
             
         }
 
@@ -50,7 +50,7 @@ namespace LinkedListLibrary
          
             if (current.Next != null)
             {
-                FindAValue(current.Next, value)
+                FindAValue(current.Next, value);
             }
 
             if (current.Value == value)
@@ -62,7 +62,7 @@ namespace LinkedListLibrary
                 current = current.Next;
             }
 
-            FindAValue(current, value);
+            return FindAValue(current, value);
 
         }
 
@@ -83,13 +83,15 @@ namespace LinkedListLibrary
 
             if (current.Next != null)
             {
-                TraverseLL(current.Next, inputValue);
+                return TraverseLL(current.Next, inputValue);
             }
 
-            if (current == null)
-            {
-                return null;
-            }
+            //if (current == null)
+            //{
+            //    return null;
+            //}
+
+            return null;
         }
     }
 }

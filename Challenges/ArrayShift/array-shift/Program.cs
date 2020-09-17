@@ -28,19 +28,19 @@ namespace array_shift
         {
             int[] outputArray = new int[array.Length + 1];
 
-            int arrayMiddle = (array.Length + 1) / 2;
+            int arrayMiddle = Math.Ceiling((array.Length + 1) / 2);
 
-            int arrayIndex = 0;
+            int counter = 0;
 
             for (int i = 0; i < outputArray.Length; i++)
             {
-                if (i == arrayMiddle)
+                if (i == arrayMiddle - 1)
                 {
                     outputArray[i] = value;
                 }
                 else
                 {
-                    outputArray[i] = array[arrayIndex++];
+                    outputArray[i] = array[counter++];
                 }
             }
             return outputArray;
