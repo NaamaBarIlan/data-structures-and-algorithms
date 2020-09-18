@@ -15,6 +15,7 @@
 10. [Tree Intersection](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TreeIntersection)
 11. [Left Join](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeftJoin)
 12. [Reverse String](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/ReverseString)
+13. [Count The Triplets](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/CountTriplets)
 
 
 ### Data Structures:
