@@ -11,7 +11,7 @@
 
 * Write a function called BinarySearch which takes in 2 parameters: a sorted array and the search key. 
 
-* Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+* Without utilizing any of the built-in methods available to your language, return the index of the arrayâ€™s element that is equal to the search key, or -1 if the element does not exist.
 
 * The search algorithm  used in your function should be a binary search.
 
@@ -35,13 +35,6 @@
 | Space| O(1) | This is because the sorting is done in place and no new space needs to be allocated  |
 
 ---
-
-
-### Whiteboard Visual
-
-![Image 1]()
-
-
 
 ### Change Log
 
