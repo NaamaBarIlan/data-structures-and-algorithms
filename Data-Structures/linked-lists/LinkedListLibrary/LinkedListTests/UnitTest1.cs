@@ -1,6 +1,7 @@
 using System;
 using Xunit;
 using LinkedListLibrary;
+using static LinkedListTests.LinkedList;
 using System.Collections.Generic;
 
 namespace LinkedListTests
@@ -331,6 +332,28 @@ namespace LinkedListTests
             // Assert
             Assert.Equal(10, value);
         }
+
+        [Fact]
+        public void CanTraverseLLRecursively()
+        {
+            // Arrange
+            LinkedList list = new LinkedList();
+            list.Insert(10);
+            list.Insert(20);
+            list.Insert(30);
+            list.Insert(40);
+            list.Insert(50);
+
+            // Act
+            List<int> result = TraverseLLRecursive(list);
+            List<int> linkedListAsList = new List<int> { 10, 20, 30, 40, 50 };
+
+
+            // Assert
+            Assert.Equal(linkedListAsList, result);
+
+        }
+
 
     }
 
