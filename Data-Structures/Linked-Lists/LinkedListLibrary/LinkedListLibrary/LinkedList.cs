@@ -229,5 +229,21 @@ namespace LinkedListTests
             return walker.Value;
         }
 
+        public static List<int> TraverseLLRecursive(LinkedList linkedList)
+        {
+            List<int> values = new List<int>();
+            TraverseLLRecursive(linkedList.Head, values);
+            return values;
+        }
+
+        private static void TraverseLLRecursive(Node Current, List<int> list)
+        {
+            list.Add(Current.Value);
+
+            if (Current.Next != null)
+            {
+                TraverseLLRecursive(Current.Next, list);
+            }
+        }
     }
 }
