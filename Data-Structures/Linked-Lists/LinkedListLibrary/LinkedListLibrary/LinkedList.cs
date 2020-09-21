@@ -199,14 +199,13 @@ namespace LinkedListTests
         /// </summary>
         /// <param name="key">An int value that is a position from the end of a linked list</param>
         /// <returns>The int value of the node at the key position in the linked list</returns>
-        public int FindKthFromEnd(int key)
+        public int FindKthFromEnd(int k)
         {
             // create 2 references:
             Node walker = Head;
             Node runner = Head;
 
             // runner to iterate k number of position within the linked list
-            int k = key;
             while (k > 0)
             {
                 if (runner.Next != null)

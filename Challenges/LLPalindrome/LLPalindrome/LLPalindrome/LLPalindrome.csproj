@@ -9,6 +9,9 @@
     <Reference Include="LinkedListLibrary">
       <HintPath>..\..\..\..\Data-Structures\Linked-Lists\LinkedListLibrary\LinkedListLibrary\obj\Debug\netcoreapp3.1\LinkedListLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="StacksAndQueues">
+      <HintPath>..\..\..\..\Data-Structures\Stack-And-Queue\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp3.1\StacksAndQueues.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
