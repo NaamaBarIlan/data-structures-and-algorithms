@@ -28,64 +28,33 @@ namespace LLPalindrome
             {
 				Console.WriteLine("False! It is not!");
 			}
-
 		}
 
-		public static bool IsAPalindrome(LinkedList list)
-		{
-			Stack stack = new Stack();
-			Node current = list.Head;
-			int counter = 0;
+		//public static bool IsAPalindrome(LinkedList list)
+		//{
+  //          Stack stack = new Stack();
+  //          Node current = list.Head;
 
-			while (current != null)
-			{
-				counter++;
-				current = current.Next;
-			}
+		//	while (current != null)
+		//	{
+		//		stack.Push(current.Value);
+		//		current = current.Next;
+		//	}
 
-			decimal mid = Math.Ceiling((decimal)counter / 2);
-			current = list.Head;
+		//	current = list.Head;
 
-			if (counter % 2 != 0)
-			{
-		while (current != null)
-				{
-					if (counter < mid)
-					{
-						stack.Push(current.Value);
-					}
+		//	while (current != null)
+  //          {
+		//		//TODO: match data types for stack (obj) and list (int)
+		//		if (current.Value != stack.Pop())
+		//		{
+		//			return false;
+		//		}
+		//		stack.Pop();
+		//		current = current.Next;
+		//	}
 
-					if (counter > mid)
-					{
-						if (current != stack.Pop())
-						{
-							return false;
-						}
-					}
-					current = current.Next;
-				}
-			}
-
-			if (counter % 2 == 0)
-			{
-				while (current != null)
-				{
-					if (counter <= mid)
-					{
-						stack.Push(current.Value);
-					}
-
-					if (counter > mid)
-					{
-						if (current != stack.Pop())
-						{
-							return false;
-						}
-					}
-					current = current.Next;
-				}
-			}
-			return true;
-		}
+		//	return true;
+		//}
 	}
 }
