@@ -17,7 +17,8 @@
 12. [Reverse String](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/ReverseString)
 13. [Count The Triplets](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/CountTriplets)
 14. [Binary Search](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinarySearch)
-
+15. [Linked List Palindrome](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LLPalindrome)
+16. [Insert A Node Into A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 
 ### Data Structures:
 1. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
