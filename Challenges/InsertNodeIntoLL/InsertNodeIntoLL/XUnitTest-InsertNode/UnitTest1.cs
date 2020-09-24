@@ -14,6 +14,8 @@ namespace XUnitTest_InsertNode
 
             LinkedList list = new LinkedList();
 
+            Node current = list.Head;
+
             list.Append(10);
             list.Append(20);
             list.Append(30);
@@ -21,9 +23,11 @@ namespace XUnitTest_InsertNode
 
             // Act
 
-            InsertANodeIntoLL(list.head, 25, int 2);
+            //InsertANodeIntoLL(list.Head, 25, 2);
 
             // Assert
+
+            //Assert.Equal()
         }
     }
 }
