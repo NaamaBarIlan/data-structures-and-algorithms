@@ -4,14 +4,14 @@ using System;
 
 namespace InsertNodeIntoLL
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
-        public static Node InsertNodeIntoLL(Node head, int value, int position)
+        public static Node InsertANodeIntoLL(Node head, int value, int position)
         {
 
             Node node = new Node(value);

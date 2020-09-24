@@ -17,6 +17,7 @@
 
 | Input | Expected Output |
 | :-----------: | :-----------:  |
+| Node head, int value, int position | Node head |
 
 ---
 
