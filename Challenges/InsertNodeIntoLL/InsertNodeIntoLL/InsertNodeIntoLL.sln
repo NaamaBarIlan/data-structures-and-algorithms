@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertNodeIntoLL", "InsertNodeIntoLL\InsertNodeIntoLL.csproj", "{8CFDEE54-190A-41D4-9FE5-A166A63713E1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest-InsertNode", "XUnitTest-InsertNode\XUnitTest-InsertNode.csproj", "{C3E5DBBE-55AE-461A-9C8F-24E963EDA6B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8CFDEE54-190A-41D4-9FE5-A166A63713E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CFDEE54-190A-41D4-9FE5-A166A63713E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CFDEE54-190A-41D4-9FE5-A166A63713E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3E5DBBE-55AE-461A-9C8F-24E963EDA6B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3E5DBBE-55AE-461A-9C8F-24E963EDA6B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3E5DBBE-55AE-461A-9C8F-24E963EDA6B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3E5DBBE-55AE-461A-9C8F-24E963EDA6B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
