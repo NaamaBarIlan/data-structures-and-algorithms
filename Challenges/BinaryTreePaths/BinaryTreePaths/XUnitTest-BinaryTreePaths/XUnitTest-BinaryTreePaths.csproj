@@ -18,4 +18,10 @@
     <ProjectReference Include="..\BinaryTreePaths\BinaryTreePaths.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="Trees">
+      <HintPath>..\..\..\..\Data-Structures\Trees\Trees\Trees\bin\Debug\netcoreapp3.1\Trees.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

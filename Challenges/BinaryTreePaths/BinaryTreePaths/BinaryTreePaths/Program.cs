@@ -4,7 +4,7 @@ using Trees;
 
 namespace BinaryTreePaths
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace BinaryTreePaths
 
             // Act
 
-            List<string> paths = BinaryTreePaths(tree);
+            List<string> paths = AllBinaryTreePaths(tree);
 
             // Assert
 
@@ -45,7 +45,7 @@ namespace BinaryTreePaths
 
         }
 
-        public static List<string> BinaryTreePaths(Tree<char> tree)
+        public static List<string> AllBinaryTreePaths(Tree<char> tree)
         {
             List<string> paths = new List<string>();
 
@@ -56,11 +56,11 @@ namespace BinaryTreePaths
                 return paths;
             }
 
-            BinaryTreePaths(root, "", paths);
+            AllBinaryTreePaths(root, "", paths);
             return paths;
         }
 
-        private static void BinaryTreePaths(Node<char> root, string path, List<string> paths)
+        private static void AllBinaryTreePaths(Node<char> root, string path, List<string> paths)
         {
             path += root.Value;
 
@@ -71,12 +71,12 @@ namespace BinaryTreePaths
 
             if (root.LeftChild != null)
             {
-                BinaryTreePaths(root.LeftChild, path + "->", paths);
+                AllBinaryTreePaths(root.LeftChild, path + "->", paths);
             }
 
             if (root.RightChild != null)
             {
-                BinaryTreePaths(root.RightChild, path + "->", paths);
+                AllBinaryTreePaths(root.RightChild, path + "->", paths);
             }
         }
     }
