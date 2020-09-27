@@ -42,7 +42,7 @@ Output: ["1->2->5", "1->3"]
 ---
 
 ### Change Log
-1.1 *Completed challenge and added testing* - 25 Sep 2020 
+1.1 *Completed challenge and added testing* - 25 Sep 2020 <br>
 1.0 *Initial project set up* - 24 Sep 2020  
 
 ---
