@@ -19,10 +19,11 @@
 14. [Binary Search](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinarySearch)
 15. [Linked List Palindrome](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LLPalindrome)
 16. [Insert Node Into A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
+17. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinaryTreePaths)
 
 ### Data Structures:
 1. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
-2. [Linked List : Insert, Append, Includes, InsertBefore, InsertAfter, FindKthFromEnd](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/README.md)
+2. [Linked List Methods](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/README.md)
 3. [Stack & Queue](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Stack-And-Queue)
 4. [Trees](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
 5. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
