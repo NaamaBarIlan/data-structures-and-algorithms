@@ -2,7 +2,16 @@
 
 ## Table of Contents
 
-### Challenges:
+### Data Structures:
+1. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
+2. [Linked List Methods](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/README.md)
+3. [Stack & Queue](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Stack-And-Queue)
+4. [Trees](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
+5. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
+6. [Graphs](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Graphs)
+7. [Traversals](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals)
+
+### Code Challenges:
 1. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
 2. [Linked List: Zip Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/Zip/README.md)
 3. [Queue With Stacks](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/QueueWithStacks)
@@ -20,12 +29,4 @@
 15. [Linked List Palindrome](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LLPalindrome)
 16. [Insert Node Into A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinaryTreePaths)
-
-### Data Structures:
-1. [Singly Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/linked-lists.md)
-2. [Linked List Methods](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/README.md)
-3. [Stack & Queue](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Stack-And-Queue)
-4. [Trees](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
-5. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
-6. [Graphs](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Graphs)
-7. [Traversals](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals)
+18. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TwoSum)
