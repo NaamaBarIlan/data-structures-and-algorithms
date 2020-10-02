@@ -40,7 +40,7 @@
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
 
 ### LeetCode Problems:
-* [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TwoSum) 
-* [Reverse Integer](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/ReverseInt)
-* [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinaryTreePaths)
-* [Increasing BST](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/IncreasingBST)
+1. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TwoSum) 
+2. [Reverse Integer](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/ReverseInt)
+3. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/BinaryTreePaths)
+4. [Increasing BST](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/IncreasingBST)
