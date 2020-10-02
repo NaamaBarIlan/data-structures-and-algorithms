@@ -43,7 +43,6 @@ namespace ReverseInt
             // traverse the string and reverse it
             for (int i = 0, j = inputString.Length -1; i < inputString.Length; i++, j--)
             {
-
                 outputArray[i] = inputString[j];
             }
 
