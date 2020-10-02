@@ -39,6 +39,8 @@
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
 
+---
+
 ### LeetCode Problems:
 1. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TwoSum) 
 2. [Reverse Integer](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/ReverseInt)
