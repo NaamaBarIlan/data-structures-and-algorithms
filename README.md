@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-* Data Structures
-* Code Challenges
-* LeetCode Problems
+* [Data Structures](https://github.com/NaamaBarIlan/data-structures-and-algorithms#data-structures)
+* [Code Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms#code-challenges)
+* [LeetCode Problems](https://github.com/NaamaBarIlan/data-structures-and-algorithms#leetcode-problems)
 
 ---
 
@@ -38,8 +38,6 @@
 16. [Insert Node At A Specific Position In A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
-
----
 
 ### LeetCode Problems:
 * [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/TwoSum) 
