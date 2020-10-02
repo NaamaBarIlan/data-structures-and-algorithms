@@ -15,10 +15,23 @@ namespace ReverseInt
             Console.WriteLine(ReverseInteger(120));
         }
 
+        /// <summary>
+        /// Reverses digits of an integer, given a 32-bit signed integer
+        /// </summary>
+        /// <param name="x">A 32-bit signed integer</param>
+        /// <returns>The reversed integer</returns>
         public static int ReverseInteger(int x)
         {
+            if (x > int.MaxValue)
+            {
+                return 0; 
+            }
+
+            bool negative = false;
+
             if (x < 0)
             {
+                negative = true;
                 x *= -1;
             }
 
@@ -40,7 +53,7 @@ namespace ReverseInt
 
             int result = Int32.Parse(resultString);
 
-            if (x < 0)
+            if (negative)
             {
                 result *= -1;
             }
