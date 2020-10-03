@@ -15,6 +15,8 @@
 
 * You can return the answer in any order.
 
+* [Link to LeetCode problem](https://leetcode.com/problems/two-sum/)
+
 ---
 
 ### Inputs and Expected Outputs
