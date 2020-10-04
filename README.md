@@ -45,4 +45,4 @@
 1. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/TwoSum) 
 2. [Reverse Integer](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/ReverseInt)
 3. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/BinaryTreePaths)
-4. [Increasing BST](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/IncreasingBST)
+
