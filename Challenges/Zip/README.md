@@ -58,7 +58,7 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 
 ## Change Log
 
-1.2 *Fixed the ZipLists method bug, so that the happy path test is working * - 16 Jul 2020.
+1.2 *Fixed the ZipLists method bug, so that the happy path test is working * - 16 Jul 2020. <br>
 1.1 *Collaborated with Andrew Smith* - 15 Jul 2020.
 
 ---
