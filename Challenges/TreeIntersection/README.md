@@ -67,7 +67,7 @@
 
 ### Change Log
 
-1.1 *Completed Tree Intersection code and 2 passing unit tests* - 29 Aug 2020 
+1.1 *Completed Tree Intersection code and 2 passing unit tests* - 29 Aug 2020<br>
 1.0 *Initial project set up* - 19 Aug 2020  
 
 ---
