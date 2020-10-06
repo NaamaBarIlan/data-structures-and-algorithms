@@ -11,16 +11,7 @@ namespace AnimalShelter
 
         public static Queue Enqueue(Animal animal)
         {
-            Queue shelter = new Queue();
 
-            if (shelter.Front == null)
-            {
-                shelter.Front = animal;
-            }
-
-            shelter.Rear = animal;
-
-            return shelter;
         }
 
 
