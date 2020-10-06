@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalShelter", "AnimalShelter\AnimalShelter.csproj", "{C5A1446F-9BD2-4F16-80CA-BBFFD6BBE2AD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnimalShelter", "AnimalShelter\AnimalShelter.csproj", "{C5A1446F-9BD2-4F16-80CA-BBFFD6BBE2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest-AnimalShelter", "XUnitTest-AnimalShelter\XUnitTest-AnimalShelter.csproj", "{C671E2BA-1015-4C9B-AFAD-7741532D87C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C5A1446F-9BD2-4F16-80CA-BBFFD6BBE2AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5A1446F-9BD2-4F16-80CA-BBFFD6BBE2AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5A1446F-9BD2-4F16-80CA-BBFFD6BBE2AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C671E2BA-1015-4C9B-AFAD-7741532D87C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C671E2BA-1015-4C9B-AFAD-7741532D87C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C671E2BA-1015-4C9B-AFAD-7741532D87C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C671E2BA-1015-4C9B-AFAD-7741532D87C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
