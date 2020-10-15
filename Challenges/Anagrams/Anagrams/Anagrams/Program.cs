@@ -6,7 +6,9 @@ namespace Anagrams
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Valid Anagrams!");
+
+
         }
 
         /// <summary>
@@ -18,7 +20,18 @@ namespace Anagrams
         /// <returns>A true if the second string is an anagram of the first, or false</returns>
         public static bool ValidAnagram(string str1, string str2)
         {
+            if (str1.Length != str2.Length)
+            {
+                return false;
+            }
 
+            int counter1 = 0;
+            int counter2 = 0;
+
+            foreach (char item in str1)
+            {
+                 
+            }
         }
     }
 }
