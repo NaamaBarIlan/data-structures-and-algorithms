@@ -8,6 +8,19 @@ namespace Anagrams
         {
             Console.WriteLine("Valid Anagrams!");
 
+            // Expected Output: true
+
+            string example1 = "anagram";
+            string example1a = "nagaram";
+
+            Console.WriteLine(ValidAnagram(example1, example1a));
+
+            // Expected Output: false
+            string example2 = "aaz";
+            string example2a = "zza";
+
+            Console.WriteLine(ValidAnagram(example2, example2a));
+
 
         }
 
@@ -25,13 +38,23 @@ namespace Anagrams
                 return false;
             }
 
-            int counter1 = 0;
-            int counter2 = 0;
+            int[] counter = new int[26];
 
-            foreach (char item in str1)
+            for (int i = 0; i < str1.Length; i++)
             {
-                 
+                counter[str1[i] - 'a']++;
+                counter[str2[i] - 'a']--;
             }
+
+            foreach (var item in counter)
+            {
+                if(item != 0)
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
     }
 }
