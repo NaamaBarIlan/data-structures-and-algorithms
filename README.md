@@ -38,7 +38,7 @@
 16. [Insert Node At A Specific Position In A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
-19. [Sum Zero](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/SumZero)
+19. [Sum Zero](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/SumZero/SumZero)
 
 ---
 
