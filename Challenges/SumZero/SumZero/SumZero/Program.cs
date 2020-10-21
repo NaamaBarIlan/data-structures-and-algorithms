@@ -12,15 +12,19 @@ namespace SumZero
             int[] result1 = SumZero(input1);
             Console.WriteLine(string.Join(" ", result1));
 
-            int[] input2 = { -4, -3, -2, -1, 0, 5, 10 };
-            int[] result2 = SumZero(input2);
-            Console.WriteLine(string.Join(" ", result2));
+            //int[] input2 = { -4, -3, -2, -1, 0, 5, 10 };
+            //int[] result2 = SumZero(input2);
+            //Console.WriteLine(string.Join(" ", result2));
+
+ 
         }
 
         public static int[] SumZero(int[] arr)
         {
-            int left = arr[0];
-            int right = arr[arr.Length - 1];
+            int leftIdx = 0;
+            int rightIdx = arr.Length - 1;
+            int left = arr[leftIdx];
+            int right = arr[rightIdx];
             int[] result = new int[2];
 
             while (left < right)
@@ -35,11 +39,11 @@ namespace SumZero
                 } 
                 else if (sum > 0)
                 {
-                    right--;
+                    rightIdx--;
                 }
                 else
                 {
-                    left++;
+                    leftIdx++;
                 }
             }
 
