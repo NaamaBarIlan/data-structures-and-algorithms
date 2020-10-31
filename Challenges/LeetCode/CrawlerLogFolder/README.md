@@ -67,13 +67,14 @@ Output: 0
 
 | Efficiency  | Big O |  |
 | :-----------: | :-----------: |  :----------- |
-| Time |  O()  |  |
-| Space| O() |  |
+| Time | O(n) | This is because we are traversing the entire string array so our time will grow as the input grows |
+| Space| O(1) | This is because the only new space we are allocating is for the counter  |
 
 ---
 
 ### Change Log
 
-1.0 *Initial project set up* - 29 Sep 2020  
+1.1 *Completed MinOperations method and updated README * - 31 Oct 2020
+1.0 *Initial project set up* - 29 Oct 2020  
 
 ---
