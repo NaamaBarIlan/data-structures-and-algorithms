@@ -19,10 +19,14 @@ namespace CrawlerLogFolder
         }
 
         /// <summary>
-        /// 
+        /// Takes a a list of strings logs, that represent a file system 
+        /// which keeps a log each time a user performs a change folder operation.
+        /// logs[i] is the operation performed by the user at the ith step.
+        /// The file system starts in the main folder, then the operations in logs are performed.
+        /// Calculates the minimum number of operations needed to go back to the main folder after the change folder operations.
         /// </summary>
         /// <param name="logs"></param>
-        /// <returns></returns>
+        /// <returns>Minimum number of operations back to the main folder</returns>
         public static int MinOperations(string[] logs)
         {
             int counter = 0;
