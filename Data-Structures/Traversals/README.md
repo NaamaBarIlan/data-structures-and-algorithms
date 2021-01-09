@@ -576,18 +576,6 @@ BinarySearchTreeTraversal(Node root)
 | Time | O(h) | The Big O time complexity of a Binary Search Tree's insertion and search operations is O(h), or O(height). In the worst case, we will have to search all the way down to a leaf, which will require searching through as many nodes as the tree is tall. |
 | Space | O(1) | The Big O space complexity of a BST search would be O(1). During a search, we are not allocating any additional space. |
 
---- 
-
-### Recursive Traversal
-
-#### Code:
-
-#### Big O:
-
-| Efficiency  | Big O | Analysis |
-| :-----------: | :-----------: |:-----------: |
-| Time | O() |  |
-| Space | O() |  |
 
 ---
 
