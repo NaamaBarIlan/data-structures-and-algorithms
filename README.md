@@ -49,3 +49,8 @@
 4. [Valid Anagram](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Anagrams/Anagrams)
 5. [Crawler Log Folder](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/CrawlerLogFolder)
 
+---
+
+### CodeWars Kata:
+
+1. [Replace with Alphabet Position]()
