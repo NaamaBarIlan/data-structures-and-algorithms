@@ -5,8 +5,6 @@
 ## Reverse Integer
 *Author: Na'ama Bar-Ilan*
 
-
-
 ---
 
 ### Problem Domain
