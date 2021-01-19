@@ -8,8 +8,9 @@ namespace ReplaceWAlphabetPosition
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-        }
+			AlphabetPosition("The sunset sets at twelve o' clock.");
+			AlphabetPosition("The narwhal bacons at midnight.");
+		}
 
 		public static string AlphabetPosition(string str)
 		{
@@ -18,9 +19,9 @@ namespace ReplaceWAlphabetPosition
 			StringBuilder SB = new StringBuilder();
 			string lowerCaseString = str.ToLower();
 
-			for (int i = 1; i < alphabetString.Length + 1; i++)
+			for (int i = 0; i < alphabetString.Length; i++)
 			{
-				alphabetTable.Add("alphabetString[i]", "i");
+				alphabetTable.Add(alphabetString[i], i+1);
 			}
 
 			foreach (char item in lowerCaseString)
@@ -31,11 +32,11 @@ namespace ReplaceWAlphabetPosition
 				}
 				else
 				{
-					SB.Append(alphabetTable["item"]);
+					SB.Append($"{alphabetTable[item]} ");
 				}
-
 			}
 
+			Console.WriteLine($"{SB.ToString()}");
 			return SB.ToString();
 		}
 
