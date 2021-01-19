@@ -38,6 +38,7 @@
 16. [Insert Node At A Specific Position In A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
+19. [Sum Zero](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/SumZero/SumZero)
 
 ---
 
@@ -45,4 +46,11 @@
 1. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/TwoSum) 
 2. [Reverse Integer](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/ReverseInt)
 3. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/BinaryTreePaths)
-4. [Increasing BST](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/IncreasingBST)
+4. [Valid Anagram](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Anagrams/Anagrams)
+5. [Crawler Log Folder](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/CrawlerLogFolder)
+
+---
+
+### CodeWars Kata:
+
+1. [Replace with Alphabet Position](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/CodeWars/ReplaceWAlphabetPosition)

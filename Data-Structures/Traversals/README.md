@@ -107,8 +107,8 @@ public int FindKthFromEnd(int key)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) | This is because, at its worse case, the node we are looking for will be the very last node in the linked list. n represents the number of nodes in the linked list. |
-| Space | O(1) | This is because there is no additional space being used than what is already given to us with the linked list input |
+| Time | O(n) | At its worse case, the node we are looking for will be the very last node in the linked list. n represents the number of nodes in the linked list. |
+| Space | O(1) | There is no additional space being used than what is already given to us with the linked list input |
  
 ### Recursive Traversal:
 
@@ -135,8 +135,9 @@ private static void TraverseLL(Node current)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) | This is because, at its worse case, the node we are looking for will be the very last node in the linked list. n represents the number of nodes in the linked list. |
-| Space | O(1) | This is because there is no additional space being used than what is already given to us with the linked list input |
+| Time | O(n) | At its worse case, the node we are looking for will be the very last node in the linked list. n represents the number of nodes in the linked list. |
+| Space | O(1) | There is no additional space being used than what is already given to us with the linked list input |
+
 ---
 
 ## Stacks
@@ -191,8 +192,8 @@ public int StackTraversal(Stack stack1)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) |  This is because, at its worse case, the node we are looking for will be at the very bottom of the stack |
-| Space | O(n) | This is because the stack cannot be traversed in place and a second stack needs to be instantiated |
+| Time | O(n) |  At its worse case, the node we are looking for will be at the very bottom of the stack |
+| Space | O(n) | The stack cannot be traversed in place and a second stack needs to be instantiated |
  
 ### Recursive Traversal:
 
@@ -222,8 +223,8 @@ public Node StackTraversal(Stack stack)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) |  This is because, at its worse case, the node we are looking for will be at the very bottom of the stack |
-| Space | O(n) | This is because the stack cannot be traversed in place and a second stack needs to be instantiated |
+| Time | O(n) |  At its worse case, the node we are looking for will be at the very bottom of the stack |
+| Space | O(n) | The stack cannot be traversed in place and a second stack needs to be instantiated |
 
 ---
 
@@ -309,8 +310,8 @@ public static int FindMinInQueue(Queue que)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) | This is because, at its worse case, the node we are looking for will be at the very rear of the queue |
-| Space | O(1) | This is because we are traversing the queue in place, so no new space needs to be allocated |
+| Time | O(n) | At its worse case, the node we are looking for will be at the very rear of the queue |
+| Space | O(1) | The queue is being traversed in place, so no new space needs to be allocated |
 
 ---
 
@@ -350,8 +351,8 @@ Private static int SumQueElements(Queue que, Int sum)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) | This is because, at its worse case, the node we are looking for will be at the very rear of the queue |
-| Space | O(1) | This is because we are traversing the queue in place, so no new space needs to be allocated |
+| Time | O(n) | At its worse case, the node we are looking for will be at the very rear of the queue |
+| Space | O(1) | The queue is being traversed in place, so no new space needs to be allocated |
 
 ---
 
@@ -407,7 +408,7 @@ public static void BreadthFirstTraversal(Node root)
 
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
-| Time | O(n) | Since we visit each node in a breadth-first traversal once, the time it will take to read every node depends on the number of nodes in the tree |
+| Time | O(n) | Since each node is visited in a breadth-first traversal once, the time it will take to read every node depends on the number of nodes in the tree |
 | Space | O(w) | The space complexity of a breadth-first traversal is O(w) where w equals the width of the tree. In the worst case situation, we could enqueue all the nodes in a tree if they are all children of one another. |
 
 --- 
@@ -511,7 +512,7 @@ private void PostOrder(List<T> list, Node<T> root)
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
 | Time | O(h) | Where h equals the hight of the tree.  In the worst case, we will have to search all the way down to a leaf, which will require searching through as many nodes as the tree is tall  |
-| Space | O(1) | During a search, we are not allocating any additional space  |
+| Space | O(1) | During a search, there is no need for allocating any additional space  |
 
 ---
 
@@ -575,18 +576,6 @@ BinarySearchTreeTraversal(Node root)
 | Time | O(h) | The Big O time complexity of a Binary Search Tree's insertion and search operations is O(h), or O(height). In the worst case, we will have to search all the way down to a leaf, which will require searching through as many nodes as the tree is tall. |
 | Space | O(1) | The Big O space complexity of a BST search would be O(1). During a search, we are not allocating any additional space. |
 
---- 
-
-### Recursive Traversal
-
-#### Code:
-
-#### Big O:
-
-| Efficiency  | Big O | Analysis |
-| :-----------: | :-----------: |:-----------: |
-| Time | O() |  |
-| Space | O() |  |
 
 ---
 

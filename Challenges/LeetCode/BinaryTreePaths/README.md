@@ -12,6 +12,8 @@
 * Given a binary tree, return all root-to-leaf paths.
 * Note: A leaf is a node with no children.
 
+* [Link to LeetCode problem](https://leetcode.com/problems/binary-tree-paths/)
+
 ---
 
 ### Inputs and Expected Outputs
