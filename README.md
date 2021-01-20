@@ -48,6 +48,7 @@
 3. [Binary Tree Paths](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/BinaryTreePaths)
 4. [Valid Anagram](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Anagrams/Anagrams)
 5. [Crawler Log Folder](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/CrawlerLogFolder)
+6. [Remove Duplicates from Sorted Array](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/RemoveDuplicates) 
 
 ---
 
