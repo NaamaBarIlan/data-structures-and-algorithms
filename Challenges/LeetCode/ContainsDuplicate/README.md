@@ -44,6 +44,7 @@ Output: true
 
 ### Change Log
 
+1.1 *Completed problem* - 21 Jan 2021  <br>
 1.0 *Initial project set up* - 20 Jan 2021  
 
 ---
