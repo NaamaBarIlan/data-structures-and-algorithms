@@ -49,6 +49,7 @@
 4. [Valid Anagram](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Anagrams/Anagrams)
 5. [Crawler Log Folder](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/CrawlerLogFolder)
 6. [Contains Duplicate](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/ContainsDuplicate) 
+7. [Best Time to Buy and Sell Stock](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/MaxProfit) 
 
 ---
 
