@@ -36,10 +36,10 @@ Explanation: In this case, no transactions are done and the max profit = 0.
  
 ---
 
-###Constraints:
+### Constraints:
 
-1 <= prices.length <= 10<sup>5</sup>
-0 <= prices[i] <= 10<sup>4</sup>
+* 1 <= prices.length <= 10<sup>5</sup>
+* 0 <= prices[i] <= 10<sup>4</sup>
 
 ---
 
