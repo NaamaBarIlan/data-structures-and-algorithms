@@ -15,6 +15,11 @@ namespace ContainsDuplicate
 			Console.WriteLine($"Example 3: {ContainsDuplicates(example3)}");
 		}
 
+		/// <summary>
+		/// Finds if a given array of integers contains any duplicates. 
+		/// </summary>
+		/// <param name="intArr">The array of integers that is checked for duplicates</param>
+		/// <returns>True if any value appears at least twice in the array, or false if every element is distinct</returns>
 		public static bool ContainsDuplicates(int[] intArr)
 		{
 			bool hasDuplicates = false;
