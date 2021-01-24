@@ -19,16 +19,17 @@ namespace array_shift
         }
 
         /// <summary>
-        /// This method takes in an array and the value to be added and returns an array with the new value added at the middle index.
+        /// This method takes in an array and the value to be added 
+        /// and returns an array with the new value added at the middle index.
         /// </summary>
         /// <param name="array">An int array</param>
         /// <param name="value">An int data type</param>
-        /// <returns></returns>
+        /// <returns>A new integer array with the added integer in the middle index position</returns>
         public static int[] InsertShiftArray(int[] array, int value)
         {
             int[] outputArray = new int[array.Length + 1];
 
-            int arrayMiddle = Math.Ceiling((array.Length + 1) / 2);
+            decimal arrayMiddle = Math.Ceiling((decimal)(array.Length + 1) / 2);
 
             int counter = 0;
 
