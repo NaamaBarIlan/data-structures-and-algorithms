@@ -20,7 +20,7 @@
 ---
 
 ### Code Challenges:
-1. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
+1. [Sum Zero](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/SumZero/SumZero)
 2. [Zip Linked Lists](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/Zip/README.md)
 3. [Queue With Stacks](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Queue-With-Stacks)
 4. [FIFO Animal Shelter](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/FIFOAnimalShelter)
@@ -38,7 +38,8 @@
 16. [Insert Node At A Specific Position In A Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
 18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
-19. [Sum Zero](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/SumZero/SumZero)
+19. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
+
 
 ---
 
