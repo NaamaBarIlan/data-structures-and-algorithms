@@ -21,7 +21,6 @@ namespace Anagrams
 
             Console.WriteLine(ValidAnagram(example2, example2a));
 
-
         }
 
         /// <summary>
