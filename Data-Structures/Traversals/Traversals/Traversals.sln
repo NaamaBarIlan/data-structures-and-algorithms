@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Traversals", "Traversals\Traversals.csproj", "{D65BA3F4-5D3F-47DC-8B14-1BE18E590369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Traversals", "Traversals\Traversals.csproj", "{D65BA3F4-5D3F-47DC-8B14-1BE18E590369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTest-Traversals", "XUnitTest-Traversals\XUnitTest-Traversals.csproj", "{FC99115E-4048-40EA-8D8E-6320257F24BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D65BA3F4-5D3F-47DC-8B14-1BE18E590369}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D65BA3F4-5D3F-47DC-8B14-1BE18E590369}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D65BA3F4-5D3F-47DC-8B14-1BE18E590369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC99115E-4048-40EA-8D8E-6320257F24BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC99115E-4048-40EA-8D8E-6320257F24BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC99115E-4048-40EA-8D8E-6320257F24BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC99115E-4048-40EA-8D8E-6320257F24BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
