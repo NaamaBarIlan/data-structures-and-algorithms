@@ -11,6 +11,13 @@ namespace Traversals
         {
             Console.WriteLine("Traversals");
 
+            LinkedList list = new LinkedList();
+            list.Insert(4);
+            list.Insert(8);
+            list.Insert(15);
+
+            Console.WriteLine(CountLLNodes(list));
+
         }
 
         //LinkedLists
