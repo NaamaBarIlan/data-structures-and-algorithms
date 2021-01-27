@@ -11,6 +11,8 @@ namespace Traversals
         {
             Console.WriteLine("Traversals");
 
+            Console.WriteLine("Linked Lists:");
+
             LinkedList list = new LinkedList();
             list.Insert(4);
             list.Insert(8);
@@ -44,9 +46,9 @@ namespace Traversals
         }
 
 
-        //2. Counting the amount of duplicated nodes in a Linked List
+        //Counting the amount of duplicated nodes in a Linked List
 
-
+        
 
     }
 }
