@@ -33,7 +33,7 @@ namespace Traversals
         /// <summary>
         /// Counts the number of nodes in a linked list
         /// </summary>
-        /// <param name="linkedList">A specific linked list</param>
+        /// <param name="linkedList">A given linked list</param>
         /// <returns>The number of nodes in the linked list</returns>
         public static int CountLLNodes(LinkedList linkedList)
         {
@@ -52,6 +52,11 @@ namespace Traversals
 
         //Counting the amount of duplicated nodes in a Linked List
 
+        /// <summary>
+        /// Counts the number of duplicate nodes in a linked list
+        /// </summary>
+        /// <param name="list">A given linked list</param>
+        /// <returns>The total number of duplicate nodes in the linked list</returns>
         public static int CountDuplicateLLNodes(LinkedList list)
         {
             int counter = 0;
