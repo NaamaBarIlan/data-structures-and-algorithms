@@ -17,8 +17,12 @@ namespace Traversals
             list.Insert(4);
             list.Insert(8);
             list.Insert(15);
+            list.Insert(4);
+            list.Insert(8);
 
-            Console.WriteLine(CountLLNodes(list));
+            //Console.WriteLine(CountLLNodes(list));
+
+            Console.WriteLine(CountDuplicateLLNodes(list));
 
         }
 
@@ -48,7 +52,31 @@ namespace Traversals
 
         //Counting the amount of duplicated nodes in a Linked List
 
-        
+        public static int CountDuplicateLLNodes(LinkedList list)
+        {
+            int counter = 0;
+            Node walker = list.Head;
+            Node runner = list.Head;
+
+            while (walker.Next != null)
+            {
+                while (runner.Next != null)
+                {
+                    runner = runner.Next;
+
+                    if (runner.Value == walker.Value)
+                    {
+                        counter++;
+                    }
+                }
+
+                walker = walker.Next;
+                runner = walker;
+            }
+
+            return counter;
+        }
+
 
     }
 }
