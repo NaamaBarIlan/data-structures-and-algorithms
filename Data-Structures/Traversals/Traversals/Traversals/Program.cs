@@ -2,6 +2,7 @@
 using LinkedListTests;
 using System;
 using System.Collections.Generic;
+using Trees;
 
 namespace Traversals
 {
@@ -20,7 +21,7 @@ namespace Traversals
             list.Insert(4);
             list.Insert(8);
 
-            //Console.WriteLine(CountLLNodes(list));
+            Console.WriteLine(CountLLNodes(list));
 
             Console.WriteLine(CountDuplicateLLNodes(list));
 
@@ -28,7 +29,7 @@ namespace Traversals
 
         //LinkedLists
 
-        //Counting the amount of nodes in Linked List
+        //Counting the number of nodes in Linked List
 
         /// <summary>
         /// Counts the number of nodes in a linked list
@@ -50,7 +51,7 @@ namespace Traversals
         }
 
 
-        //Counting the amount of duplicated nodes in a Linked List
+        //Counting the number of duplicated nodes in a Linked List
 
         /// <summary>
         /// Counts the number of duplicate nodes in a linked list

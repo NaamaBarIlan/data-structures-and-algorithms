@@ -13,6 +13,12 @@
     <Reference Include="LinkedListLibrary">
       <HintPath>..\..\..\Linked-Lists\LinkedListLibrary\LinkedListLibrary\obj\Debug\netcoreapp3.1\LinkedListLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="StacksAndQueues">
+      <HintPath>..\..\..\Stack-And-Queue\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp3.1\StacksAndQueues.dll</HintPath>
+    </Reference>
+    <Reference Include="Trees">
+      <HintPath>..\..\..\Trees\Trees\Trees\bin\Debug\netcoreapp3.1\Trees.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
