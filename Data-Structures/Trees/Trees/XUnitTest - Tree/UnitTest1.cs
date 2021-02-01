@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 using Trees;
-using static Trees.IntTree;
+//using static Trees.IntTree;
 using System.Xml;
 using System.Collections.Generic;
 

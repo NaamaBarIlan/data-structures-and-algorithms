@@ -1,35 +1,84 @@
-﻿using System;
+﻿using StacksAndQueues;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using Trees;
 
 namespace Traversals
 {
     class TreeTraversals
     {
-    }
+		// Counting the number of nodes in a tree
 
-    // Counting the number of nodes in a tree
+		// Depth First
 
-    // Depth First
+		public List<string> PreOrder(Node<string> root)
+        {
+			List<string> list = new List<string>();
+			PreOrder(list, root);
+			return list;
+        }
 
-    // Breath First
+		private void PreOrder(List<string> list, Node<string> root)
+        {
+			list.Add(root.Value);
+			
+			if(root.LeftChild != null)
+            {
+				PreOrder(list, root.LeftChild);
+            }
 
-    //Counting the number of leaves in a tree
+			if(root.LeftChild != null)
+            {
+				PreOrder(list, root.RightChild);
+            }
+        }
 
-    // Depth First
+		// Breath First
+		//public static int CountTreeNodesBreath(Tree<string> tree)
+		//{
+		//	int counter = 0;
 
-    // Breath First
+		//	Queue que = new Queue();
 
-    //Counting the number of right branches in a tree
+		//	que.Enqueue(tree.Root);
 
-    // Depth First
+		//	while (que.Peek != null)
+		//	{
+		//		Node front = que.Dequeue();
+		//		counter++;
 
-    // Breath First
+		//		if (front.LeftChild != null)
+		//		{
+		//			que.Enqueue(front.LeftChild);
+		//		}
 
-    //Count the number of duplicated nodes in a tree
+		//		if (front.RightChild != null)
+		//		{
+		//			que.Enqueue(front.RightChild);
+		//		}
+		//	}
 
-    // Depth First
+		//	return counter;
+		//}
 
-    // Breath First
+		//Counting the number of leaves in a tree
+
+		// Depth First
+
+		// Breath First
+
+		//Counting the number of right branches in a tree
+
+		// Depth First
+
+		// Breath First
+
+		//Count the number of duplicated nodes in a tree
+
+		// Depth First
+
+		// Breath First
+	}
 
 }
