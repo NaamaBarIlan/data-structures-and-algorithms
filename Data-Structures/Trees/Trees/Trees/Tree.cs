@@ -159,5 +159,35 @@ namespace Trees
 
         }
 
+        /// <summary>
+        /// Counting the number of nodes in a tree,
+        /// using Depth First traversal
+        /// </summary>
+        /// <param name="root">A unique root value</param>
+        /// <returns>The number of nodes in the tree</returns>
+        public int CountTreeNodesDepth(Node<int> root)
+        {
+            int counter = 0;
+            CountTreeNodesDepth(counter, root);
+            return counter;
+        }
+
+        private void CountTreeNodesDepth(int counter, Node<int> root)
+        {
+            counter++;
+
+            if (root.LeftChild != null)
+            {
+                CountTreeNodesDepth(counter, root.LeftChild);
+            }
+
+            if (root.RightChild != null)
+	{
+                CountTreeNodesDepth(counter, root.RightChild);
+            }
+
+        }
+
+
     }
 }
