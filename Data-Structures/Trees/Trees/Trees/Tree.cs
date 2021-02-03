@@ -23,7 +23,7 @@ namespace Trees
         /// Conducts a preorder traversal or a binary tree,
         /// through indirect recursion with the overload method.
         /// </summary>
-        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <param name="root">The top Node in the tree</param>
         /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> PreOrder(Node<T> root)
         {
@@ -38,7 +38,7 @@ namespace Trees
         /// captures each of the values in a list and returns that list.
         /// </summary>
         /// <param name="traversal">The list object that will inserted with values</param>
-        /// <param name="root">A unique root value</param>
+        /// <param name="root">The top Node in the tree</param>
         private void PreOrder(List<T> traversal, Node<T> root)
         {
             traversal.Add(root.Value);
@@ -55,10 +55,10 @@ namespace Trees
         }
 
         /// <summary>
-        /// Conducts a inorder traversal or a binary tree,
+        /// Conducts a in-order traversal or a binary tree,
         /// through indirect recursion with the overload method.
         /// </summary>
-        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <param name="root">The top Node in the tree</param>
         /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> InOrder(Node<T> root)
         {
@@ -73,7 +73,7 @@ namespace Trees
         /// captures each of the values in a list and returns that list.
         /// </summary>
         /// <param name="traversal">The list object that will inserted with values</param>
-        /// <param name="root">A unique root value</param>
+        /// <param name="root">The top Node in the tree</param>
         private void InOrder(List<T> traversal, Node<T> root)
         {
 
@@ -94,7 +94,7 @@ namespace Trees
         /// Conducts a postorder traversal or a binary tree,
         /// through indirect recursion with the overload method.
         /// </summary>
-        /// <param name="root">A unique value that is the root of the binary tree</param>
+        /// <param name="root">The top Node in the tree</param>
         /// <returns>A list of the all the values in the binary tree</returns>
         public List<T> PostOrder(Node<T> root)
         {
@@ -109,7 +109,7 @@ namespace Trees
         /// captures each of the values in a list and returns that list.
         /// </summary>
         /// <param name="traversal">The list object that will inserted with values</param>
-        /// <param name="root">A unique root value</param>
+        /// <param name="root">The top Node in the tree</param>
         private void PostOrder(List<T> traversal, Node<T> root)
         {
 
@@ -163,7 +163,7 @@ namespace Trees
         /// Counting the number of nodes in a tree,
         /// using Depth First traversal
         /// </summary>
-        /// <param name="root">A unique root value</param>
+        /// <param name="root">The top Node in the tree</param>
         /// <returns>The number of nodes in the tree</returns>
         public int CountTreeNodesDepth(Node<int> root)
         {
@@ -182,12 +182,41 @@ namespace Trees
             }
 
             if (root.RightChild != null)
-	{
+	        {
                 CountTreeNodesDepth(counter, root.RightChild);
             }
 
         }
 
+        /// <summary>
+        /// Count the number of leaves in a tree
+        /// </summary>
+        /// <param name="root">The top Node in the tree</param>
+        /// <returns></returns>
+        public int CountTreeLeavesDepth(Node<int> root)
+        {
+            int counter = 0;
+            CountTreeLeavesDepth(counter, root);
+            return counter;
+        }
+
+        private void CountTreeLeavesDepth(int counter, Node<int> root)
+        {
+            if (root.RightChild == null && root.LeftChild == null)
+            {
+                counter++;
+            }
+
+            if (root.RightChild != null)
+            {
+                CountTreeLeavesDepth(counter, root.RightChild);
+            }
+
+            if (root.LeftChild != null)
+            {
+                CountTreeLeavesDepth(counter, root.LeftChild);
+            }
+        }
 
     }
 }
