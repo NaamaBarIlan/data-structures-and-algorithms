@@ -202,7 +202,7 @@ namespace XUnitTest___Tree
 
         [Fact]
 
-        public void CanCountNumberOfNodesInTree()
+        public void CanCountTreeLeavesDepth()
         {
             // Arrange
             Tree<int> tree = new Tree<int>();
@@ -227,9 +227,10 @@ namespace XUnitTest___Tree
             c.RightChild = g;
 
             // Act
-            int result = CountTreeNodesDepth(tree.Root);
+            int result = tree.CountTreeNodesDepth(tree.Root);
 
             // Assert
+            Assert.Equal(7, result);
         }
     }
 }
