@@ -202,7 +202,7 @@ namespace XUnitTest___Tree
 
         [Fact]
 
-        public void CanCountTreeLeavesDepth()
+        public void CountTreeNodesDepth()
         {
             // Arrange
             Tree<int> tree = new Tree<int>();
