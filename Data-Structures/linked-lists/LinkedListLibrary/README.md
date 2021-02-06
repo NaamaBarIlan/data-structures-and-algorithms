@@ -1,7 +1,7 @@
-# Data Structure Implementation: Linked List
+# Data Structure Implementation
 ---
 
-## About Me
+## Linked List
 
 *Authors: Na'ama Bar-Ilan & Robert Carter*
 
