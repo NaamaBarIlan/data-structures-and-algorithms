@@ -1,4 +1,4 @@
-# Data Structure Implementation: Linked List
+# Data Structure Implementation
 ---
 
 ## Linked List
