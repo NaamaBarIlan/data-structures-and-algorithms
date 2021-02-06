@@ -1,4 +1,4 @@
-# Daily Code Challenge
+# Data Structure Implementation
 
 ## Hashtable
 *Author: Na'ama Bar-Ilan*
