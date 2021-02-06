@@ -1,4 +1,4 @@
-# Daily Code Challenge
+# Data Structure Implementation
 
 ## Stack & Queue
 *Author: Na'ama Bar-Ilan*
