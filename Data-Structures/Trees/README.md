@@ -1,4 +1,4 @@
-# Daily Code Challenge
+# Data Structure Implementation
 
 ## Trees
 *Author: Na'ama Bar-Ilan*
