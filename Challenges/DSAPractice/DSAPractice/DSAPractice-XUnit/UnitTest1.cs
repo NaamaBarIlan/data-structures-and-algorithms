@@ -39,5 +39,38 @@ namespace DSAPractice_XUnit
             // Assert
             Assert.Equal(7, result);
         }
+
+        [Fact]
+
+        public void CountTreeNodesBreadth()
+        {
+            // Arrange
+            Tree<string> tree = new Tree<string>();
+
+            Node<string> root = new Node<string>("a");
+            Node<string> b = new Node<string>("b");
+            Node<string> c = new Node<string>("c");
+            Node<string> d = new Node<string>("d");
+            Node<string> e = new Node<string>("e");
+            Node<string> f = new Node<string>("f");
+            Node<string> g = new Node<string>("g");
+
+            tree.Root = root;
+
+            root.LeftChild = b;
+            root.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.LeftChild = f;
+            c.RightChild = g;
+
+            // Act
+            int result = BreadthFirst.CountTreeNodesBreath(tree);
+
+            // Assert
+            Assert.Equal(7, result);
+        }
     }
 }

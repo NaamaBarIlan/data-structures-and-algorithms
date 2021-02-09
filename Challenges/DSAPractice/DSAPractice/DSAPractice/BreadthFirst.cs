@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DSAPractice
 {
-    class BreadthFirst
+    public class BreadthFirst
     {
         public static int CountTreeNodesBreath(Tree<string> tree)
         {
