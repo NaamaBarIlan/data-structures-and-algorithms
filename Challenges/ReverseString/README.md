@@ -1,8 +1,22 @@
-Problem Domain: 
+
+# Daily Code Challenge
+
+---
+
+## Reverse a String
+*Author: Na'ama Bar-Ilan*
+
+---
+
+### Problem Domain
 
 Solve the following code challenge in the file:
 
 Reverse a string, 3 different ways
+
+---
+
+### Inputs and Expected Outputs
 
 Input:"This is a string"
 
