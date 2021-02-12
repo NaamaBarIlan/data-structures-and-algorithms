@@ -50,15 +50,15 @@ Return result;
 **Find a value**
 
 ```
- public Node FindAValueInLL(LinkedList linkedList, int inputValue)
+ public Node FindAValueInLL(LinkedList list, int value)
  {
-	Node current = linkedList.Head;
+    Node current = list.Head;
 
-    while(current != null)
+    while (current != null)
     {
-        if (current.Value == inputValue)
+        if (current.Value == value)
         {
-			return current;
+		return current;
         }
 
         current = current.Next;        
