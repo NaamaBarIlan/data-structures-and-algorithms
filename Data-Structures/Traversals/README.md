@@ -320,14 +320,14 @@ public static int FindMinInQueue(Queue que)
 #### Code:
 ```
 
-Public static int SumQueElements(Queue que)
+public static int SumQueElements(Queue que)
 {
 	int sum = 0;
 	
 	return SumQueElements(que, sum);
 } 
 
-Private static int SumQueElements(Queue que, Int sum)
+private static int SumQueElements(Queue que, int sum)
 {
 	// Check if the front is null
 	If (que.Front == null)
