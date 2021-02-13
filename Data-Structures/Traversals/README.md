@@ -252,27 +252,27 @@ public Node StackTraversal(Stack stack)
 * **In Place**
 
 ```
-public int InPlaceQueTraversal()
+public int InPlaceQueTraversal(Queue que)
 {
 	int first = 0;
 
-	if (queue.Peek != null)
+	if (que.Peek != null)
 	{
-		first = queue.Front;
+		first = que.Front;
 	}
 
 	do
 	{
 		// Remove node from the front of the queue:
-		var temp = queue.Dequeue();
+		var temp = que.Dequeue();
 
 		// EVAL 
-		temp = ?;
+		Console.WriteLine(temp.Value);
 
 		// Add the node to the back of the queue:
-		queue.Enqueue(temp);
+		que.Enqueue(temp);
 	}
-	while(que.Front != first)
+	while(que.Front != first);
 
 	return first;
 }
