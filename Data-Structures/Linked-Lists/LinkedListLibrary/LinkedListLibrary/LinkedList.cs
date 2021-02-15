@@ -82,7 +82,7 @@ namespace LinkedListTests
         }
 
         /// <summary>
-        /// This method adds a new node with the given value to the end of the list.
+        /// This method adds a new node with the given value to the end of the linked list.
         /// </summary>
         /// <param name="value">The int value to be added to the list</param>
         /// <returns>The list with the appended value</returns>
@@ -119,6 +119,7 @@ namespace LinkedListTests
 
             Node node = new Node(value);
             Current = Head;
+
             // Add it to the end
             if (Head == null)
             {
@@ -132,7 +133,6 @@ namespace LinkedListTests
                 }
 
                 Current.Next = node;
-                //Current = Current.Next;
             }
 
         }
