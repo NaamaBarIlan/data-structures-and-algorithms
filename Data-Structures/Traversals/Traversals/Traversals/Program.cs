@@ -89,6 +89,12 @@ namespace Traversals
             return counter;
         }
 
+        /// <summary>
+        /// Reverses a linked list so that the all of the list's values are in reverse order.
+        /// </summary>
+        /// <param name="list">The linked list that is being reversed</param>
+        /// <returns>A new linked list with all of the values 
+        /// of the original linked list in reverse order</returns>
         public static LinkedList ReverseLL(LinkedList list)
         {
             LinkedList newList = new LinkedList();
