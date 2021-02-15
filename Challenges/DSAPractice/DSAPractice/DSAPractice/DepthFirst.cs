@@ -6,29 +6,25 @@ namespace DSAPractice
 {
     public class DepthFirst
     {
-        public static int CountTreeNodesDepth(Node<int> root)
+
+        public static int CountTreeNodesDepth(Tree<int> tree)
         {
-            int counter = 0;
-            CountTreeNodesDepth(counter, root);
-            return counter;
+            return CountTreeNodesDepth(tree.Root);
         }
 
-        private static void CountTreeNodesDepth(int counter, Node<int> root)
+        private static int CountTreeNodesDepth(Node<int> current)
         {
-            counter++;
-
-            if (root.LeftChild != null)
+            if (current == null)
             {
-                CountTreeNodesDepth(counter, root.LeftChild);
+                return 0;
             }
 
-            if (root.RightChild != null)
-            {
-                CountTreeNodesDepth(counter, root.RightChild);
-            }
+            int result = 1 + CountTreeNodesDepth(current.LeftChild) +
+                             CountTreeNodesDepth(current.RightChild);
+
+            return result;
 
         }
-
-
+ 
     }
 }

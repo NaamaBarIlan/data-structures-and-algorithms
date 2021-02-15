@@ -15,15 +15,21 @@ namespace Traversals
             Console.WriteLine("Linked Lists:");
 
             LinkedList list = new LinkedList();
+            list.Insert(1);
+            list.Insert(2);
+            list.Insert(3);
             list.Insert(4);
-            list.Insert(8);
-            list.Insert(15);
-            list.Insert(4);
-            list.Insert(8);
+            list.Insert(5);
 
-            Console.WriteLine(CountLLNodes(list));
+            Console.WriteLine($"list: {list}");
 
-            Console.WriteLine(CountDuplicateLLNodes(list));
+            Console.WriteLine($"ReverseLL: {ReverseLL(list)}");
+
+            Console.WriteLine($"CountLLNodes: {CountLLNodes(list)}");
+
+            Console.WriteLine($"CountDuplicateLLNodes: {CountDuplicateLLNodes(list)}");
+
+
 
         }
 
@@ -83,6 +89,31 @@ namespace Traversals
             return counter;
         }
 
+        /// <summary>
+        /// Reverses a linked list so that the all of the list's values are in reverse order.
+        /// </summary>
+        /// <param name="list">The linked list that is being reversed</param>
+        /// <returns>A new linked list with all of the values 
+        /// of the original linked list in reverse order</returns>
+        public static LinkedList ReverseLL(LinkedList list)
+        {
+            LinkedList newList = new LinkedList();
+
+            Node current = list.Head;
+
+            if (current == null)
+            {
+                return null;
+            }
+
+            while (current != null)
+            {
+                newList.Insert(current.Value);
+                current = current.Next;
+            }
+
+            return newList;
+        }
 
     }
 }

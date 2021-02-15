@@ -14,9 +14,10 @@ namespace DSAPractice
 
             que.Enqueue(tree.Root);
 
-            while (que.Peek() != null)
+            while (que.Count != 0)
             {
                 Node<String> front = que.Dequeue();
+
                 counter++;
 
                 if (front.LeftChild != null)

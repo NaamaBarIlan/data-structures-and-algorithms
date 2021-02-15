@@ -34,7 +34,7 @@ namespace DSAPractice_XUnit
             c.RightChild = g;
 
             // Act
-            int result = DepthFirst.CountTreeNodesDepth(tree.Root);
+            int result = DepthFirst.CountTreeNodesDepth(tree);
 
             // Assert
             Assert.Equal(7, result);
