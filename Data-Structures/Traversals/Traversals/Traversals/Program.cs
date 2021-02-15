@@ -19,11 +19,13 @@ namespace Traversals
             list.Insert(2);
             list.Insert(3);
             list.Insert(4);
-            list.Insert(5);
+            list.Insert(2);
 
             Console.WriteLine($"list: {list}");
 
             Console.WriteLine($"ReverseLL: {ReverseLL(list)}");
+
+            Console.WriteLine($"ReverseLLRec: {ReverseLLRec(list)}");
 
             Console.WriteLine($"CountLLNodes: {CountLLNodes(list)}");
 
@@ -115,5 +117,39 @@ namespace Traversals
             return newList;
         }
 
+        /// <summary>
+        /// Recursively reverses a linked list so that the all of the list's values are in reverse order.
+        /// </summary>
+        /// <param name="list">The linked list that is being reversed</param>
+        /// <returns>A new linked list with all of the values 
+        /// of the original linked list in reverse order</returns>
+        public static LinkedList ReverseLLRec(LinkedList list)
+        {
+            LinkedList newList = new LinkedList();
+            ReverseLLRecHelper(list.Head, newList);
+            return newList;
+        }
+
+        /// <summary>
+        /// A helper method for the ReverseLLRec method,
+        /// handles the recursion. 
+        /// </summary>
+        /// <param name="current">The head node of the LinkedList that is being traversed</param>
+        /// <param name="newList">An empty LinkedList</param>
+        /// <returns>The newList with all of the node values of the traversed list, 
+        /// in reverse order</returns>
+        private static LinkedList ReverseLLRecHelper(Node current, LinkedList newList)
+        {
+            if (current == null)
+            {
+                return newList;
+            }
+
+            newList.Insert(current.Value);
+
+            ReverseLLRecHelper(current.Next, newList);
+
+            return newList;
+        }
     }
 }
