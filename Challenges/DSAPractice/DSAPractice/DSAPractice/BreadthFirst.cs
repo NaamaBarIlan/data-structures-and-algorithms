@@ -76,5 +76,32 @@ namespace DSAPractice
 
             return counter;
         }
+
+        public static int CountRightBranchesBreadth(Node<string> root)
+        {
+            int counter = 0;
+
+            Queue<Node<string>> que = new Queue<Node<string>>();
+
+            que.Enqueue(root);
+
+            while(que.Count != 0)
+            {
+                Node<string> front = que.Dequeue();
+
+                if(front.LeftChild != null)
+                {
+                    que.Enqueue(front.LeftChild);
+                }
+
+                if(front.RightChild != null)
+                {
+                    counter++;
+                    que.Enqueue(front.RightChild);
+                }
+            }
+
+            return counter;
+        }
     }
 }
