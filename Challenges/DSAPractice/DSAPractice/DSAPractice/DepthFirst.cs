@@ -14,7 +14,7 @@ namespace DSAPractice
         /// <returns>The total count of nodes in the tree</returns>
         public static int CountTreeNodesDepth(Tree<int> tree)
         {
-            return CountTreeNodesDepth(tree.Root);
+            return CountTreeNodesDepthHelper(tree.Root);
         }
 
         /// <summary>
@@ -22,15 +22,15 @@ namespace DSAPractice
         /// </summary>
         /// <param name="current">The root node of the tree that is being traversed</param>
         /// <returns>The total count of nodes in the tree</returns>
-        private static int CountTreeNodesDepth(Node<int> current)
+        private static int CountTreeNodesDepthHelper(Node<int> current)
         {
             if (current == null)
             {
                 return 0;
             }
 
-            int result = 1 + CountTreeNodesDepth(current.LeftChild) +
-                             CountTreeNodesDepth(current.RightChild);
+            int result = 1 + CountTreeNodesDepthHelper(current.LeftChild) +
+                             CountTreeNodesDepthHelper(current.RightChild);
 
             return result;
 
@@ -42,12 +42,12 @@ namespace DSAPractice
         /// </summary>
         /// <param name="root">The root node of the tree that is being traversed</param>
         /// <returns>The total count of leaves in the tree</returns>
-        public static int CountTreeLeaves(Node<int> root)
+        public static int CountTreeLeavesDepth(Node<int> root)
         {
-            return CountTreeLeavesHelper(root);
+            return CountTreeLeavesDepthHelper(root);
         }
 
-        private static int CountTreeLeavesHelper(Node<int> current)
+        private static int CountTreeLeavesDepthHelper(Node<int> current)
         {
             if (current == null)
             {
@@ -59,8 +59,8 @@ namespace DSAPractice
                 return 1;
             }
 
-            int result = CountTreeLeavesHelper(current.LeftChild) +
-                             CountTreeLeavesHelper(current.RightChild);
+            int result = CountTreeLeavesDepthHelper(current.LeftChild) +
+                             CountTreeLeavesDepthHelper(current.RightChild);
 
             return result;
         }
