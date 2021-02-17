@@ -99,7 +99,7 @@ namespace DSAPractice_XUnit
             c.RightChild = g;
 
             // Act
-            int result = DepthFirst.CountTreeLeaves(root);
+            int result = DepthFirst.CountTreeLeavesDepth(root);
 
             // Assert
             Assert.Equal(4, result);
