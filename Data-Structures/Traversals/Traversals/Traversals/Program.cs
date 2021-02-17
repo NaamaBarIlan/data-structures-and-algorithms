@@ -10,9 +10,7 @@ namespace Traversals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Traversals");
-
-            Console.WriteLine("Linked Lists:");
+            Console.WriteLine("LinkedList Traversals");
 
             LinkedList list = new LinkedList();
             list.Insert(1);
@@ -23,27 +21,23 @@ namespace Traversals
 
             Console.WriteLine($"list: {list}");
 
-            Console.WriteLine($"ReverseLL: {ReverseLL(list)}");
+            Console.WriteLine($"Reverse LL: {ReverseLL(list)}");
 
-            Console.WriteLine($"ReverseLLRec: {ReverseLLRec(list)}");
+            Console.WriteLine($"Reverse LL Recursively: {ReverseLLRec(list)}");
 
-            Console.WriteLine($"CountLLNodes: {CountLLNodes(list)}");
+            Console.WriteLine($"Count LL Nodes: {CountLLNodes(list)}");
+
+            Console.WriteLine($"Count LL Nodes Recursively: {CountLLNodesRec(list)}");
 
             Console.WriteLine($"CountDuplicateLLNodes: {CountDuplicateLLNodes(list)}");
 
-
-
         }
-
-        //LinkedLists
-
-        //Counting the number of nodes in Linked List
 
         /// <summary>
         /// Counts the number of nodes in a linked list
         /// </summary>
-        /// <param name="linkedList">A given linked list</param>
-        /// <returns>The number of nodes in the linked list</returns>
+        /// <param name="linkedList">A specific linked list</param>
+        /// <returns>The total number of nodes in the linked list</returns>
         public static int CountLLNodes(LinkedList linkedList)
         {
             int counter = 0;
@@ -56,6 +50,31 @@ namespace Traversals
             }
 
             return counter;
+        }
+
+        /// <summary>
+        /// Counts the number of nodes in a linked list recursively
+        /// </summary>
+        /// <param name="list">A specific linked list</param>
+        /// <returns>The total number of nodes in the linked list</returns>
+        public static int CountLLNodesRec(LinkedList list)
+        {
+            return CountLLNodesRecHelper(list.Head); 
+        }
+
+        /// <summary>
+        /// A helper method for CountNodesRec
+        /// </summary>
+        /// <param name="current">The head node of the linked list that is being traversed</param>
+        /// <returns>The total number of nodes in the linked list</returns>
+        private static int CountLLNodesRecHelper(Node current)
+        {
+            if(current == null)
+            {
+                return 0;
+            }
+
+            return 1 + CountLLNodesRecHelper(current.Next); ;
         }
 
 
