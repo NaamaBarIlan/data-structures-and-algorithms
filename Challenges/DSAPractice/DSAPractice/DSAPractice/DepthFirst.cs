@@ -47,6 +47,11 @@ namespace DSAPractice
             return CountTreeLeavesDepthHelper(root);
         }
 
+        /// <summary>
+        /// Helper method for CountTreeLeavesDepth
+        /// </summary>
+        /// <param name="current">The root node of the tree that is being traversed</param>
+        /// <returns>The total count of leaves in the tree</returns>
         private static int CountTreeLeavesDepthHelper(Node<int> current)
         {
             if (current == null)
