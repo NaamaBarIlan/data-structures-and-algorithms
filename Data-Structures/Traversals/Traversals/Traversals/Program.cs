@@ -21,15 +21,15 @@ namespace Traversals
 
             Console.WriteLine($"list: {list}");
 
-            Console.WriteLine($"Reverse LL: {ReverseLL(list)}");
-
-            Console.WriteLine($"Reverse LL Recursively: {ReverseLLRec(list)}");
-
             Console.WriteLine($"Count LL Nodes: {CountLLNodes(list)}");
 
             Console.WriteLine($"Count LL Nodes Recursively: {CountLLNodesRec(list)}");
 
             Console.WriteLine($"CountDuplicateLLNodes: {CountDuplicateLLNodes(list)}");
+
+            Console.WriteLine($"Reverse LL: {ReverseLL(list)}");
+
+            Console.WriteLine($"Reverse LL Recursively: {ReverseLLRec(list)}");
 
         }
 
@@ -38,10 +38,10 @@ namespace Traversals
         /// </summary>
         /// <param name="linkedList">A specific linked list</param>
         /// <returns>The total number of nodes in the linked list</returns>
-        public static int CountLLNodes(LinkedList linkedList)
+        public static int CountLLNodes(LinkedList list)
         {
             int counter = 0;
-            Node current = linkedList.Head;
+            Node current = list.Head;
 
             while (current != null)
             {
@@ -76,9 +76,6 @@ namespace Traversals
 
             return 1 + CountLLNodesRecHelper(current.Next); ;
         }
-
-
-        //Counting the number of duplicated nodes in a Linked List
 
         /// <summary>
         /// Counts the number of duplicate nodes in a linked list
