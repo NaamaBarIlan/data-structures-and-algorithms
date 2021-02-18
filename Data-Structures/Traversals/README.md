@@ -534,6 +534,7 @@ BinarySearchTreeTraversal(Node root)
 {
 	// The value we're searching for:
 	int target = 100;
+	
 	Node current = root;
 
 	// Check if the root equals to the target value:
@@ -542,7 +543,7 @@ BinarySearchTreeTraversal(Node root)
 		return true;
 	}
 
-	// While the node has children, isn't a leaf.
+	// While the node has children, isn't a leaf:
 	while (current.LeftChild != null && current.RightChild != null)
 	{
 		// Check if the value equals the target
@@ -551,13 +552,13 @@ BinarySearchTreeTraversal(Node root)
 			return true;
 		}
 
-		// If the target is smaller than the value of current, set the current to the left child
+		// If the target is smaller than the value of current, set the current to the left child:
 		if (target < current.Value)
 		{
 			current = current.LeftChild;
 		}
 
-		// If the target is greater than the value of current, set the current to the right child
+		// If the target is greater than the value of current, set the current to the right child:
 		if (target > current.Value)
 		{
 			current = current.RightChild;
@@ -565,7 +566,7 @@ BinarySearchTreeTraversal(Node root)
 	}
 
 	// If the value wasn't found in any of the nodes:
-	return False;
+	return false;
 }
 ```
 
