@@ -38,7 +38,7 @@ namespace Traversals
         /// </summary>
         /// <param name="linkedList">A specific linked list</param>
         /// <returns>The total number of nodes in the linked list</returns>
-        public static int CountLLNodes(LinkedList list)
+        publ ic static int CountLLNodes(LinkedList list)
         {
             int counter = 0;
             Node current = list.Head;
