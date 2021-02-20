@@ -530,11 +530,8 @@ private void PostOrder(List<T> list, Node<T> root)
 #### Code:
 
 ```
-BinarySearchTreeTraversal(Node root)
+BinarySearchTreeTraversal(Node root, int target)
 {
-	// The value we're searching for:
-	int target = 100;
-	
 	Node current = root;
 
 	// Check if the root equals to the target value:
