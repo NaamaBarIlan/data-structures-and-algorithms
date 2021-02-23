@@ -37,13 +37,21 @@
 
 ```
 
-while(current != null)
+public static int CountLLNodes(LinkedList list)
 {
-	result = [evaluation logic];
-	current = current.Next;
+	int counter = o;
+	
+	Node current = list.Head;
+
+	while(current.Next != null)
+	{
+		counter++;
+		current = current.Next;
+	}
+
+	return counter;
 }
 
-Return result;
 
 ```
 
