@@ -111,6 +111,36 @@ public int FindKthFromEnd(int key)
 }
 ```
 
+```
+public static int CountDuplicateLLNodes(LinkedList list)
+{
+	int counter = 0;
+
+	Node walker = list.Head;
+
+		Node runner = list.Head;
+
+	while(walker.Next != null)
+	{
+		while(runner.Next != null)
+		{
+			runner = runner.Next;
+
+			if(runner.Value == walker.Value)
+			{
+				counter++;
+			}
+
+		}
+
+		walker = walker.Next;
+		runner = walker;   
+	}
+
+	return counter;
+}
+```
+
 #### Big O:
 
 | Efficiency  | Big O | Analysis |
