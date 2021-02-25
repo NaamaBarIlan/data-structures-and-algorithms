@@ -194,7 +194,7 @@ private static void TraverseLL(Node current)
 #### LIFO
 * Last In First Out - the last item added to the stack will be the first item popped out of the stack.
 
-**Important! A stack cannot be traversed in place**
+**A stack cannot be traversed in place!**
 
 ### Iterative Traversal:
 
@@ -238,7 +238,7 @@ public int StackTraversal(Stack stack1)
 #### Code:
 
 ```
-public Node StackTraversal(Stack stack)
+public Node StackTraversalRec(Stack stack)
 {
 	if (stack.IsEmpty())
 	{
