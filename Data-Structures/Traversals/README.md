@@ -368,7 +368,7 @@ public static int SumQueElements(Queue que)
 private static int SumQueElements(Queue que, int sum)
 {
 	// Check if the front is null
-	If (que.Front == null)
+	if(que.Front == null)
 	{
 		return sum;
 	}
