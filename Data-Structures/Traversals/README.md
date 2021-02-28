@@ -62,9 +62,9 @@ public static int CountLLNodes(LinkedList list)
  {
     Node current = list.Head;
 
-    while (current != null)
+    while(current != null)
     {
-        if (current.Value == value)
+        if(current.Value == value)
         {
 		return current;
         }
@@ -90,7 +90,7 @@ public int FindKthFromEnd(int key)
     int k = key;
     while (k > 0)
     {
-        if (runner.Next != null)
+        if(runner.Next != null)
         {
             k--;
             runner = runner.Next;
@@ -101,7 +101,7 @@ public int FindKthFromEnd(int key)
         }
     }
 
-    while (runner.Next != null)
+    while(runner.Next != null)
     {
         walker = walker.Next;
         runner = runner.Next;
@@ -207,7 +207,7 @@ public int StackTraversal(Stack stack1)
 
 	int sum = 0;
 
-	while (stack1.Peek != null) 
+	while(stack1.Peek != null) 
 	{
 		// POP
 		Node temp = stack1.Pop(); 
@@ -240,7 +240,7 @@ public int StackTraversal(Stack stack1)
 ```
 public Node StackTraversalRec(Stack stack)
 {
-	if (stack.IsEmpty())
+	if(stack.IsEmpty())
 	{
 		return null;
 	}
@@ -248,7 +248,7 @@ public Node StackTraversalRec(Stack stack)
 	// EVAL
 	Node removed = stack.Pop();
 
-	if (stack.IsEmpty())
+	if(stack.IsEmpty())
 	{
 		return removed;
 	}
@@ -294,7 +294,7 @@ public int InPlaceQueTraversal(Queue que)
 {
 	int first = 0;
 
-	if (que.Peek != null)
+	if(que.Peek != null)
 	{
 		first = que.Front;
 	}
@@ -322,18 +322,18 @@ public int InPlaceQueTraversal(Queue que)
 ```
 public static int FindMinInQueue(Queue que)
 {
-	if (que.Peek == null)
+	if(que.Peek == null)
 	{
 		return null;
 	}
 	
 	int temp = que.Dequeue;
 	
-	while (que.Peek != null)
+	while(que.Peek != null)
 	{
 		int front = que.Dequeue;
 		
-		if (temp > front)
+		if(temp > front)
 		{
 			temp = front;
 		}
@@ -420,7 +420,7 @@ public static void BreadthFirstTraversal(Node root)
 	que.Enqueue(root);
 
 	// As long as the queue isn't empty:
-	while (que.Peek() != null)
+	while(que.Peek() != null)
 	{
 		// DQ the front node and output 
 		Node front = que.Dequeue();
@@ -428,13 +428,13 @@ public static void BreadthFirstTraversal(Node root)
 		ConsoleWriteLine(front.Value);
 
 		// NQ Left Child
-		if (front.LeftChild != null)
+		if(front.LeftChild != null)
 		{
 			que.Enqueue(front.LeftChild);
 		}
 		
 		// NQ Right Child
-		if (front.RightChild != null)
+		if(front.RightChild != null)
 		{
 			que.Enqueue(front.RightChild);
 		}
@@ -470,13 +470,13 @@ private void PreOrder(List<T> list, Node<T> root)
     list.Add(root.Value);
 
     // LEFT
-    if (root.LeftChild != null)
+    if(root.LeftChild != null)
     {
         PreOrder(list, root.LeftChild);
     }       
 
 	// RIGHT
-    if (root.RightChild != null)
+    if(root.RightChild != null)
     {
         PreOrder(list, root.RightChild);
     }                      
@@ -498,7 +498,7 @@ public List<T> InOrder(Node<T> root)
 private void InOrder(List<T> list, Node<T> root)
 {
     // LEFT
-    if (root.LeftChild != null)
+    if(root.LeftChild != null)
     {
         InOrder(list, root.LeftChild);
     }        
@@ -507,7 +507,7 @@ private void InOrder(List<T> list, Node<T> root)
     list.Add(root.Value);
 
     // RIGHT
-    if (root.RightChild != null)
+    if(root.RightChild != null)
     {
         InOrder(list, root.RightChild);
     }                     
@@ -529,13 +529,13 @@ public List<T> PostOrder(Node<T> root)
 private void PostOrder(List<T> list, Node<T> root)
 {
 	// LEFT
-    if (root.LeftChild != null)
+    if(root.LeftChild != null)
     {
         PostOrder(list, root.LeftChild);
     }
 
 	// RIGHT
-    if (root.RightChild != null)
+    if(root.RightChild != null)
     {
         PostOrder(list, root.RightChild);
     }
