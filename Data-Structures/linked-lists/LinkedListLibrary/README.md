@@ -76,10 +76,10 @@ A C# implementation of a `Singly Linked List`. Singly Linked Lists contain indiv
 *The Append method creates a new node with a given int value, then iterates through the nodes of the Linked List checking all the values. Once the last node on list is reached the method adds the new node to the end of the linked list.*
 
 ### InsertBefore
-* This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value before the value.*
+*This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value before the value.*
 
 ### InsertAfter
-* This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value after the value.*
+*This method takes two int paramaters a value and a new value. The method traverses the Linked List and compares all the values to the input value. When it locates value, it inserts the new value after the value.*
 
 
 ---
