@@ -80,11 +80,11 @@ public static int CountLLNodes(LinkedList list)
 **Walker and Runner**
 
 ```
-public int FindKthFromEnd(int key)
+public int FindKthFromEnd(LinkedList list, int key)
 {
     // create 2 references:
-    Node walker = Head;
-    Node runner = Head;
+    Node walker = list.Head;
+    Node runner = list.Head;
 
     // runner to iterate k number of position within the linked list
     int k = key;
