@@ -37,8 +37,7 @@
 15. [Linked List Palindrome](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LLPalindrome)
 16. [Insert Node Into a Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
-18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
-19. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
+18. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
 
 
 ---
