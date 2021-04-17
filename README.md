@@ -5,6 +5,7 @@
 * [Data Structures](https://github.com/NaamaBarIlan/data-structures-and-algorithms#data-structures)
 * [Code Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms#code-challenges)
 * [LeetCode Problems](https://github.com/NaamaBarIlan/data-structures-and-algorithms#leetcode-problems)
+* [Grokking Algorithms](https://github.com/NaamaBarIlan/data-structures-and-algorithms#Grokking-algorithms)
 
 ---
 
@@ -37,10 +38,16 @@
 15. [Linked List Palindrome](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LLPalindrome)
 16. [Insert Node Into a Linked List](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/InsertNodeIntoLL)
 17. [Print Numbers](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/PrintNumbers)
-18. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
+18. [Recursion Challenges](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/Recursion)
+19. [Array shift](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/ArrayShift/README.md)
 
 
 ---
+
+### Grokking Algorithms
+1. [Binary Search]()
+
+--- 
 
 ### LeetCode Problems:
 1. [Two Sum](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Challenges/LeetCode/TwoSum) 
