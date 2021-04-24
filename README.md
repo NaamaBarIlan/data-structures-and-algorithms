@@ -46,6 +46,7 @@
 
 ### Grokking Algorithms
 1. [Binary Search](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/GrokkingAlgo/01BinarySearch/01BinarySearch/Program.cs)
+2. [Selection Sort](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Challenges/GrokkingAlgo/02SelectionSort/02SelectionSort/02SelectionSort/Program.cs)
 
 --- 
 
