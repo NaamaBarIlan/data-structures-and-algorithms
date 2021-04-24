@@ -5,15 +5,18 @@ namespace _02SelectionSort
     class Program
     {
         /// <summary>
-        /// This excercise from Grokking Algorithms was converted to C# from Python
-        /// Reference: https://www.manning.com/books/grokking-algorithms
+        /// This is an excercise from Grokking Algorithms, for reference:
+        /// https://www.manning.com/books/grokking-algorithms
+        /// The solution is based on this Exception Not Found article:
+        /// https://exceptionnotfound.net/selection-sort-csharp-the-sorting-algorithm-family-reunion/
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
         {
             int[] exampleArray = { 5, 3, 6, 2, 10 };
-            Console.WriteLine(FindSmallest(exampleArray));
-            //Array.ForEach(SelectionSort(exampleArray), Console.Write);
+            int[] exampleArray2 = { 62, -31, 7, 14};
+            Console.WriteLine("[{0}]", string.Join(", ", SelectionSort(exampleArray)));
+            Console.WriteLine("[{0}]", string.Join(", ", SelectionSort(exampleArray2)));
         }
 
         /// <summary>
@@ -22,44 +25,28 @@ namespace _02SelectionSort
         /// <param name="arr">The input integer array</param>
         /// <returns>A new integer array with 
         /// all elements sorted from smallest to largest value</returns>
-        //public static int[] SelectionSort(int[] arr)
-        //{
-        //    int[] newArr = new int[arr.Length];
-
-        //    for (int i = 0; i < arr.Length; i++)
-        //    {
-        //        int smallest = FindSmallest(arr);
-        //        newArr[i] = arr[smallest];
-        //    }
-
-        //    return newArr;
-        //}
-
-        /// <summary>
-        /// Finds the smallest value in an array
-        /// </summary>
-        /// <param name="arr">The input integer array</param>
-        /// <returns>The index of the smallest integer
-        /// in the input array</returns>
-        public static int FindSmallest(int[] arr)
-        {
-            //Stores the smallest value
-            int smallestValue = arr[0];
-            //Stores the index of the smallest value
-            int smallestIndex = 0;
-
-            for (int i = 1; i < arr.Length; i++)
+        public static int[] SelectionSort(int[] arr)
+        {            
+            for (int i = 0; i < arr.Length; i++)
             {
-                if (arr[i] < smallestValue)
+                int smallestValue = arr[i];
+                int smallestIndex = i;
+                int temp;
+
+                for (int j = i + 1; j < arr.Length; j++)
                 {
-                    smallestValue = arr[i];
-                    smallestIndex = i;
+                    if (arr[j] < smallestValue)
+                    {
+                        smallestValue = arr[j];
+                        smallestIndex = j;
+                    }
                 }
+
+                temp = smallestValue;
+                arr[smallestIndex] = arr[i];
+                arr[i] = temp;
             }
-
-            return smallestIndex;
+            return arr;
         }
-
-
     }
 }
