@@ -6,7 +6,19 @@ namespace _03Recursion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Recursion!");
+
+            Countdown(5);
+        }
+
+        public static void Countdown(int i)
+        {
+            Console.WriteLine(i);
+
+            if (i > 0)
+            {
+                Countdown(i - 1);
+            }
         }
     }
 }
