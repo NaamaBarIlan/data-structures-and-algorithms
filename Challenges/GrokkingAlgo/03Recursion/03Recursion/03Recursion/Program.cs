@@ -8,7 +8,11 @@ namespace _03Recursion
         {
             Console.WriteLine("Recursion!");
 
+            Console.WriteLine("1. Countdown:");
             Countdown(5);
+
+
+            Console.WriteLine("2. Greet:");
         }
 
         public static void Countdown(int i)
@@ -20,5 +24,7 @@ namespace _03Recursion
                 Countdown(i - 1);
             }
         }
+
+        
     }
 }
