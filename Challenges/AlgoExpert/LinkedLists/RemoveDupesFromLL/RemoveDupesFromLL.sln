@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDupesFromLL", "RemoveDupesFromLL\RemoveDupesFromLL.csproj", "{8D273D53-5480-412E-B3E1-2ED30E94DFB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D273D53-5480-412E-B3E1-2ED30E94DFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D273D53-5480-412E-B3E1-2ED30E94DFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D273D53-5480-412E-B3E1-2ED30E94DFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D273D53-5480-412E-B3E1-2ED30E94DFB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E4227D8-FF0C-4E24-95F6-96EC9EE7ADCD}
+	EndGlobalSection
+EndGlobal
