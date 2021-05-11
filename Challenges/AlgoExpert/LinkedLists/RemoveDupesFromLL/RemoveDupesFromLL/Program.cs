@@ -8,16 +8,27 @@ namespace RemoveDupesFromLL
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-        }
+			LinkedList<int> list1 = new LinkedList<int>();
+			list1.AddLast(1);
+			list1.AddLast(1);
+			list1.AddLast(3);
+			list1.AddLast(4);
+			list1.AddLast(4);
+			list1.AddLast(4);
+			list1.AddLast(5);
+			list1.AddLast(6);
+			list1.AddLast(6);
 
-		public LinkedList<int> RemoveDuplicatesFromLinkedList(LinkedList<int> linkedList)
+            Console.WriteLine(RemoveDuplicatesFromLinkedList(list1)); 
+
+		}
+
+		public static LinkedList<int> RemoveDuplicatesFromLinkedList(LinkedList<int> linkedList)
 		{
-			// Write your code here.
-
-			// set up runner to list.Head
-			// set up current to list.Head
-			LinkedListNode<int> runner = linkedList.First;
+			// set up current and runner to list's Head
+			
 			LinkedListNode<int> current = linkedList.First;
+			LinkedListNode<int> runner = linkedList.First;
 
 			// check if list is empty => return null
 			if (current == null)
@@ -31,16 +42,16 @@ namespace RemoveDupesFromLL
 			// traverse both runner and current. 
 			while (current.Next != null)
 			{
-				// -  if current.value == runner.value => 
-				//    move runner to runner.Next and delete runner.
-				if (current.Value == runner.Value)
+				// if current equals runner
+				// move runner to runner.Next and delete runner.
+				 while (current.Value == runner.Value)
 				{
-					LinkedListNode<int> temp = runner;
+					LinkedListNode<int> temp = current.Next;
 					runner = runner.Next;
-                    //current.Next = runner;
 				}
 
-				current = current.Next;
+				current = runner;
+				runner = runner.Next;
 
 			}
 
