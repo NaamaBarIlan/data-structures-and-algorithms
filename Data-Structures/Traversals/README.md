@@ -146,7 +146,7 @@ public static int CountDuplicateLLNodes(LinkedList list)
 | Efficiency  | Big O | Analysis |
 | :-----------: | :-----------: |:-----------: |
 | Time | O(n) | At its worse case, the node we are looking for will be the very last node in the linked list. n represents the number of nodes in the linked list. |
-| Space | O(1) | There is no additional space being used than what is already given to us with the linked list input |
+| Space | O(1) | There is no additional space being used other than what is already given to us with the linked list input |
  
 ### Recursive Traversal:
 
