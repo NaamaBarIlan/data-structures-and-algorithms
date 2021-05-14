@@ -19,7 +19,7 @@ namespace PalindromeCheck
 
 			Console.WriteLine("3) Pointers / Iterative / Space = O(1) / Time = O(N)");
 
-            Console.WriteLine("IsPalindrome3: " + IsPalindrome3("abcdcba"));
+            Console.WriteLine("IsPalindrome3: " + IsPalindrome3("abb"));
         }
 
 		public static bool IsPalindrome1(string str)
@@ -38,14 +38,16 @@ namespace PalindromeCheck
 			return result;
 		}
 
-		private static bool IsPalindrome2(string str, int i = 0)
+		public static bool IsPalindrome2(string str, int i = 0)
         {
 			int j = str.Length - 1 - i;
 
+			// Base case:
 			if (i > j)
 			{
 				return true;
 			}
+			// Recursive case:
 			else
 			{
 				return str[i] == str[j] && IsPalindrome2(str, i + 1);
@@ -54,21 +56,19 @@ namespace PalindromeCheck
 
 		public static bool IsPalindrome3(string str)
 		{
-            for (int i = 0; i < str.Length; i++)
-            {
-				int leftIdx = i;
-				int rightIdx = str.Length - 1 - i;
+			int leftIdx = 0;
+			int rightIdx = str.Length - 1;
 
-				while (leftIdx < rightIdx)
+			while (leftIdx < rightIdx)
+			{
+				if (str[leftIdx] != str[rightIdx])
 				{
-					if (str[leftIdx] != str[rightIdx])
-					{
-						return false;
-					}
-					leftIdx++;
-					rightIdx--;
+					return false;
 				}
-			}			
+				leftIdx++;
+				rightIdx--;
+			}
+
 			return true;
 		}
 	}
