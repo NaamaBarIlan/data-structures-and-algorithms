@@ -71,31 +71,32 @@ namespace DSAPractice
         }
 
         /// <summary>
-        /// 
+        /// Returns the height of a binary tree as an integer
+        /// The height of a binary tree is the number of edges 
+        /// between the tree's root and its furthest leaf
         /// </summary>
-        /// <param name="root"></param>
-        /// <returns></returns>
-        public static int TreeHeight(Node<int> root)
+        /// <param name="root">A reference to the root of a binary tree</param>
+        /// <returns>A single integer denoting the height of the binary tree</returns>
+        public static int GetTreeHeight(Node<int> current)
         {
-            return TreeHeightHelper(root);
-        }
-
-        private static int TreeHeightHelper(Node<int> current)
-        {
-            if(current == null)
+            //base case:
+            if (current == null)
             {
-                return 0;
+                return -1;
             }
 
-            if(current.LeftChild != null || current.RightChild != null)
+            // recursive case:
+            int leftSide = GetTreeHeight(current.LeftChild);
+            int rightSide = GetTreeHeight(current.RightChild);
+
+            if(leftSide > rightSide)
             {
-                return 1;
+                return leftSide + 1;
             }
-
-            int result =  TreeHeightHelper(current.LeftChild) + TreeHeightHelper(current.RightChild);
-
-            return result;
+            else
+            {
+                return rightSide + 1;
+            }
         }
-
     }
 }
