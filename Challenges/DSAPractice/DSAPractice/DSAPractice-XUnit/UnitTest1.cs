@@ -173,7 +173,7 @@ namespace DSAPractice_XUnit
         }
 
         [Fact]
-        public void CanCountTreeHeight()
+        public void CanGetTreeHeight()
         {
             // Arrange
             Tree<int> tree = new Tree<int>();
@@ -198,7 +198,7 @@ namespace DSAPractice_XUnit
             c.RightChild = g;
 
             // Act
-            int result = DepthFirst.TreeHeight(root);
+            int result = DepthFirst.GetTreeHeight(root);
 
             // Assert
             Assert.Equal(2, result);
