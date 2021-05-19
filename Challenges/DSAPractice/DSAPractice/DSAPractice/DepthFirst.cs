@@ -70,6 +70,32 @@ namespace DSAPractice
             return result;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="root"></param>
+        /// <returns></returns>
+        public static int TreeHeight(Node<int> root)
+        {
+            return TreeHeightHelper(root);
+        }
+
+        private static int TreeHeightHelper(Node<int> current)
+        {
+            if(current == null)
+            {
+                return 0;
+            }
+
+            if(current.LeftChild != null || current.RightChild != null)
+            {
+                return 1;
+            }
+
+            int result =  TreeHeightHelper(current.LeftChild) + TreeHeightHelper(current.RightChild);
+
+            return result;
+        }
 
     }
 }
