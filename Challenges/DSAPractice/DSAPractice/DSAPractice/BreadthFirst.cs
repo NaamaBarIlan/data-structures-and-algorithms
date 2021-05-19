@@ -103,5 +103,11 @@ namespace DSAPractice
 
             return counter;
         }
+
+        public static int TreeHeight(Node<string> root)
+        {
+
+            return 0;
+        }
     }
 }

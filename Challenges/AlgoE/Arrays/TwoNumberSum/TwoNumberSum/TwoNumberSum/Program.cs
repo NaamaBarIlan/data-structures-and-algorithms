@@ -5,15 +5,17 @@ namespace TwoNumberSum
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             Console.WriteLine("Two Number Sum");
 
 			int[] exampleArr = { 3, 5, -4, 8, 11, 1, -1, 6 };
 
             //Console.WriteLine("[{0}]", string.Join(", ", TwoNumberSum1(exampleArr, 10)));
+			 
+			//Console.WriteLine("[{0}]", string.Join(", ", TwoNumberSum2(exampleArr, 10)));
 
-			Console.WriteLine("[{0}]", string.Join(", ", TwoNumberSum2(exampleArr, 10)));
+			Array.ForEach(TwoNumberSum2(exampleArr, 10), Console.WriteLine);
 
 		}
 
