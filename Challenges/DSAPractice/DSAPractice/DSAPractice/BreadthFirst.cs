@@ -104,10 +104,38 @@ namespace DSAPractice
             return counter;
         }
 
-        public static int TreeHeight(Node<string> root)
+        public static int NodeDepths(Node<string> root)
         {
+            Queue<Node<string>> que = new Queue<Node<string>>();
+            root.DepthLevel = 0;
+            int sumOfDepths = 0;
+            if (root == null)
+            {
+                return 0;
+            }
 
-            return 0;
+            que.Enqueue(root);
+
+            while (que.Count != 0)
+            {
+                Node<string> front = que.Dequeue();
+
+                sumOfDepths += front.DepthLevel;
+
+                if (front.LeftChild != null)
+                {
+                    front.LeftChild.DepthLevel = front.DepthLevel + 1;
+                    que.Enqueue(front.LeftChild);
+                }
+
+                if (front.RightChild != null)
+                {
+                    front.RightChild.DepthLevel = front.DepthLevel + 1;
+                    que.Enqueue(front.RightChild);
+                }
+            }
+
+            return sumOfDepths;
         }
     }
 }
