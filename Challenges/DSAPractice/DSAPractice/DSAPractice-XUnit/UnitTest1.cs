@@ -203,5 +203,42 @@ namespace DSAPractice_XUnit
             // Assert
             Assert.Equal(2, result);
         }
+
+        [Fact]
+        public void CanCountNodesDepth()
+        {
+            // Arrange
+            Tree<string> tree = new Tree<string>();
+
+            Node<string> root = new Node<string>("a");
+            Node<string> b = new Node<string>("b");
+            Node<string> c = new Node<string>("c");
+            Node<string> d = new Node<string>("d");
+            Node<string> e = new Node<string>("e");
+            Node<string> f = new Node<string>("f");
+            Node<string> g = new Node<string>("g");
+            Node<string> h = new Node<string>("h");
+            Node<string> i = new Node<string>("i");
+
+            tree.Root = root;
+
+            root.LeftChild = b;
+            root.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.LeftChild = f;
+            c.RightChild = g;
+
+            d.LeftChild = h;
+            d.RightChild = i;
+
+            // Act
+            int result = BreadthFirst.NodeDepths(root);
+
+            // Assert
+            Assert.Equal(16, result);
+        }
     }
 }

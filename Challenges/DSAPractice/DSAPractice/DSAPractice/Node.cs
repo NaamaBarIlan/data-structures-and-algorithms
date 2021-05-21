@@ -16,5 +16,7 @@ namespace DSAPractice
         {
             Value = value;
         }
+
+        public int DepthLevel { get; set; }
     }
 }
