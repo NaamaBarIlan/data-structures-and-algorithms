@@ -104,6 +104,14 @@ namespace DSAPractice
             return counter;
         }
 
+        /// <summary>
+        /// Takes in a Binary Tree and returns the sum 
+        /// of all of its nodes' depths.
+        /// A node's depth is the distance between a node in a Binary Tree
+        /// and the tree's root
+        /// </summary>
+        /// <param name="root">The root node of a specific Binary Tree</param>
+        /// <returns>The sum of all the tree nodes' depth.</returns>
         public static int NodeDepths(Node<string> root)
         {
             Queue<Node<string>> que = new Queue<Node<string>>();
