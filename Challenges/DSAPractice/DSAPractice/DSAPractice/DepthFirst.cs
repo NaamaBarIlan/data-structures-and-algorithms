@@ -98,5 +98,64 @@ namespace DSAPractice
                 return rightSide + 1;
             }
         }
+
+        
+        /// <summary>
+        /// Finds if a BT is contained in another BT
+        /// </summary>
+        /// <param name="tree1Root"></param>
+        /// <param name="tree2Root"></param>
+        /// <returns></returns>
+        public static bool IsTree1ContainedInTree2(Node<int> tree1Root, Node<int> tree2Root)
+        {
+            return FindRootMatch(tree1Root, tree2Root);
+        }
+
+        private static bool FindRootMatch(Node<int> tree1Root, Node<int> tree2Current)
+        {
+            // base case:
+            if (tree2Current == null)
+            {
+                return false;
+            }
+
+            // check if the current node matches the root
+            // if true, compare the trees 
+            if (tree2Current.Value == tree1Root.Value)
+            {
+                return CompareTwoTrees(tree1Root, tree2Current);
+            }
+
+            return FindRootMatch(tree1Root, tree2Current.LeftChild) ||
+            FindRootMatch(tree1Root, tree2Current.RightChild);
+        }
+
+        private static bool CompareTwoTrees(Node<int> current1, Node<int> current2)
+        {
+            //base case:
+            if (current1 == null && current2 == null)
+            {
+                return true;
+            }
+
+            if (current1 != null || current2 != null)
+            {
+                return false;
+            }
+
+            if (current1.Value == current2.Value)
+            {
+                bool leftMatch = CompareTwoTrees(current1.LeftChild, current2.LeftChild);
+                bool rightMatch = CompareTwoTrees(current1.RightChild, current2.RightChild);
+
+                return leftMatch && rightMatch;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
+
     }
 }
