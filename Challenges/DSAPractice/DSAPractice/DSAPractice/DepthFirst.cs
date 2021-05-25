@@ -148,11 +148,11 @@ namespace DSAPractice
         //===============================================================
 
         /// <summary>
-        /// Finds if a BT is contained in another BT
+        /// Finds if on Binary Tree (tree1) is contained in another Binary Tree (tree2).
         /// </summary>
-        /// <param name="tree1Root"></param>
-        /// <param name="tree2Root"></param>
-        /// <returns></returns>
+        /// <param name="tree1Root">The root of the tree that may be contained in tree2</param>
+        /// <param name="tree2Root">The root of the tree that may be containing tree1</param>
+        /// <returns>True or false</returns>
         public static bool IsTree1ContainedInTree2(Node<int> tree1Root, Node<int> tree2Root)
         {
             return FindRootMatch(tree1Root, tree2Root);

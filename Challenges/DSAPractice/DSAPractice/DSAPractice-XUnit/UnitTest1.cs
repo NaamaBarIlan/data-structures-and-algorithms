@@ -267,5 +267,49 @@ namespace DSAPractice_XUnit
             // Assert
             Assert.Equal(2, result);
         }
+
+        [Fact]
+        public void CanFindIfTreeIsContainedInAnotherTree()
+        {
+            // Arrange
+
+            Tree<int> tree1 = new Tree<int>();
+
+            Node<int> root1 = new Node<int>(15);
+            Node<int> h = new Node<int>(25);
+            Node<int> i = new Node<int>(30);
+
+            tree1.Root = root1;
+
+            root1.LeftChild = h;
+            root1.RightChild = i;
+
+            Tree<int> tree2 = new Tree<int>();
+
+            Node<int> root2 = new Node<int>(10);
+            Node<int> b = new Node<int>(15);
+            Node<int> c = new Node<int>(20);
+            Node<int> d = new Node<int>(25);
+            Node<int> e = new Node<int>(30);
+            Node<int> f = new Node<int>(35);
+            Node<int> g = new Node<int>(40);
+
+            tree2.Root = root2;
+
+            root2.LeftChild = b;
+            root2.RightChild = c;
+
+            b.LeftChild = d;
+            b.RightChild = e;
+
+            c.LeftChild = f;
+            c.RightChild = g;
+
+            // Act
+            bool result = DepthFirst.IsTree1ContainedInTree2(root1, root2);
+
+            // Assert
+            Assert.True(result);
+        }
     }
 }
