@@ -99,7 +99,54 @@ namespace DSAPractice
             }
         }
 
-        
+        //==============================================================
+
+        /// <summary>
+        /// Returns the length of the smallest branch in a binary tree
+        /// without using any global variables. 
+        /// </summary>
+        /// <param name="root">A reference to the root of a binary tree</param>
+        /// <returns>The length, the number of nodes, of the smallest in the binary tree</returns>
+        public static int SmallestBranch(Node<int> root)
+        {
+            return SmallestBranchHelper(root);
+        }
+
+        private static int SmallestBranchHelper(Node<int> current)
+        {
+            //Edge case: if the root is null, return 0
+            if (current == null)
+            {
+                return 0;
+            }
+
+            // Base case: if the node is a leaf node return 1
+            if(current.LeftChild == null && current.RightChild == null)
+            {
+                return 1;
+            }
+            
+            // Recursive case:
+
+            // If the node's left side is null return f(right)
+            if(current.LeftChild == null)
+            {
+                return 1 + SmallestBranchHelper(current.RightChild);
+            }
+
+            // If the node's right side is null return f(left)
+            if(current.RightChild == null)
+            {
+                return 1 + SmallestBranchHelper(current.LeftChild);
+            }
+
+            // Return the smallest of left and right
+            return 1 + Math.Min(SmallestBranchHelper(current.LeftChild),
+                                SmallestBranchHelper(current.RightChild));
+        }
+
+        //===============================================================
+
         /// <summary>
         /// Finds if a BT is contained in another BT
         /// </summary>
@@ -156,6 +203,9 @@ namespace DSAPractice
             }
             
         }
+
+
+        
 
     }
 }
