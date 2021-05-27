@@ -204,8 +204,47 @@ namespace DSAPractice
             
         }
 
+        /// <summary>
+        /// Return a list of the sums of each branch in a binary tree
+        /// </summary>
+        /// <param name="current"></param>
+        /// <returns></returns>
+        public static List<int> BranchSums(Node<int> root)
+        {
+            List<int> output = new List<int>();
+            BranchSumsHelper(root, output);
+            return output;
+        }
 
-        
+        private static List<int> BranchSumsHelper(Node<int> current, List<int> list)
+        {
+            // base case:
+            if (current == null)
+            {
+                return null;
+            }
+
+            // Left branch sum
+            if (current.LeftChild != null)
+            {
+                int leftSum = current.Value + BranchSumsHelper(current.LeftChild, list);
+                list.Add(leftSum);
+            }
+
+            // Right branch sum
+
+            if (current.RightChild != null)
+            {
+                int rightSum = current.Value + BranchSumsHelper(current.RightChild, list);
+                list.Add(rightSum);
+            }
+            // add sum to list
+            return list;
+
+
+        }
+
+
 
     }
 }
