@@ -7,7 +7,11 @@ namespace QuickSort
         static void Main(string[] args)
         {
             Console.WriteLine("QuickSort");
-        }
+
+			int[] testArr1 = { 8, 5, 2, 9, 5, 6, 3 };
+			Console.WriteLine("[{0}]", string.Join(", ", QuickSort(testArr1)));
+
+		}
 
 		public static int[] QuickSort(int[] array)
 		{
@@ -15,12 +19,12 @@ namespace QuickSort
 			return array;
 		}
 
-		public static void SwapElements(int i, int j, int[] array)
-		{
-			int temp = array[j];
-			array[j] = array[i];
-			array[i] = temp;
-		}
+		//public static void SwapElements(int i, int j, int[] array)
+		//{
+		//	int temp = array[j];
+		//	array[j] = array[i];
+		//	array[i] = temp;
+		//}
 
 		public static void QuickSortHelper(int[] array, int startIdx, int endIdx)
 		{
@@ -45,7 +49,10 @@ namespace QuickSort
 				// if left is bigger than pivot and right is smaller than pivot, swap them (temp)
 				if (left > pivot && right < pivot)
 				{
-					SwapElements(left, pivot, array);
+					//SwapElements(left, pivot, array);
+					int temp = left;
+					left = pivot;
+					pivot = left;
 				}
 				// if left is smaller than pivot, increment leff = move to the right
 				if (left <= pivot)
@@ -59,20 +66,27 @@ namespace QuickSort
 				}
 			}
 			// swap the pivot and right element
-			SwapElements(right, pivot, array);
+			//SwapElements(right, pivot, array);
+			int temp2 = right;
+			right = pivot;
+			pivot = temp2;
 			// check which sub array is smaller
-			bool isLeftSubarrSmaller = rightIdx - 1 - startIdx < endIdx - (rightIdx + 1);
+			//bool isLeftSubarrSmaller = rightIdx - 1 - startIdx < endIdx - (rightIdx + 1);
 			// recurse sub-arrays:
-			if (isLeftSubarrSmaller)
-			{
-				QuickSortHelper(array, startIdx, rightIdx - 1);
-				QuickSortHelper(array, rightIdx + 1, endIdx);
-			}
-			else
-			{
-				QuickSortHelper(array, rightIdx + 1, endIdx);
-				QuickSortHelper(array, startIdx, rightIdx - 1);
-			}
+
+			QuickSortHelper(array, startIdx, rightIdx - 1);
+			QuickSortHelper(array, rightIdx + 1, endIdx);
+
+			//if (isLeftSubarrSmaller)
+			//{
+			//	QuickSortHelper(array, startIdx, rightIdx - 1);
+			//	QuickSortHelper(array, rightIdx + 1, endIdx);
+			//}
+			//else
+			//{
+			//	QuickSortHelper(array, rightIdx + 1, endIdx);
+			//	QuickSortHelper(array, startIdx, rightIdx - 1);
+			//}
 		}
 	}
 }
