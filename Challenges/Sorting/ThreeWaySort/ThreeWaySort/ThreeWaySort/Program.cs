@@ -11,9 +11,20 @@ namespace ThreeWaySort
 			int[] testorder1 = {0, 1, -1};
 
 			Console.WriteLine("Iterative, two iterations: ");
-			Console.WriteLine("[{0}]", string.Join(", ", ThreeNumberSort(testArray1, testorder1)));
+
+			PrintArray(ThreeNumberSort(testArray1, testorder1));
 		}
 
+		/// <summary>
+		/// Given an array of integers and another array of three distinct integers
+		/// Sorts in place the first array accourding to the desired order
+		/// int the sercond array.
+		/// </summary>
+		/// <param name="array">The integer array to be sorted, 
+		/// contains 3 distinct integers at most</param>
+		/// <param name="order">The integer array representing the desired order
+		/// for the integers in the first array</param>
+		/// <returns>The input integer array, sorted by the input order array</returns>
 		public static int[] ThreeNumberSort(int[] array, int[] order)
 		{
 			// set a firstIdx and a lastIdx
@@ -49,6 +60,12 @@ namespace ThreeWaySort
 				}
 			}
 			return array;
+		}
+
+
+		public static void PrintArray(int[] array)
+        {
+			Console.WriteLine("[{0}]", string.Join(", ", array));
 		}
 	}
 }
