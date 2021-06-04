@@ -9,14 +9,66 @@ namespace ThreeWaySort
             Console.WriteLine("ThreeWaySort");
 			int[] testArray1 = {1, 0, 0, -1, -1, 0, 1, 1};
 			int[] testorder1 = {0, 1, -1};
+			string[] testStringArray1 = { "yellow", "red", "blue", "blue", "yellow", "red", "blue", "blue", "yellow", "red" };
+			string[] testStringArray2 = { "yellow", "red" };
+			string[] testStringOrder = { "blue", "red", "yellow" };
 
 			//Console.WriteLine("Iterative, traversing the input array twice: ");
 			//PrintArray(ThreeWaySort(testArray1, testorder1));
 
-			Console.WriteLine("Recursive, devide and conquer: ");
-			PrintArray(ThreeWaySort2(testArray1));
+			//Console.WriteLine("Recursive, devide and conquer: ");
+			//PrintArray(ThreeWaySort2(testArray1));
+
+			Console.WriteLine("ThreeWayStringSort: ");
+			PrintStringArray(ThreeWayStringSort(testStringArray1, testStringOrder, 0, testStringArray1.Length - 1));
+			//PrintStringArray(ThreeWayStringSort(testStringArray2, testStringOrder, 0, testStringArray2.Length - 1));
 		}
 
+		public static string[] ThreeWayStringSort(string[] array, string[] order, int startIdx, int endIdx)
+        {
+			// An array of 0 or 1, no need to sort
+			if (startIdx >= endIdx)
+			{
+				return array;
+			}
+
+			// Set a middle index to the startIdx
+			int midIdx = startIdx;
+
+			// While the middle index is smaller or equal to the end index
+			while (midIdx <= endIdx)
+			{
+				// If an element is equal to the first elemet in the order array,
+				// swap with the element at startIdx to move it to the start/left of the array
+				// Increment the startIdx and midIdx
+				if (array[midIdx] == order[0])
+				{
+					SwapStringElements(midIdx, startIdx, array);
+					startIdx++;
+					midIdx++;
+				}
+				// If an element is equal to the last elemet in the order array,
+				// swap with the element at endIdx to move it to the end/right of the array
+				// Decrement the endIdx
+				else if (array[midIdx] == order[2])
+				{
+					SwapStringElements(midIdx, endIdx, array);
+					endIdx--;
+				}
+				// If it is not equal to the first or last element of the order array,
+				// then it is equal to the middle element and there's no need to swap
+				// Increment the midIdx
+				else
+				{
+					midIdx++;
+				}
+			}
+
+			return array;
+		}
+
+
+		 //===========================================================================================
 
 		public static int[] ThreeWaySort2(int[] array)
 		{
@@ -87,6 +139,7 @@ namespace ThreeWaySort
 			return (startIdx -1, endIdx);
         }
 
+		//===========================================================================================
 
 		/// <summary>
 		/// Given an array of integers and another array of three distinct integers
@@ -143,7 +196,21 @@ namespace ThreeWaySort
 			array[j] = temp;
         }
 
+
+		private static void SwapStringElements(int i, int j, string[] array)
+		{
+			string temp = array[i];
+			array[i] = array[j];
+			array[j] = temp;
+		}
+
+
 		public static void PrintArray(int[] array)
+		{
+			Console.WriteLine("[{0}]", string.Join(", ", array));
+		} 
+
+		public static void PrintStringArray(string[] array)
         {
 			Console.WriteLine("[{0}]", string.Join(", ", array));
 		}
