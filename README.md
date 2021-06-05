@@ -14,9 +14,10 @@
 2. [Linked List Methods](https://github.com/NaamaBarIlan/data-structures-and-algorithms/blob/master/Data-Structures/linked-lists/LinkedListLibrary/README.md)
 3. [Stack & Queue](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Stack-And-Queue)
 4. [Trees](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Trees)
-5. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
-6. [Graphs](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Graphs)
-7. [Traversals](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals)
+5. [Heaps](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Heaps)
+6. [Hashtable](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Hashtable)
+7. [Graphs](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Graphs)
+8. [Traversals](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals)
 
 ---
 
