@@ -11,6 +11,66 @@ namespace Permutations
 
 			List<int> test1 = new List<int>{ 1, 2, 3 };
 			PrintListOfLists(GetPermutations(test1));
+
+			string test2 = "cow";
+			PrintListOfCharLists(StringPermutations(test2));
+		}
+
+		public static List<List<char>> StringPermutations(string str)
+        {
+			List<char> inputString = StringToCharList(str);
+			List<List<char>> permutations = new List<List<char>>();
+			StringPermutationsHelper(0, inputString, permutations);
+			return permutations;
+        }
+
+		private static void StringPermutationsHelper(int i, List<char> str, List<List<char>> permutations)
+        {
+			// base case: if i is the last char in the string,
+			// then all of the chars have been visited, 
+			// add str to the permutations list
+			if(i == str.Count - 1)
+            {
+				permutations.Add(new List<char>(str));
+            }
+            else
+            {
+				for(int j = i; j < str.Count; j++)
+                {
+					CharSwap(str, i, j);
+					StringPermutationsHelper(i + 1, str, permutations);
+					CharSwap(str, i, j);
+				}
+            }
+		}
+
+		private static List<char> StringToCharList(string str)
+		{
+			List<char> list = new List<char>();
+			foreach (char character in str)
+			{
+				list.Add(character);
+			}
+			return list;
+		}
+
+		private static void CharSwap(List<char> str, int i, int j)
+		{
+			char temp = str[i];
+			str[i] = str[j];
+			str[j] = temp;
+		}
+
+		private static void PrintListOfCharLists(List<List<char>> listOfLists)
+		{
+			foreach (List<char> subList in listOfLists)
+			{
+				foreach (char item in subList)
+				{
+					Console.Write(item);
+				}
+				Console.WriteLine();
+			}
 		}
 
 		public static List<List<int>> GetPermutations(List<int> array)
@@ -38,6 +98,8 @@ namespace Permutations
 			}
 		}
 
+		
+
 		private static void Swap(List<int> array, int i, int j)
 		{
 			int temp = array[i];
@@ -56,5 +118,9 @@ namespace Permutations
                 Console.WriteLine();
 			}
 		}
+
+		
+
+
 	}
 }
