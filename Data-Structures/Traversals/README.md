@@ -578,8 +578,8 @@ BinarySearchTreeTraversal(Node root, int target)
 		return true;
 	}
 
-	// While the node has children, isn't a leaf:
-	while (current.LeftChild != null && current.RightChild != null)
+	// While the current node is not null:
+	while (current != null)
 	{
 		// Check if the value equals the target
 		if (current.Value == target)
