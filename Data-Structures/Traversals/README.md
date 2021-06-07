@@ -43,7 +43,7 @@ public static int CountLLNodes(LinkedList list)
 	
 	Node current = list.Head;
 
-	while(current.Next != null)
+	while(current != null)
 	{
 		counter++;
 		current = current.Next;
