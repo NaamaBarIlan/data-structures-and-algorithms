@@ -9,6 +9,7 @@
 5. [Binary Search Tree](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#binary-search-tree)
 6. [Hashtables](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashtables)
 7. [Hashsets](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#hashsets)
+8. [Heaps](https://github.com/NaamaBarIlan/data-structures-and-algorithms/tree/master/Data-Structures/Traversals#Heaps)
 
 
 ### Reading
@@ -710,3 +711,9 @@ hashset.Remove(4);
 
 
 ---
+
+---
+
+## Heaps
+
+### Basic Terms: 
